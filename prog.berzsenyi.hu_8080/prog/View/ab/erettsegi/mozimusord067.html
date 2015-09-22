@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/erettsegi/mozimusor?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:47:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="mozimusor.html" class="tab_normal">Nézet</a><a href="mozimusord067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../erettsegid067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../abd067.html?page=print">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../erettsegid067.html?page=print">Érettségi feladatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="mozimusord067.html?page=print">Moziműsor</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="mozimusord067.html?page=print">Moziműsor</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Moziműsor</h1>
+<div class="paragraph">
+A budapesti mozik adatai és azok egy heti műsora áll rendelkezésre a <a href="mozimusor/mozid067.html?page=print">mozi.txt</a>, a
+<a href="mozimusor/filmd067.html?page=print">film.txt</a> és a <a href="mozimusor/helyd067.html?page=print">hely.txt</a> állományban.
+</div>
+
+
+<h2>Kérdések</h2>
+
+
+<div class="paragraph">
+<ol>
+<li>Készítsen új adatbázist musor néven! Importálja a mellékelt állományokat az adatbázisba
+mozi, film és hely néven! Az állományok a mozik és a filmek adatait, valamint a vetítési
+adatokat tartalmazzák. A txt típusú adatállományok tabulátorokkal tagoltak, és az első
+soruk tartalmazza a mezőneveket.
+
+</li>
+<li>
+Táblák
+
+<pre>
+mozi (moziazon, mozinev, irszam, cim, telefon)
+	moziazon	A mozi azonosítója (szám), ez a kulcs
+	mozinev		A mozi neve (szöveg)
+	irszam		A mozi címének irányítószám része, négyjegyű szám (szám)
+	cim		A mozi címe (szöveg)
+	telefon		A mozi telefonszáma (szöveg)
+
+film (fkod, filmcim, szines, szinkron, szarmazas, mufaj, hossz)
+	fkod		A film azonosítója (szám), ez a kulcs
+	filmcim		A film címe (szöveg)
+	szines		A film színes-e (logikai)
+	szinkron	A film szinkronizáltsága (szöveg)
+	szarmazas	A film gyártóinak országa (szöveg)
+	mufaj		A film műfaja (szöveg)
+	hossz		A film vetítési ideje (szám)
+
+
+hely (fkod, moziazon)
+	fkod		A film azonosítója (szám) kulcs része
+	moziazon	A mozi azonosítója (szám) kulcs másik része
+
+</pre>
+
+A következő feladatok megoldását a zárójelben lévő néven mentse el!
+
+</li>
+<li> Lekérdezéssel írassa ki azokat a filmcímeket, amelyek gyártói között Franciaország is
+szerepel! Más mező ne jelenjen meg! (A)
+</li><li> Lekérdezéssel, minden adatával együtt listázza ki azokat a mozikat, amelyekben vetítik a
+„Lakótársat keresünk” című filmet! (B)
+</li><li> Lekérdezéssel írassa ki, hogy mely moziban vetítenek fekete-fehér filmet is! A listában
+minden mozi csak egyszer szerepeljen! (C)
+</li><li> Lekérdezés segítségével írassa ki azoknak a moziknak az adatait, amelyek nem vetítenek
+filmeket! A lekérdezés csak a mozik nevét és telefonszámát jelenítse meg! Szükség esetén
+használhat segédtáblát vagy segédlekérdezést. (D)
+</li><li> Sorolja fel lekérdezés segítségével azoknak a feliratos vígjátékoknak a címeit, amelyeket
+több mint két moziban vetítenek! (E)
+</li><li> Írassa ki, hogy melyik a leghosszabb vetítési idejű film és melyik mozi(k)ban vetítik! A
+lekérdezésben csak a film címét és a mozi(k) nevét jelenítse meg! (F)
+</li><li> Adja meg azoknak a filmeknek a címét, amelyeket a 13. kerületi mozik vetítenek (film-
+cím, a mozi neve, irányítószáma és címe)! A 13. kerületi mozik irányítószámának 2. és 3.
+számjegyéből képzett szám 13. A budapesti irányítószámok egyessel kezdődnek. (G)
+</li><li> Készítsen jelentést a G lekérdezés alapján mozi szerint csoportosítva, amelyben a mozi
+nevét, irányítószámát és címét együtt kiemelve adja meg a 13. kerületben vetített filmeket!
+A jelentésfejben a cím legyen „A 13. kerületben vetített filmek”! (H)
+</li>
+</ol>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2011-02-08 08:23:39
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/erettsegi/mozimusor?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:47:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

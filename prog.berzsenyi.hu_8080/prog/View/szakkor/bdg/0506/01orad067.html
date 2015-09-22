@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0506/01ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 21:08:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="01ora.html" class="tab_normal">Nézet</a><a href="01orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0506d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0506d067.html?page=print">2005/2006</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="01orad067.html?page=print">1. óra</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="01orad067.html?page=print">1. óra</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>1. óra</h1>
+
+<div style="text-align: center;">2005. 09. 27. (Fehér Gábor)</div>
+<h2>Tervezés</h2>
+<div class="paragraph">
+Ezen az órán kipróbáltunk két programtervezési módszert:
+Az egyik a program felülről lefelé finomítással való megtervezése volt; a másik a futásidőben használt adatok jobb csoportosítása rekord adatstruktúrákkal.
+Mindkét módszer a program felépítésének az átláthatóságát javította.
+</div>
+<h3>Felülről lefelé finomítás</h3>
+<div class="paragraph">
+Kezdetben feltételezzük, hogy van egy számítógép-parancs, ami pont a mi feladatunkat oldja meg. Ilyenkor igencsak egyszerű a programunk: meghívja ezt a parancsot. Mivel sajnos ritkán van ilyen szerencsénk, tovább kell lépnünk: a következő lépésben implementáljuk ezt a parancsot mi magunk! Bontsuk fel néhány összefüggő egységre, és most azt képzéljük, hogy ugyan az eredeti parancsra még mindig nincs számítógép-parancsunk, de ezekre az egységekre már van. 
+Tehát az eredeti parancs helyett írunk egy eljárást, ami kiadja ezeket a parancsokat. (A parancsokon kívűl esetleg tartalmazhat néhány elágazást, vagy más vezérlési szerkeztet.)
+
+Látható, hogy az itt kiadott parancsok helyett is eljárásokat kell írnunk, és az azokban kiadott parancsok helyett is, és így tovább mindaddig, amíg el nem jutunk egy egyszerüségig, ami már könnyen leprogramozható. Az általános tanács az, hogy minden eljárás valami jól körülhatárolható, viszonylag egyszerü dolgot csináljon.
+</div>
+<div class="paragraph">
+Lehetséges, hogy írunk majd olyan eljárást is, amit több különböző felsőbbszintű eljárás is meghív, ez különösen jó dolog.
+</div>
+<h3>Rekord adatsruktúra</h3>
+<div class="paragraph">
+Az objektum-orientált filozófia egyik fontos része az az elv, hogy az összetartozó adatokat egy helyen kell tárolni. Ez könnyen alkalmazható programunk átláthatóbbá tételére OO-t nem támogató nyelveken is, mint pl. Pascal, C. Erre Pascalban a <span class="codetext">RECORD</span>, C-ben pedig a <span class="codetext">struct</span> nyelvi elem szolgál. Például, ha <span class="codetext">1000</span> racionális számot akarunk tárolni tört alakban, akkor azt eddig így csináltuk:
+</div>
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="pascal_keyword">CONST</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;maxn&#160;</span><span class="pascal_operator">=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1000</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">VAR</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;szamlalok</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">ARRAY</span><span class="pascal_plain">&#160;</span><span class="pascal_separator">[</span><span class="pascal_num_literal">1</span><span class="pascal_separator">..</span><span class="pascal_plain">maxn</span><span class="pascal_separator">]</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">OF</span><span class="pascal_plain">&#160;</span><span class="pascal_type">INTEGER</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;nevezok</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">ARRAY</span><span class="pascal_plain">&#160;</span><span class="pascal_separator">[</span><span class="pascal_num_literal">1</span><span class="pascal_separator">..</span><span class="pascal_plain">maxn</span><span class="pascal_separator">]</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">OF</span><span class="pascal_plain">&#160;</span><span class="pascal_type">INTEGER</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /></div>
+<div class="paragraph">
+Sokkal szemléletesbb azonban a következő megoldás:
+</div>
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="pascal_keyword">CONST</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;maxn&#160;</span><span class="pascal_operator">=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1000</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">TYPE</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;TRac&#160;</span><span class="pascal_operator">=</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">RECORD</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;szamlalo</span><span class="pascal_separator">,</span><span class="pascal_plain">&#160;nevezo</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_type">INTEGER</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">END</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">VAR</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;szamok</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">ARRAY</span><span class="pascal_plain">&#160;</span><span class="pascal_separator">[</span><span class="pascal_num_literal">1</span><span class="pascal_separator">..</span><span class="pascal_plain">maxn</span><span class="pascal_separator">]</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">OF</span><span class="pascal_plain">&#160;TRac</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /></div>
+<div class="paragraph">
+Rekordokat természetesen nem csak tömbökben vehetünk fel, példánkban a <span class="codetext">TRac</span> egy a nyelv beépített típusaival (<span class="codetext">INTEGER</span>,  <span class="codetext">STRING</span>) egyenértékűen használható típus. A rekordokban tárolt adattagok a <span class="codetext">.</span> operátorral érhetők el:
+</div>
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="pascal_keyword">VAR</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;a</span><span class="pascal_separator">,</span><span class="pascal_plain">&#160;b</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;TRac</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">BEGIN</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;a</span><span class="pascal_separator">.</span><span class="pascal_plain">szamlalo&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1</span><span class="pascal_separator">;</span><span class="pascal_plain">&#160;a</span><span class="pascal_separator">.</span><span class="pascal_plain">nevezo&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">2</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;b</span><span class="pascal_separator">.</span><span class="pascal_plain">szamlalo&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">42</span><span class="pascal_separator">;</span><span class="pascal_plain">&#160;b</span><span class="pascal_separator">.</span><span class="pascal_plain">nevezo&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">84</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;szamok</span><span class="pascal_separator">[</span><span class="pascal_num_literal">1</span><span class="pascal_separator">]</span><span class="pascal_plain">&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;a</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;szamok</span><span class="pascal_separator">[</span><span class="pascal_num_literal">2</span><span class="pascal_separator">]</span><span class="pascal_plain">&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;a</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;szamok</span><span class="pascal_separator">[</span><span class="pascal_num_literal">3</span><span class="pascal_separator">].</span><span class="pascal_plain">szamlalo&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">53</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;szamok</span><span class="pascal_separator">[</span><span class="pascal_num_literal">3</span><span class="pascal_separator">].</span><span class="pascal_plain">nevezo&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">37</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">END</span><span class="pascal_separator">.</span><span class="pascal_plain"></span><br /></div>
+<div class="paragraph">
+Az előbbi programrészben például az is a jó, hogy írhatunk <span class="codetext">TRac</span> típusú paramétereket átvevő pl. összadó, szorzó, egyszerüsítő eljárásokat, és ha a programunk többi részében azokat használjuk, akkor ha egyszer majd át akarunk állni pl. komplex számokra is, akkor csak azokat az eljárásokat kell módosítani.
+</div>
+<div class="paragraph">
+OO nyelvekben lehetőség van az adatsrtuktúra típusok, és a rajtuk műveleteket végző eljárások szorosabb összekapcsolására, adatrejtésre, és az adatstruktúrák egymásra építésére is. Kisebb programoknál ezekre még nincs olyan nagy szükség...
+</div>
+<h3>A példa C-ben:</h3>
+<div class="paragraph">Az eredeti deklarációk:</div>
+<div class="code codetext"><style>.cpp_preproc {
+color: purple;
+}
+.cpp_doxygen_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);  
+}
+.cpp_doxygen_tag {
+color: rgb(147,147,147); background-color: rgb(247,247,247); font-style: italic; font-weight: bold;
+}
+.cpp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.cpp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.cpp_type {
+color: rgb(128,0,0);
+}
+.cpp_operator {
+color: rgb(0,0,0);
+}
+.cpp_char_literal {
+color: rgb(255,0,255);
+}
+.cpp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.cpp_num_literal {
+color: rgb(0,0,255);
+}
+.cpp_comment {
+color: rgb(147,147,147);  
+}
+.cpp_plain {
+color: rgb(0,0,0);
+}
+.cpp_string_literal {
+color: rgb(255,0,0);
+}
+.cpp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="cpp_preproc">#define</span><span class="cpp_plain">&#160;MAXN&#160;</span><span class="cpp_num_literal">1000</span><span class="cpp_plain"></span><br /><span class="cpp_plain"></span><br /><span class="cpp_type">int</span><span class="cpp_plain">&#160;szamlalok</span><span class="cpp_separator">[</span><span class="cpp_plain">maxn</span><span class="cpp_separator">];</span><span class="cpp_plain"></span><br /><span class="cpp_type">int</span><span class="cpp_plain">&#160;nevezok</span><span class="cpp_separator">[</span><span class="cpp_plain">maxn</span><span class="cpp_separator">];</span><span class="cpp_plain"></span><br /></div>
+<div class="paragraph">A struktúrált deklarációk:</div>
+<div class="code codetext"><style>.cpp_preproc {
+color: purple;
+}
+.cpp_doxygen_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);  
+}
+.cpp_doxygen_tag {
+color: rgb(147,147,147); background-color: rgb(247,247,247); font-style: italic; font-weight: bold;
+}
+.cpp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.cpp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.cpp_type {
+color: rgb(128,0,0);
+}
+.cpp_operator {
+color: rgb(0,0,0);
+}
+.cpp_char_literal {
+color: rgb(255,0,255);
+}
+.cpp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.cpp_num_literal {
+color: rgb(0,0,255);
+}
+.cpp_comment {
+color: rgb(147,147,147);  
+}
+.cpp_plain {
+color: rgb(0,0,0);
+}
+.cpp_string_literal {
+color: rgb(255,0,0);
+}
+.cpp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="cpp_preproc">#define</span><span class="cpp_plain">&#160;MAXN&#160;</span><span class="cpp_num_literal">1000</span><span class="cpp_plain"></span><br /><span class="cpp_plain"></span><br /><span class="cpp_keyword">struct</span><span class="cpp_plain">&#160;SRac&#160;</span><span class="cpp_separator">{</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;</span><span class="cpp_type">int</span><span class="cpp_plain">&#160;szamlalo</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;</span><span class="cpp_type">int</span><span class="cpp_plain">&#160;nevezo</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_separator">};</span><span class="cpp_plain"></span><br /><span class="cpp_plain"></span><br /><span class="cpp_plain">SRac&#160;szamok</span><span class="cpp_separator">[</span><span class="cpp_plain">maxn</span><span class="cpp_separator">];</span><span class="cpp_plain"></span><br /><span class="cpp_plain"></span><br /><span class="cpp_type">int</span><span class="cpp_plain">&#160;main</span><span class="cpp_separator">()</span><span class="cpp_plain">&#160;</span><span class="cpp_separator">{</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;SRac&#160;a</span><span class="cpp_separator">,</span><span class="cpp_plain">&#160;b</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;a</span><span class="cpp_separator">.</span><span class="cpp_plain">szamlalo&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;</span><span class="cpp_num_literal">1</span><span class="cpp_separator">;</span><span class="cpp_plain">&#160;a</span><span class="cpp_separator">.</span><span class="cpp_plain">nevezo&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;</span><span class="cpp_num_literal">2</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;b</span><span class="cpp_separator">.</span><span class="cpp_plain">szamlalo&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;</span><span class="cpp_num_literal">42</span><span class="cpp_separator">;</span><span class="cpp_plain">&#160;b</span><span class="cpp_separator">.</span><span class="cpp_plain">nevezo&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;</span><span class="cpp_num_literal">84</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;szamok</span><span class="cpp_separator">[</span><span class="cpp_num_literal">0</span><span class="cpp_separator">]</span><span class="cpp_plain">&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;a</span><span class="cpp_separator">;</span><span class="cpp_plain">&#160;szamok</span><span class="cpp_separator">[</span><span class="cpp_num_literal">1</span><span class="cpp_separator">]</span><span class="cpp_plain">&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;b</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;szamok</span><span class="cpp_separator">[</span><span class="cpp_num_literal">2</span><span class="cpp_separator">].</span><span class="cpp_plain">szamlalo&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;</span><span class="cpp_num_literal">53</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;szamok</span><span class="cpp_separator">[</span><span class="cpp_num_literal">2</span><span class="cpp_separator">].</span><span class="cpp_plain">nevezo&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;</span><span class="cpp_num_literal">37</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_separator">}</span><span class="cpp_plain"></span><br /></div>
+<h2>Feladat</h2>
+<div class="paragraph">
+<a href="01ora/tarsasjatekd067.html?page=print">Társasjáték</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Adminisztrátor;
+        utolsó módosítás:
+        2009-11-07 23:32:42
+        (Adminisztrátor)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0506/01ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 21:08:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

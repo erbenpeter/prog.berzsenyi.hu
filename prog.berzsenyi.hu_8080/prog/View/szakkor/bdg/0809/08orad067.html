@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/08ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 21:55:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="08ora.html" class="tab_normal">Nézet</a><a href="08orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0809d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0809d067.html?page=print">2008/2009</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="08orad067.html?page=print">8. óra - Floyd-Warshall algoritmus</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="08orad067.html?page=print">8. óra - Floyd-Warshall algoritmus</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../elmeletd067.html?page=print">Elmélet</a>
+            
+                
+                &gt;
+                <a href="../../../elmelet/algd067.html?page=print">Algoritmusok</a>
+            
+                
+                &gt;
+                <a href="../../../elmelet/alg/grafalgod067.html?page=print">Gráfalgoritmusok</a>
+            
+            <br />
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>8. óra</h1>
+<div class="paragraph">Nekilátunk a gráfalgoritmusok átnézésének. Először távolságokat számolgatunk gráfokban.</div>
+<h2>Floyd-Warshall algoritmus</h2>
+
+<h3>A probléma</h3>
+<div class="paragraph">Adott egy (esetleg élsúlyozott, irányított) gráf. Határozzuk meg az összes pontpárra a gráfban számított távolságokat. Két pont (i és j) távolsága a legrövidebb
+i-ből j-be vezető út hossza. Az út hossza pedig a benne szereplő (irányított) élek összsúlya. Ha a gráf súlyozatlan, akkor az út hossza a benne szereplő élek száma, tehát úgy számolhatunk, mintha minden súly egységnyi lenne.</div>
+
+<h3>A megoldási ötlet</h3>
+<div class="paragraph">Az i-ből j-be vezető út hosszát több lépésben számoljuk ki. 
+Bevezetjük a <span class="mathspan">$d_k(i,j)$</span> függvényt, ami az i-ből j-be  vezető olyan utak közül a legrövidebb hossza, amelyek i-től és j-től eltekintve csak az 1,2,...,k csúcsokon haladnak át. (Nem feltétlenül mindegyiken.)</div><div class="paragraph">
+Ekkor <span class="mathspan">$d_0(i,j)$</span> az (i,j) él hossza, ha i és j különbözik és van köztük él, végtelen, ha nincs köztük él, és <span class="mathspan">$d_0(i,i)=0$</span>.
+</div>
+<div class="paragraph">
+Feladatunk <span class="mathspan">$d_n(i,j)$</span> kiszámítása, ezt n lépésben tesszük meg, k=1,2,...,n-re meghatározzuk <span class="mathspan">$d_k(i,j)$</span>-t.
+</div>
+<div class="paragraph">
+A számítása alapja a következő rekurzió:
+</div>
+<div class="paragraph">
+<span class="mathspan">$d_k(i,j)=\min(d_{k-1}(i,j), d_{k-1}(i,k)+d_{k-1}(k,j))$</span>
+</div>
+<div class="paragraph"><div style="text-align: center;">
+<img src="../../../../Download299e.png?node=3316" alt="" class=""/>
+</div>
+</div>
+<h3>Az algoritmus</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">kezdetben&#160;minden&#160;i</span><span class="metahun_separator">,</span><span class="metahun_plain">j</span><span class="metahun_operator">-</span><span class="metahun_plain">re&#160;legyen&#160;d</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">,</span><span class="metahun_plain">j</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;az&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">i</span><span class="metahun_separator">,</span><span class="metahun_plain">j</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;&eacute;l&#160;hossza</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;d</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">,</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;pedig&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain"></span><br /><span class="metahun_plain">amennyiben&#160;nincs&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">i</span><span class="metahun_separator">,</span><span class="metahun_plain">j</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;&eacute;l</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;olyankor&#160;d</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">,</span><span class="metahun_plain">j</span><span class="metahun_separator">]</span><span class="metahun_operator">=</span><span class="metahun_plain">v&eacute;gtelen</span><br /><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;k&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_operator">-</span><span class="metahun_plain">től&#160;n</span><span class="metahun_operator">-</span><span class="metahun_plain">ig&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;i&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_operator">-</span><span class="metahun_plain">től&#160;n</span><span class="metahun_operator">-</span><span class="metahun_plain">ig&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;j&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_operator">-</span><span class="metahun_plain">től&#160;n</span><span class="metahun_operator">-</span><span class="metahun_plain">ig&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;d</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">,</span><span class="metahun_plain">j</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">=</span><span class="metahun_plain">&#160;min</span><span class="metahun_separator">(</span><span class="metahun_plain">d</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">,</span><span class="metahun_plain">j</span><span class="metahun_separator">],</span><span class="metahun_plain">&#160;d</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">,</span><span class="metahun_plain">k</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;d</span><span class="metahun_separator">[</span><span class="metahun_plain">k</span><span class="metahun_separator">,</span><span class="metahun_plain">j</span><span class="metahun_separator">])</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+</div>
+<div class="paragraph">
+Az algoritmusban nem használtuk a <span class="mathspan">$k$</span> indexet. Gondoljuk végig, hogy ez nem befolyásolja az algoritmus helyességét.
+</div>
+<h2>Feladat</h2> 
+<div class="paragraph">
+<a href="08ora/szerkezetekd067.html?page=print">Szerkezetek</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/08ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 21:55:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

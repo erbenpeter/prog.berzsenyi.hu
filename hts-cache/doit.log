@@ -1,0 +1,8 @@
+http://prog.berzsenyi.hu:8080/prog/ -O "/home/erben/websites/prog.bdg" -%v
+File generated automatically on Tue, 07 Aug 2012 15:46:16, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+

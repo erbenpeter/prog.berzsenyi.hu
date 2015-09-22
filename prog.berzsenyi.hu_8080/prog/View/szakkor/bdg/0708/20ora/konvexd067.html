@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0708/20ora/konvex?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:35:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="konvex.html" class="tab_normal">Nézet</a><a href="konvexd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../20orad067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../0708d067.html?page=print">2007/2008</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../20orad067.html?page=print">20. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="konvexd067.html?page=print">Konvex burok térben</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="konvexd067.html?page=print">Konvex burok térben</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Konvex burok térben</h1>
+<div class="paragraph"> Egy ponthalmaz konvex, ha bármely két pontját összekötő szakasz is teljes egészében a halmazban van. Egy ponthalmaz konvex burka a legkisebb (legszűkebb) konvex halmaz, ami az eredeti ponthalmazt tartalmazza.<br/>
+Példáu az
+<span class="mathspan">$ X = {(0, 0, 0), (10, 0, 0), (0, 10, 0), (0, 0, 10)}$</span> halmaz konvex burka a 
+felsorolt pontok által meghatározott tetraéder. <br/>
+A feladatban csak olyan ponthalmazok szerepelnek, amelyeknek konvex burka csupa háromszöglappal rendelkező poliéder.
+</div>
+<div style="text-align: center;">
+<img src="../../../../../Download98b2.png?node=2593" alt="" class=""/>
+</div>
+<div class="paragraph">
+
+</div>
+<h2>Feladat</h2>
+<div class="paragraph">
+Írj programot, ami megadja a konvex burok felszínét, egészre kerekítve.
+</div>
+
+<h2>Bemenet</h2>
+<div class="paragraph">
+A bemenet  több tesztesetet tartalmaz, mindegyik eset első sora a pontok számát adja meg
+(<span class="mathspan">$4 \le n \le 25$</span>). Ezután <span class="mathspan">$n$</span> sorban a pontok koordinátái következnek (<span class="mathspan">$-100 \le x, y, z \le 100$</span>). A bemenet végét egy 0 jelzi.
+
+</div> 
+<h2>Kimenet</h2>
+<div class="paragraph">
+Minden kérdéshez írjuk ki a konvex burok felszínét, egészre kerekítve.
+</div>
+<h2>Példa</h2>
+<div class="paragraph">
+<table class="ttpre">
+<tr>
+<td>area.in</td><td>area.out</td>
+</tr>
+<tr>
+<td>5
+0 0 0
+10 0 0
+0 10 0
+0 0 10
+1 1 1
+9
+0 0 0
+2 0 0
+2 2 0
+0 2 0
+1 1 2
+1 1 -2
+1 1 -1
+1 1 0
+1 1 1
+0</td>
+<td>237
+18</td>
+</tr>
+</table>
+
+</div>
+
+<h2>Tesztadatok</h2>
+<div class="paragraph">
+<a href="konvex/aread067.html?page=print">area.in</a> <br/>
+<a href="konvex/aread067-2.html?page=print">area.out</a>
+</div>
+
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0708/20ora/konvex?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:35:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

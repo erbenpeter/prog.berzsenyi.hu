@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/26ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:08:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="26ora.html" class="tab_normal">Nézet</a><a href="26orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0809d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0809d067.html?page=print">2008/2009</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="26orad067.html?page=print">26. óra</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="26orad067.html?page=print">26. óra</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Grafikai algoritmusok: töröttvonal és konvex burok</h1>
+<div style="text-align: center;">Peregi Tamás</div>
+<h2>Alapok</h2>
+<h3>Problémafelvetés</h3>
+<div class="paragraph">
+Adott N pont a 2 v. 3 dimenziós térben, koordinátákkal megadva. A koordináták egész számok.
+A ponthalmazzal kapcsolatos geometriai objektumokat állítunk elő.
+</div>
+<h3>Miért nem számolunk lebegőpontos számokkal?</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.cpp_preproc {
+color: purple;
+}
+.cpp_doxygen_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);  
+}
+.cpp_doxygen_tag {
+color: rgb(147,147,147); background-color: rgb(247,247,247); font-style: italic; font-weight: bold;
+}
+.cpp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.cpp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.cpp_type {
+color: rgb(128,0,0);
+}
+.cpp_operator {
+color: rgb(0,0,0);
+}
+.cpp_char_literal {
+color: rgb(255,0,255);
+}
+.cpp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.cpp_num_literal {
+color: rgb(0,0,255);
+}
+.cpp_comment {
+color: rgb(147,147,147);  
+}
+.cpp_plain {
+color: rgb(0,0,0);
+}
+.cpp_string_literal {
+color: rgb(255,0,0);
+}
+.cpp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="cpp_preproc">#include</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">iostream</span><span class="cpp_operator">&gt;</span><span class="cpp_plain"></span><br /><span class="cpp_preproc">#include</span><span class="cpp_operator">&lt;</span><span class="cpp_plain">cmath</span><span class="cpp_operator">&gt;</span><span class="cpp_plain"></span><br /><span class="cpp_plain"></span><br /><span class="cpp_type">int</span><span class="cpp_plain">&#160;main</span><span class="cpp_separator">()</span><span class="cpp_plain">&#160;</span><span class="cpp_separator">{</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;</span><span class="cpp_keyword">double</span><span class="cpp_plain">&#160;a&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;</span><span class="cpp_num_literal">13622342.2746364</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;</span><span class="cpp_keyword">double</span><span class="cpp_plain">&#160;b&#160;</span><span class="cpp_operator">=</span><span class="cpp_plain">&#160;</span><span class="cpp_num_literal">4673563.2384912</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_plain"></span><br /><span class="cpp_plain">&#160;&#160;&#160;&#160;std</span><span class="cpp_operator">::</span><span class="cpp_plain">cout&#160;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&#160;</span><span class="cpp_num_literal">12</span><span class="cpp_operator">*</span><span class="cpp_plain">a</span><span class="cpp_operator">*</span><span class="cpp_plain">b</span><span class="cpp_operator">-</span><span class="cpp_num_literal">12</span><span class="cpp_operator">*</span><span class="cpp_plain">b</span><span class="cpp_operator">*</span><span class="cpp_plain">a&#160;</span><span class="cpp_operator">&lt;&lt;</span><span class="cpp_plain">&#160;std</span><span class="cpp_operator">::</span><span class="cpp_plain">endl</span><span class="cpp_separator">;</span><span class="cpp_plain"></span><br /><span class="cpp_separator">}</span><span class="cpp_plain"></span><br /></div>
+</div>
+<div class="paragraph">
+A fenti program matematikai várakozásainkkal szemben a következő eredményre vezet:
+</div>
+<div class="paragraph">
+<div class="code codetext"><style>.cpp_preproc {
+color: purple;
+}
+.cpp_doxygen_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);  
+}
+.cpp_doxygen_tag {
+color: rgb(147,147,147); background-color: rgb(247,247,247); font-style: italic; font-weight: bold;
+}
+.cpp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.cpp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.cpp_type {
+color: rgb(128,0,0);
+}
+.cpp_operator {
+color: rgb(0,0,0);
+}
+.cpp_char_literal {
+color: rgb(255,0,255);
+}
+.cpp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.cpp_num_literal {
+color: rgb(0,0,255);
+}
+.cpp_comment {
+color: rgb(147,147,147);  
+}
+.cpp_plain {
+color: rgb(0,0,0);
+}
+.cpp_string_literal {
+color: rgb(255,0,0);
+}
+.cpp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="cpp_operator">-</span><span class="cpp_num_literal">0.125</span><span class="cpp_plain"></span><br /></div>
+</div>
+<div class="paragraph">
+Ennek oka az, hogy a lebegőpontos számok aritmetikája nem azonos a valós számok aritmetikájával. További részletek a számábrázolással foglalkozó írásokban találhatók.
+Például: <a href="http://www.berzsenyi.hu/~erben/wiki/index.php/K%C3%B6z%C3%A9pszint_5._t%C3%A9tel">számábrázolások</a>.
+</div>
+
+
+<h3>Pontok rendezése az 1-es síknegyedben</h3>
+<div class="paragraph">
+<span class="mathspan">$
+B>A \Leftrightarrow 
+\beta > \alpha \Leftrightarrow 
+\tan \beta > \tan \alpha \Leftrightarrow 
+\frac{y_B}{x_B} > \frac{y_A}{x_A} \Leftrightarrow 
+y_B\cdot x_A > y_A\cdot x_B \Leftrightarrow 
+0 > y_Ax_B-y_Bx_A
+
+$</span>
+</div>
+<div class="paragraph">
+<img src="../../../../Downloadd3b6.png?node=3907" alt="" class=""/>
+</div>
+<div class="paragraph">
+Ha két pont forgásiránya azonos, akkor origótól mért távolságuk szerint rendezhetők.
+Ehhez nem kell négyzetre emelni, elég az x koordinátákat összehasonlítani, vagy ha azok is egyenlők, akkor az y koordinátákat.
+</div>
+<h3>Egy pont egy egyenes melyik partján van?</h3>
+<div class="paragraph">
+Ha azt szeretnénk tudni, hogy egy <span class="mathspan">$P_2$</span> pont a <span class="mathspan">$P_0P_1$</span>
+egyenes melyik partján van, akkor elég a <span class="mathspan">$\overrightarrow{P_0P_1}$</span>
+és <span class="mathspan">$\overrightarrow{P_0P_2}$</span> vektorok forgásirányát összehasonlítani.
+</div>
+<h3>Forgás irány függvény</h3>
+<h2>Pontok összekötése nem metsző töröttvonallal</h2>
+<div class="paragraph">
+Adott N pont az első síknegyedben. Kössük össze őket önmagát nem metsző töröttvonallal.
+</div>
+<h3>Algoritmus</h3>
+<div class="paragraph">
+A pontokat rendezzük forgásirány, és azon belül origótól való távolság szerint. Ezután a rendezés sorrendjében történő összekötés megfelelő.
+</div>
+<div class="paragraph">
+<img src="../../../../Download0bfc.png?node=3904" alt="" class=""/><br/><br/>
+<img src="../../../../Download85b8.png?node=3905" alt="" class=""/><br/><br/>
+<img src="../../../../Download5542.png?node=3906" alt="" class=""/><br/><br/>
+</div>
+<h3>Példa</h3>
+<div class="paragraph">
+<table>
+<tr><td>.BE</td><td>.KI</td></tr>
+<tr>
+<td>
+6<br/>
+2 0<br/>
+1 4<br/>
+0 2<br/>
+3 2<br/>
+2 4<br/>
+2 6<br/>
+</td>
+<td>
+6<br/>
+1 4 5 6 2 3 
+</td>
+</tr>
+</table>
+</div>
+<h2>Konvex burok</h2>
+<div class="paragraph">
+Adott N pont az első síknegyedben. Határozzuk meg a pontok konvex burkát!
+</div>
+<h2>Tesztadatok</h2>
+<div class="paragraph">
+<a href="26ora/bed067.html?page=print">be.zip</a><br/>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/26ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:08:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

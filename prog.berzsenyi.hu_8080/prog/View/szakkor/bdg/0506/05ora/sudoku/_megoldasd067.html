@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0506/05ora/sudoku/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:34:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="_megoldas.html" class="tab_normal">Nézet</a><a href="_megoldasd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../sudokud067.html?page=print">
+                    <img src="../../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../0506d067.html?page=print">2005/2006</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../05orad067.html?page=print">5. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../sudokud067.html?page=print">Sudoku</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="_megoldasd067.html?page=print">Megoldás</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+                
+                <a href="../sudokud067.html?page=print">Sudoku</a> (<a href="_megoldasd067.html?page=print">Megoldás</a>)
+            
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+            
+                
+                &gt;
+                <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+            
+                
+                &gt;
+                <a href="../../../0506d067.html?page=print">2005/2006</a>
+            
+                
+                &gt;
+                <a href="../../05orad067.html?page=print">5. óra</a>
+            
+            <br />
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h2>A megoldás algoritmusa</h2>
+<div class="paragraph">Az alap algoritmus igen egyszerű:</div>
+<ul>
+  <li>Az ismert számokat a táblába helyezzük.</li>
+  <li>Megnézzük, hogy van-e olyan üres mező, amelybe csakis egy újabb szám kerülhet (kizárásos alapon). Ha van legalább egy ilyen mező, visszatérünk az előző pontra. Ha nincs, készen vagyunk.</li>
+</ul>
+<div class="paragraph">De hogyan tároljuk az adatokat? Hogyan keressük meg az olyan mezőket, amelyeknél egyértelműen meghatározható az új érték? Egy alapos rendszertervezéssel megkaphatjuk a választ ezekre a kérdésekre.</div>
+
+<h2>Adatszerkezet</h2>
+<div class="paragraph">A Sudoku tábla 9×9 db mezőből áll. Minden egyes mezőnek van egy értéke: 1-től 9-ig, ha ismerjük, illetve 0, ha még nem. Továbbá minden mezőnél fel kell jegyezni, hogy melyek azok a számok, amiket kizártunk, tehát nem szerepelhetnek az adott mezőben.<br/>
+A legegyszerőbb egy struktúrában tárolni a mezők egybetartozó adatait. Ebben a struktúrában szükség lesz egy egész számra a mező értékéhez, továbbá egy boolean elemekből álló, <span class="codetext">Lehet[1..9]</span> nevű tömb, melynek kezdetben minden eleme Igaz.</div>
+<div class="paragraph">A Sudoku tábla memóriában tárolásához fel kell vennünk egy <span class="codetext">mezok[0..8,0..8]</span> tömböt, melynek minden eleme az előbb megbeszélt struktúrából áll. Célszerű a mezők indexelését 0-tól kezdeni, ez a későbbi számolásoknál lesz igen kedvező.</div>
+
+<h2>Az algoritmus lépései</h2>
+<h3>Új érték beszúrása</h3>
+<div class="paragraph">Ha egy új számot elhelyezünk a táblában, figyelnünk kell arra, hogy bizonyos mezők már nem tartalmazhatják ugyanazt az értéket. Így az érintett mezőknél - az adott sorban, oszlopban illetve 3×3-as blokkban - a beírt számhoz tartozó <span class="codetext">Lehet</span> értékeket Hamis-ra kell állítani.
+</div>
+<div class="paragraph"><img src="../../../../../../Download074b.png?node=1102" alt="" class=""/></div>
+<div class="paragraph">
+Vigyázzunk arra, hogy nemcsak a többi mezőnél csökken a értékek lehetőségeinek száma. Abba a mezőbe ugyanis, ahová az új szám kerül, semmilyen más számot nem írhatunk a későbbiekben; a mezőhöz tartozó összes <span class="codetext">Lehet</span> értéket Hamis-ra kell állítani.</div>
+
+<h3>Új érték keresése</h3>
+<div class="paragraph">Az algoritmus a következő:</div>
+<ul>
+  <li>Sorban megnézzük az 1 és 9 közötti értékekre a 2. és 3. pontot.</li>
+  <li>Végignézzük az összes sor/oszlop/blokk minden egyes elemét, felveheti-e az adott értéket.</li>
+  <li>Ha egy szakaszon belül csak egy ilyen elemet találtunk, az a mező megkapja az adott értéket.</li>
+</ul>
+
+<h2>Megoldások</h2>
+<ul>
+  <li><a href="_megoldas/tb_sudokud067.html?page=print">tb_sudoku.cs</a> (Tihanyi Balázs, C#)</li>
+  <li><a href="_megoldas/kb_sudokud067.html?page=print">kb_sudoku.pas</a> (Kriván Bálint, Pascal)</li>
+  <li><a href="_megoldas/tr_sudokud067.html?page=print">tr_sudoku.pas</a> (Torma Róbert, Pascal)</li>
+</ul>
+<br/>
+<h3>További megoldások</h3><br/>
+<ul>
+  <li><a href="http://bdg9c.kicks-ass.net/forum/sudoku/Sudoku.rar">Sudoku</a> (Kriván Bálint, Java)</li>
+</ul>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Tihanyi Bal&aacute;zs;
+        utolsó módosítás:
+        2009-11-07 23:17:56
+        (Tihanyi Bal&aacute;zs)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0506/05ora/sudoku/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:34:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/logo/dolgozatok/d_c08_20110207?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:30:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="d_c08_20110207.html" class="tab_normal">Nézet</a><a href="d_c08_20110207d067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../dolgozatokd067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../logod067.html?page=print">Logo programozás</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../dolgozatokd067.html?page=print">Dolgozatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="d_c08_20110207d067.html?page=print">Dolgozat C08 2011.02.07.</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="d_c08_20110207d067.html?page=print">Dolgozat C08 2011.02.07.</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Logo témazáró, C08, 2011.02.07.</h1> 
+
+<div class="paragraph">Négy listakezelési feladatot kell megoldanod, mindegyiket eljárásokkal, 
+az eljárásoknak <b>ugyanabban a projekt-fájlban</b> kell lennie, amit a saját neveddel kell lementened (például: VargaDolgozat.IMP). Az eljárások neve és paraméterezése minden feladatnál meg van adva.
+</div> 
+<div class="paragraph">
+<font color="red">A megoldásokat tartalmazó állományt csatolmányként kell beküldeni óra végén az ismert 
+címre. </font>
+</div>
+
+
+
+
+<h2>1. feladat</h2> 
+<div class="paragraph">Írj eljárást, ami (rekurzív módon) kiszámolja egy pozitív egész <span class="mathspan">$n$</span>-re
+a  <span class="mathspan">$2^n$</span> hatvány értékét!
+</div>
+<h3>Elnevezés</h3>
+<div class="paragraph">
+<pre>
+kettőaz  :n
+</pre>
+</div>
+<h3>Példa</h3>
+
+<div class="paragraph">
+<pre>
+kiír kettőaz 6
+&gt; 64
+</pre>
+</div>
+
+<h3>Megoldás</h3>
+<div class="paragraph">
+<pre>
+eljárás kettőaz :n
+	hak :n=1 
+		[eredmény 2]
+		[eredmény 2*(kettőaz :n-1)]
+vége
+</pre>
+</div>
+
+
+<h2>2. feladat</h2> 
+<div class="paragraph">Írj eljárást, ami elhagyja egy lista 1990-nél kisebb és 2011-nél nagyobb elemeit.
+</div>
+<h3>Elnevezés</h3>
+<div class="paragraph">
+<pre>
+elhagy :L
+</pre>
+</div>
+<h3>Példa</h3>
+<div class="paragraph">
+<pre>
+kiír elhagy [1 3 10 200 1973 1990 2000 2008 2011 3000]
+&gt; 1990 2000 2008 2011
+</pre>
+</div>
+
+<h3>Megoldás</h3>
+<div class="paragraph">
+<pre>
+eljárás elhagy :l
+	hak elemszám :l=0 [eredmény []]
+	[
+		hak (vagy (első :l)&gt;2011 (első :l)&lt;1990) 
+ 			[eredmény elhagy elsőnélküli :l]
+ 			[eredmény elsőnek (első :l) (elhagy (elsőnélküli :l))]
+	]
+vége
+</pre>
+</div>
+
+
+
+<h2>3. feladat</h2> 
+<div class="paragraph">Írj eljárást, ami egy listának azt a kezdőszeletét adja vissza, amiben a számok szigorúan növekvő sorrendben követik egymást.
+</div>
+<h3>Elnevezés</h3>
+<div class="paragraph">
+<pre>
+kezdet :L
+</pre>
+</div>
+<h3>Példa</h3>
+<div class="paragraph">
+<pre>
+kiír kezdet [1 3 4 4 5 4 5 3 3 1]
+&gt; 1 3 4 
+</pre>
+</div>
+
+<h3>Megoldás</h3>
+<div class="paragraph">
+<pre>
+eljárás kezdet :l
+	hak elemszám :l&lt;2 [eredmény :l]
+	[
+		hak első :l&lt;első (elsőnélküli :l)
+			[eredmény elsőnek első :l kezdet (elsőnélküli :l)]
+			[eredmény (első :l)]
+	]
+vége
+</pre>
+</div>
+
+
+<h2>4. feladat</h2> 
+<div class="paragraph">Írj eljárást, ami "madárnyelvre" fordít egy tetszőleges szöveget.
+</div>
+<h3>Elnevezés</h3>
+<div class="paragraph">
+<pre>
+madárnyelv :szó
+</pre>
+</div>
+<h3>Példa</h3>
+<div class="paragraph">
+<pre>
+kiír madárnyelv "Berzsenyi
+&gt; Beverzsevenyivi
+</pre>
+</div>
+<h3>Megoldás</h3>
+<div class="paragraph">
+<pre>
+eljárás madárnyelv :szó
+ 	HAK elemszám :szó=0
+  	[EREDMÉNY " ]
+  	[
+		HAK eleme? első :szó [a á e é i í o ó ö ő u ú ü ű]
+   		[EREDMÉNY elsőnek első :szó (elsőnek "v (elsőnek első :szó madárnyelv elsőnélküli :szó))]
+   		[EREDMÉNY elsőnek első :szó madárnyelv elsőnélküli :szó]
+  	]
+vége
+</pre>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2011-02-08 07:11:01
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/logo/dolgozatok/d_c08_20110207?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:30:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/erettsegi/opera?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:47:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="opera.html" class="tab_normal">Nézet</a><a href="operad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../erettsegid067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../abd067.html?page=print">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../erettsegid067.html?page=print">Érettségi feladatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="operad067.html?page=print">Opera</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="operad067.html?page=print">Opera</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Opera</h1>
+<div class="paragraph">
+   Hazánkban sok műkedvelő operaénekes van. A jelenleg is aktív énekesek és néhány opera
+adatait tartalmazza az alábbi adatbázis.
+<br/>
+   A személyekre vonatkozó adatok kitaláltak, az operák adatai a magyar társulatok weblapjáról, valamint a http://opera.stanford.edu/ oldalról származnak.
+
+</div>
+<h2>Az adatbázis tartalma</h2>
+<div class="paragraph">
+Készítsen új adatbázist opera néven! A mellékelt négy adattáblát (<a href="opera/enekesd067.html?page=print">enekes.txt</a>,
+<a href="opera/mud067.html?page=print">mu.txt</a>, <a href="opera/repertoard067.html?page=print">repertoar.txt</a>, <a href="opera/szerepd067.html?page=print">szerep.txt</a>) importálja az adatbázisba a fájlnévvel azonos
+táblanéven (enekes, mu, repertoar, szerep)! Az állományok pontosvesszővel tagolt,
+UTF-8 kódolású szövegfájlok, az első sorok a mezőneveket tartalmazzák. A létrehozás során minden táblában állítsa be a megfelelő típusokat, és jelölje meg a kulcsnak alkalmas
+mezőt! A repertoar táblához adjon hozzá id néven egyedi azonosítót!
+</div>
+<h3>Táblák</h3>
+<div class="paragraph">
+<pre>
+enekes (id, nev, szulev)
+     id              az énekes azonosítója (szám), ez a kulcs
+     nev             az énekes neve (szöveg)
+     szulev          az énekes születési éve (szám)
+
+repertoar (id, enekesid, szerepid, utoljara)
+     id              a repertoár aktuális elemének azonosítója (számláló), ez a kulcs
+     enekesid        az énekes azonosítója (szám)
+     szerepid        a szerep azonosítója (szám)
+     utoljara        az év, amikor az adott szerepet utoljára énekelte az adott énekes (szám)
+
+szerep (id, szerepnev, muid, hang)
+     id              a szerep azonosítója (szám), ez a kulcs
+     szerepnev       a szerep(lő) megnevezése az adott műben (szöveg)
+     muid            a mű azonosítója (szám)
+                     a szerephez tartozó hang azonosítója (szöveg)
+     hang
+
+mu (id, szerzo, cim)
+     id              a mű azonosítója (szám), ez a kulcs
+     szerzo          a mű szerzőjének neve (szöveg)
+     cim             a mű címe (szöveg)
+
+</pre>
+</div>
+<h3>Kapcsolatok</h3>
+<div class="paragraph">
+<img src="../../../Downloadfc19.png?node=4728" alt="" class=""/>
+</div>
+
+<h2>Kérdések</h2>
+
+<div class="paragraph">
+   A következő feladatok megoldásánál a lekérdezéseket és a jelentést a zárójelben olvasható
+néven mentse! Ügyeljen arra, hogy a megoldásban pontosan a kívánt mezők, kifejezések szerepeljenek, felesleges mezőt ne jelenítsen meg!
+</div>
+<div class="paragraph">
+<ol>
+<li>
+   Készítsen lekérdezést, amely ábécérendben jeleníti meg a bariton szerepek nevét!
+   (2bariton)
+</li><li>
+Készítsen lekérdezést, amely megadja, hogy mennyi a korkülönbség a legidősebb és legfiatalabb énekes között! (3kor)
+</li><li>
+Készítsen lekérdezést, amely megadja az Erkel-operák szerepeit! A listában jelenjen meg,
+   hogy a szerephez milyen hang és melyik opera tartozik! A létrehozott lekérdezés alapján
+   készítsen jelentést, amely az Erkel-operák szerepeit sorolja fel operánként csoportosítva!
+   Minden opera esetén tüntesse fel a szerepet és a hangot a szerep nevének ábécé sorrendjében! (4erkel)
+</li><li>
+Készítsen lekérdezést, amely megadja, hogy az adatbázis szereplői közül ki énekelte legidősebben a Bánk bán című opera valamelyik szerepét! Adja meg a személy nevét, az
+   énekelt szerepet, valamint azt, hogy az utolsó énekléskor hány éves volt! (5bankban)
+</li><li>
+Kovács Ádám rendező a következő évadban Wagner-operákat szeretne színre vinni. Ezért
+   azoknak a hölgy énekeseknek nőnapi köszöntőt küld, akiknek valamelyik Wagner-opera
+   szerepel repertoárjában. Készítsen lekérdezést, amely felsorolja az érintettek nevét!
+   Ügyeljen arra, hogy minden személy csak egyszer jelenjen meg! A nők alt, szoprán és
+   mezzoszoprán hangon énekelnek. (6wagner)
+</li><li>
+A kis Máté szüleivel látott egy operaelőadást. Meglepődve ismerte fel a szomszéd Ottó
+   bácsit a színpadon. Furcsának találta, hogy bár a darabban van Ottó nevű szerep, azt a szerepet nem a szomszéd játssza. Készítsen lekérdezést, amelyik megadja a szomszéd nevét,
+   és azt, hogy ebben a darabban milyen szerepet játszott! (7otto)
+</li><li>
+Készítsen lekérdezést, amely megadja, hogy hány énekes tartozik az egyes hangokhoz!
+   (Feltételezheti, hogy az egyes énekesek repertoárjában megtalálható összes szerephez
+   ugyanaz a hang tartozik.) (8hangszam)
+</li>
+</ol>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-02-18 17:37:11
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/erettsegi/opera?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:47:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

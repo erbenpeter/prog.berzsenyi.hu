@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/sqlwhere?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:14:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="sqlwhere.html" class="tab_normal">Nézet</a><a href="sqlwhered067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../abd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../abd067.html?page=print">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="sqlwhered067.html?page=print">SQL WHERE</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="sqlwhered067.html?page=print">SQL WHERE</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>SQL WHERE</h1>
+
+<div class="paragraph">
+A <span class="codetext">WHERE</span> után adjuk meg annak feltételét, hogy melyik sorok kerüljenek
+az eredménybe. 
+Egy feltételben mezők és konstanskifejezések értékét hasonlíthatjuk össze.
+Összetett feltételek logikai műveletekkel képezhetők.
+
+<ul>
+<li> "és" : <span class="codetext">AND</span></li>
+<li> "vagy" : <span class="codetext">OR</span></li>
+<li> "nem" : <span class="codetext">NOT</span></li>
+</ul>
+
+</div>
+
+<div class="paragraph">
+<div class="code codetext"><br />&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;cim<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;sorozatok<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;kezdet&nbsp;&lt;&nbsp;2000<br />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+<div class="code codetext"><br />&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;cim<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;sorozatok<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;nemzet&nbsp;=&nbsp;'magyar'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+
+<div class="code codetext"><br />&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;nev<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;szereplok<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;(sorozat&nbsp;=&nbsp;1)&nbsp;AND&nbsp;(fo&nbsp;=&nbsp;'i')<br />&nbsp;&nbsp;&nbsp;&nbsp;<br /></div>
+</div>
+
+<div class="paragraph">
+Karakterláncok esetében használhatunk dzsóker karaktereket. Ekkor az egyenlőség 
+helyett a <span class="codetext">LIKE</span> parancsot használjuk.
+(<span class="codetext">%</span> :0 vagy több tetszőleges karakter; 
+<span class="codetext">_</span> : egy tetszőleges karakter). [MS-W alatt '*' és '?'.]
+
+<div class="code codetext"><br />&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;cim,web<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;sorozatok&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;web&nbsp;LIKE&nbsp;'%.hu'<br />&nbsp;&nbsp;&nbsp;&nbsp;<br /></div>
+
+</div>
+
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:29:22
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/sqlwhere?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:14:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

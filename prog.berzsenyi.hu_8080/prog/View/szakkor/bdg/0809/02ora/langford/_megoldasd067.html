@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/02ora/langford/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:40:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="_megoldas.html" class="tab_normal">Nézet</a><a href="_megoldasd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../langfordd067.html?page=print">
+                    <img src="../../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../0809d067.html?page=print">2008/2009</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../02orad067.html?page=print">2. óra - Permutáció</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../langfordd067.html?page=print">Langford permutációk</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="_megoldasd067.html?page=print">Megoldás</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+                
+                <a href="../langfordd067.html?page=print">Langford permutációk</a> (<a href="_megoldasd067.html?page=print">Megoldás</a>)
+            
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+            
+                
+                &gt;
+                <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+            
+                
+                &gt;
+                <a href="../../../0809d067.html?page=print">2008/2009</a>
+            
+                
+                &gt;
+                <a href="../../02orad067.html?page=print">2. óra - Permutáció</a>
+            
+            <br />
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h2>Algoritmus</h2>
+<h3>Nyers erő</h3>
+<div class="paragraph">
+Az ismétléses permutáció algoritmusával legyártjuk az összes esetet, és mindegyikre megnézzük, hogy teljesül-e a Langford tulajdonság. Vigyázat!!! L[10] kiszámításához
+<span class="mathspan">$\frac{20!}{2^{10}}=2~375~880~867~360~000$</span> esetet kell megnéznünk.
+</div>
+<h3>Hatékonyabban</h3>
+<div class="paragraph">
+Nem érdemes minden permutációt megvizsgálni, hiszen például az
+<div class="code codetext">11232...</div>
+kezdetű sorozat biztos nem felel meg, bárhogy is folytatjuk. Ha a kezdőszeletekre tesztelni akarjuk a Langford-tulajdonságot, akkor az előző algoritmus már nem alkalmas a keresés vezérlésére. <b>Visszalépéses kereséssel</b> (back-track) tudjuk lemetszeni a keresési fa rossz ágait.
+</div>
+
+<h3>Nagyon hatékonyan</h3>
+<div class="paragraph">
+Egy megfelelő permutációt keresve nem csak akkor tudjuk, hogy a vizsgált kezdőszelet rossz, ha van benne két azonos szám rossz távolságra, hanem akkor is, ha egy szám első előfordulásától "jobbra" már nincs elég hely. (Pl. az első 10-es után még 4 számnak van hely, nem lehet a második 10-es tőle 10 lépésre.)
+</div>
+<h3>Leggyorsabban?</h3>
+<div class="paragraph">
+Ha "lerakjuk" az első <i>k</i>-t, akkor meghatároztuk a másik <i>k</i> helyét is.
+Érdemes tehát eleve a párokat pakolni az üres helyekre, a Langford-szabály szerint. 
+</div>
+<table><tr>
+<td><font color="red"><b>1</b></font></td>
+<td> x </td>
+<td><font color="red"><b>1</b></font></td>
+<td><font color="blue"><b>2</b></font></td>
+<td>y </td>
+<td>z </td>
+<td><font color="blue"><b>2</b></font></td>
+<td>w</td>
+<td>...</td>
+</tr></table>
+<div class="paragraph">
+Így az úgynevezett <b>pontos fedés feladat</b> (Exact Cover Problem) egy variánsát kapjuk, ami 16-nál kisebb <i>n</i>-ekre már gyorsan elintézhető. (Nagy input esetén továbbra is reménytelen a dolog, a pontos fedés probléma NP-teljes.)
+</div>
+
+<h2>Kódok</h2>
+<div class="paragraph">
+Uray János (C++): <a href="_megoldas/langfordd067.html?page=print">langford.cpp</a><br/>
+Kriván Bálint (java): <a href="_megoldas/Langford0d067.html?page=print">Langford0.java</a> Nyers erő<br/>
+Kriván Bálint (java): <a href="_megoldas/Langford1d067.html?page=print">Langford1.java</a> Visszalépéses keresés<br/>
+Kriván Bálint (java): <a href="_megoldas/Langford2d067.html?page=print">Langford2.java</a> Javított visszalépéses keresés<br/>
+Kriván Bálint (java): <a href="_megoldas/Langford3d067.html?page=print">Langford3.java</a> Pontos fedés visszalépéses kereséssel<br/>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:21:19
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/02ora/langford/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:40:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

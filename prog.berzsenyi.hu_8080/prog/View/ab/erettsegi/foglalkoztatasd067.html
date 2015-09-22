@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/erettsegi/foglalkoztatas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:47:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="foglalkoztatas.html" class="tab_normal">Nézet</a><a href="foglalkoztatasd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../erettsegid067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../abd067.html?page=print">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../erettsegid067.html?page=print">Érettségi feladatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="foglalkoztatasd067.html?page=print">Foglalkoztatás</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="foglalkoztatasd067.html?page=print">Foglalkoztatás</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Foglalkoztatás</h1>
+<div class="paragraph">
+A Központi Statisztikai Hivatal 2005-ben kis népszámlálást végzett az országban a lakosság
+2%-ának megkérdezésével. Az ez alapján számított adatokból található néhány a
+foglalkozasok.txt és a lakosok.txt állományokban. A megyékről és a régiókról a
+megyek.txt és a regiok.txt tartalmaz néhány adatot.
+</div>
+<h2>Források</h2>
+<div class="paragraph">
+<a href="foglalkoztatas/foglalkozasokd067.html?page=print">foglalkozasok.txt</a><br/>
+<a href="foglalkoztatas/lakosokd067.html?page=print">lakosok.txt</a><br/>
+<a href="foglalkoztatas/megyekd067.html?page=print">megyek.txt</a><br/>
+<a href="foglalkoztatas/regiokd067.html?page=print">regiok.txt</a><br/>
+</div>
+<h2>Feladatok</h2>
+<div class="paragraph">
+<ol>
+<li>Készítsen új adatbázist foglalkoztatas néven! A mellékelt adattáblákat importálja az
+adatbázisba regiok, megyek, foglalkozasok és lakosok néven! A txt típusú adatállományok
+tabulátorokkal tagoltak, és az első soruk tartalmazza a mezőneveket.</li>
+<li>Beolvasás után állítsa be a megfelelő adatformátumokat és kulcsokat!
+<pre>
+Táblák:
+regiok (regiokod, regionev)
+	regiokod 	Egyedi azonosító (szám), ez a kulcs
+	regionev 	A régió neve (szöveg)
+
+megyek (megyekod, regiokod, megyenev)
+	megyekod 	Egyedi azonosító (szám), ez a kulcs
+	regiokod 	Annak a régiónak a kódja, 
+			amelyhez az adott megye tartozik (szám)
+	megyenev 	A megye neve (szöveg)
+
+foglalkozasok (fkod, megyekod, mezogazdasag, ipar, szolgaltatas)
+	fkod 		Egyedi azonosító (szám), ez a kulcs
+	megyekod 	Annak a megyének az azonosítója, 
+			amire az adatok vonatkoznak (szám)
+	mezogazdasag 	A mezőgazdaság területén foglalkoztatottak 
+			száma (szám)
+	ipar 		A ipar területén foglalkoztatottak száma (szám)
+	szolgaltatas 	A szolgáltatási jellegű ágazatokban 
+			foglalkoztatottak száma (szám)
+
+lakosok (megyekod, lakosszam)
+	megyekod 	Egyedi azonosító (szám), ez a kulcs
+	lakosszam 	Az adott megyében lakók száma (szám)
+
+</pre>
+
+<img src="../../../Download0fd3.png?node=5778" alt="" class=""/>
+
+Készítse el a következő feladatok megoldását! A zárójelben lévő néven mentse el azokat!
+</li>
+<li>Készítsen jelentést, amiben a régiók és a megyék neveit sorolja fel régiónkénti csoportosításban!
+A megyék a régión belül legyenek ábécé szerint rendezettek! (3regiok)</li>
+<li>Határozza meg lekérdezés segítségével a megyei foglalkoztatási adatok alapján, hogy átlagosan
+mennyi a mezőgazdaság területén foglalkoztatottak száma! (4mezo)</li>
+<li>Készítsen lekérdezést, amely megadja, hogy az egyes régiókban hány foglalkoztatott van!
+A lekérdezés eredményében csak a régió kódját és az adott régióban foglalkoztatottak számát
+jelenítse meg! (5fogl)</li>
+<li>Határozza meg lekérdezés segítségével, hogy az egyes megyékben mennyi a foglalkoztatottak
+aránya a megye lakosságához mérten! Az adatok a foglalkoztatási arány szerint
+csökkenő sorrendben jelenjenek meg! (6megyearany)</li>
+<li>Határozza meg lekérdezés segítségével a foglalkoztatottak összlakossághoz mért arányát
+országos szinten! (7arany)</li>
+<li>Az alábbi lekérdezés megadja, hogy melyik régióban a legalacsonyabb a lakosok száma.
+
+<pre>
+	SELECT regionev
+	FROM regiolakos
+	WHERE osszlakosszam =
+	(SELECT MIN(osszlakosszam) FROM regiolakos);
+</pre>
+
+Készítsen lekérdezést, ami létrehozza a hivatkozott regiolakos táblát! Különös figyelmet
+fordítson a mezőnevekre! (8regiolakos)</li>
+<li>A foglalkozasok táblában vegyen fel egy új mezőt! A mező neve legyen evszam, a típusa
+pedig olyan szám, ami évszámok tárolására alkalmas! Készítsen adatmódosító lekérdezést,
+amely az összes ki nem töltött evszam mező értékét 2005-re állítja! (9evszam)</li>
+
+</ol>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2011-04-14 08:10:20
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/erettsegi/foglalkoztatas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:47:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

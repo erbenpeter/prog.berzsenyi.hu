@@ -1,0 +1,25 @@
+/*print*/
+
+html, body {
+    background-color : white;
+  }
+
+div#fullcode {
+    background-color: white;
+}
+
+
+div#rightbase {
+   /* background-color : white;*/
+    border-bottom-color : black;
+    border-bottom-style : solid;
+    border-bottom-width : 1px;
+  }
+
+div.download {
+    background-color: white;
+}
+
+div.infotext {
+    background-color: white;
+}

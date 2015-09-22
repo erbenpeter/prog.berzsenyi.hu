@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0506/03ora/klickety/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:34:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="_megoldas.html" class="tab_normal">Nézet</a><a href="_megoldasd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../klicketyd067.html?page=print">
+                    <img src="../../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../0506d067.html?page=print">2005/2006</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../03orad067.html?page=print">3. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../klicketyd067.html?page=print">Klickety</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="_megoldasd067.html?page=print">Megoldás</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+                
+                <a href="../klicketyd067.html?page=print">Klickety</a> (<a href="_megoldasd067.html?page=print">Megoldás</a>)
+            
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+            
+                
+                &gt;
+                <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+            
+                
+                &gt;
+                <a href="../../../0506d067.html?page=print">2005/2006</a>
+            
+                
+                &gt;
+                <a href="../../03orad067.html?page=print">3. óra</a>
+            
+            <br />
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>A Klickety megvalósítása</h1>
+
+<h2>tervezés felülről lefelé</h2>
+<div class="paragraph">
+Megadjuk a játékprogram fő szerkezetét, majd folyamatosan finomítjuk az eljárásokat. Első
+nekifutásra a következő tervet fogalmazhatjuk meg:
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">Kezdeti&#160;&aacute;ll&aacute;s&#160;l&eacute;trehoz&aacute;sa</span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">am&iacute;g</span><span class="metahun_plain">&#160;lehet_l&eacute;pni</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;Be</span><span class="metahun_separator">(</span><span class="metahun_plain">&#160;k&ouml;vetkező_l&eacute;p&eacute;s&#160;</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;L&eacute;p</span><span class="metahun_separator">(</span><span class="metahun_plain">&#160;k&ouml;vetkező_l&eacute;p&eacute;s&#160;</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">V&eacute;geredm&eacute;ny&#160;ki&iacute;r&aacute;sa</span><br /></div>
+</div>
+
+<div class="paragraph">
+A játék tábláját egy 16x10-es tömbben tároljuk, a tömbelemek
+értéke az adott pozíción lévő négyzet színe, vagy nulla, ha üres a pozíció. 
+A <span class="codetext">lehet_lépni</span> függvény akkor
+ad igaz értéket, ha van két élszomszédos, azonos színű mező a táblán. Ez egy egyszerű
+dupla ciklusban ellenőrizhető. A lépés egy (sor,oszlop) párral írható le, tehát ezeket
+az adatokat kell beolvasni a <span class="codetext">következő_lépés</span> olvasásakor. Következzen tehát
+a <span class="codetext">Lép(s,o)</span> eljárás finomítása:
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">L&eacute;p</span><span class="metahun_separator">(</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_separator">)</span><span class="metahun_operator">:</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;tartom&aacute;ny</span><span class="metahun_separator">(</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;sz&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_separator">]</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;kijel&ouml;l</span><span class="metahun_separator">(</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_separator">,</span><span class="metahun_plain">sz</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;potyogtat</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;eltol</span><br /><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+A <span class="codetext">tartomány(s,o)</span> függvényben megnézzük, hogy a "klikkelt" mezőnek van-e 
+azonos színű szomszédja. Ha igen, akkor egy rekurzív eljárás segítségével "kinullázzuk" 
+az eltűnő négyzetek helyét. Ezután a <span class="codetext">potyogtat</span> eljárás
+minden oszlopra lefele potyogtatja a négyzeteket, ha keletkeztek üres mezők, végül
+az <span class="codetext">eltol</span> balra tolja az oszlopokat, ha vannak üres oszlopok. Lássuk a részleteket:</div>
+
+<div class="paragraph">
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">kijel&ouml;l</span><span class="metahun_separator">(</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_separator">,</span><span class="metahun_plain">sz</span><span class="metahun_separator">)</span><span class="metahun_operator">:</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_plain">t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;&Uuml;RES</span><br /><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;s&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&lt;=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">16</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">&eacute;s</span><span class="metahun_plain">&#160;t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">s&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;o</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">=</span><span class="metahun_plain">&#160;sz&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;kijel&ouml;l</span><span class="metahun_separator">(</span><span class="metahun_plain">s</span><span class="metahun_num_literal">+1</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_separator">,</span><span class="metahun_plain">sz</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;s&#160;</span><span class="metahun_operator">-</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&gt;=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">&eacute;s</span><span class="metahun_plain">&#160;t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">s&#160;</span><span class="metahun_operator">-</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;o</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">=</span><span class="metahun_plain">&#160;sz&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;kijel&ouml;l</span><span class="metahun_separator">(</span><span class="metahun_plain">s</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_separator">,</span><span class="metahun_plain">sz</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;o&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&lt;=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">10</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">&eacute;s</span><span class="metahun_plain">&#160;t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;o&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">=</span><span class="metahun_plain">&#160;sz&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;kijel&ouml;l</span><span class="metahun_separator">(</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_num_literal">+1</span><span class="metahun_separator">,</span><span class="metahun_plain">sz</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;o&#160;</span><span class="metahun_operator">-</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&gt;=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">&eacute;s</span><span class="metahun_plain">&#160;t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;o&#160;</span><span class="metahun_operator">-</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">=</span><span class="metahun_plain">&#160;sz&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;kijel&ouml;l</span><span class="metahun_separator">(</span><span class="metahun_plain">s</span><span class="metahun_separator">,</span><span class="metahun_plain">o</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">,</span><span class="metahun_plain">sz</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+</div>
+
+<div class="paragraph"> Miután megjelöltük az eltűnő négyzeteket (<span class="codetext">ÜRES</span>-re állítva értéküket), lefelé léptetjük a "lepotyogó"
+elemeket. A <span class="codetext">potyogtat</span> eljárás minden oszlopra meghívja a <span class="codetext">le</span> eljárást. Ennek lényege az, hogy egy
+oszlop aljától indul, és egyesével haladva felfelé, számolja az üres helyeket. Ha nemüres mezőhöz ér, lefele lépteti annyival, amennyi az eddig megtalált üres mezők száma, és "kinullázza" ezt a mezőt. ((c) Treszkai László)
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">le</span><span class="metahun_separator">(</span><span class="metahun_plain">oszlop</span><span class="metahun_separator">)</span><span class="metahun_operator">:</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_plain">darab&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;j&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">16</span><span class="metahun_operator">-</span><span class="metahun_plain">t&oacute;l&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_operator">-</span><span class="metahun_plain">ig</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">j</span><span class="metahun_separator">,</span><span class="metahun_plain">oszlop</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&lt;&gt;</span><span class="metahun_plain">&#160;&Uuml;RES&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;darab&#160;</span><span class="metahun_operator">&gt;</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">j&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;darab</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;oszlop</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">j</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;oszlop</span><span class="metahun_separator">]</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;t&aacute;bla</span><span class="metahun_separator">[</span><span class="metahun_plain">j</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;oszlop</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;&Uuml;RES</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">k&uuml;l&ouml;nben</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;darab&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;darab&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+
+</div>
+
+<div class="paragraph">
+Az <span class="codetext">eltol</span> eljárás teljesen hasonló elv alapján működik. A legalsó sorban
+<span class="codetext">ÜRES</span> mezőket keresünk balról jobbra haladva, számoljuk az üres helyeket, és
+a nemüres oszlopokat balra léptetjük annyival, ahány üres oszlopunk volt eddig.
+</div>
+
+<h2>Megoldások</h2>
+<ul>
+  <li><a href="_megoldas/ep_klicketyd067.html?page=print">ep_klickety.java</a> (Erben Péter, Java) </li>
+  <li><a href="_megoldas/tb_klicketyd067.html?page=print">tb_klickety.cs</a> (Tihanyi Balázs, C#)    </li>
+  <li><a href="_megoldas/fg_klicketyd067.html?page=print">fg_klickety.pas</a> (Fehér Gábor, Pascal) </li>
+</ul><br/>
+<h3>További megoldások</h3><br/>
+<ul>
+  <li><a href="http://blaise.try.hu/klickety/">Klickety.NET</a> (Tihanyi Balázs, C#)</li>
+  <li><a href="http://bdg9c.kicks-ass.net/forum/jklickety/JKlickety.rar">JKlickety</a> (Kriván Bálint, Java)</li>
+</ul>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:17:56
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0506/03ora/klickety/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:34:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

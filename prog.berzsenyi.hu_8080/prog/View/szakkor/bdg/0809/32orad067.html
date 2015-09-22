@@ -1,0 +1,651 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/32ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:08:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="32ora.html" class="tab_normal">Nézet</a><a href="32orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0809d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0809d067.html?page=print">2008/2009</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="32orad067.html?page=print">32. óra</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="32orad067.html?page=print">32. óra</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Google finomságok</h1>
+<div class="paragraph">
+<div style="text-align: center;">Kriván Bálint</div>
+</div>
+
+<h2>Bevezetés</h2>
+<div class="paragraph">Mit fogunk megismerni? Kicsit elmerülünk a Javascript birodalmában (de csak a kellő mértékben), hogy tudjunk használni olyan nagyszerű API-okat (<a href="http://hu.wikipedia.org/wiki/Alkalmaz%C3%A1sprogramoz%C3%A1si_fel%C3%BClet">Application Programming Interface</a>), mint például a <a href="http://code.google.com/apis/maps/documentation/v3/">Google Maps API</a>, vagy a <a href="http://code.google.com/apis/gdata/">Google Data API</a> (Ezen belül is Spreadsheets Data API). Eközben megismerkedünk a <a href="http://www.json.org/">JSON</a>-nal (JavaScript Object Notation), de csak említés és alkalmazás szinten.</div>
+
+<h2>Mit fogunk csinálni?</h2>
+<div class="paragraph">A szakkör végére egy ilyen cuccost mindenki fog tudni maga is csinálni, de természetesen együtt megcsináljuk a szakkörön: <a href="http://krivan.hu/gmap/index.html">Demo</a></div>
+
+<h2>1. Google térkép beillesztése DIV-be</h2>
+<h3>ID azonosítóval ellátott DIV</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.xml_plain {
+color: rgb(0,0,0);
+}
+.xml_tag_name {
+color: rgb(0,55,255);
+}
+.xml_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);
+}
+.xml_tag_symbols {
+color: rgb(0,59,255);
+}
+.xml_rife_tag {
+color: rgb(0,0,0); background-color: rgb(228,230,160);
+}
+.xml_attribute_value {
+color: rgb(193,0,0);
+}
+.xml_attribute_name {
+color: rgb(0,0,0); font-weight: bold;
+}
+.xml_char_data {
+color: rgb(0,0,0);
+}
+code {
+color: rgb(0,0,0); font-family: monospace; font-size: 12px; white-space: nowrap;
+}
+.xml_rife_name {
+color: rgb(0,0,196); background-color: rgb(228,230,160);
+}
+h1 {
+font-family: sans-serif; font-size: 16pt; font-weight: bold; color: rgb(0,0,0); background: rgb(210,210,210); border: solid 1px black; padding: 5px; text-align: center;
+}
+.xml_processing_instruction {
+color: rgb(0,0,0); font-weight: bold; font-style: italic;
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">DIV</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;map_canvas&quot;</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">style</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;width:100%;&#160;height:600px;&#160;background-color:#cccccc&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">DIV</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /></div>
+</div>
+<h3>MAPS API betöltése</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.xml_plain {
+color: rgb(0,0,0);
+}
+.xml_tag_name {
+color: rgb(0,55,255);
+}
+.xml_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);
+}
+.xml_tag_symbols {
+color: rgb(0,59,255);
+}
+.xml_rife_tag {
+color: rgb(0,0,0); background-color: rgb(228,230,160);
+}
+.xml_attribute_value {
+color: rgb(193,0,0);
+}
+.xml_attribute_name {
+color: rgb(0,0,0); font-weight: bold;
+}
+.xml_char_data {
+color: rgb(0,0,0);
+}
+code {
+color: rgb(0,0,0); font-family: monospace; font-size: 12px; white-space: nowrap;
+}
+.xml_rife_name {
+color: rgb(0,0,196); background-color: rgb(228,230,160);
+}
+h1 {
+font-family: sans-serif; font-size: 16pt; font-weight: bold; color: rgb(0,0,0); background: rgb(210,210,210); border: solid 1px black; padding: 5px; text-align: center;
+}
+.xml_processing_instruction {
+color: rgb(0,0,0); font-weight: bold; font-style: italic;
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">script</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;text/javascript&quot;</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">src</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;http://maps.google.com/maps/api/js?sensor=false&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><br /><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">script</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /></div>
+</div>
+<h3>Térkép inicializálása</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.xml_plain {
+color: rgb(0,0,0);
+}
+.xml_tag_name {
+color: rgb(0,55,255);
+}
+.xml_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);
+}
+.xml_tag_symbols {
+color: rgb(0,59,255);
+}
+.xml_rife_tag {
+color: rgb(0,0,0); background-color: rgb(228,230,160);
+}
+.xml_attribute_value {
+color: rgb(193,0,0);
+}
+.xml_attribute_name {
+color: rgb(0,0,0); font-weight: bold;
+}
+.xml_char_data {
+color: rgb(0,0,0);
+}
+code {
+color: rgb(0,0,0); font-family: monospace; font-size: 12px; white-space: nowrap;
+}
+.xml_rife_name {
+color: rgb(0,0,196); background-color: rgb(228,230,160);
+}
+h1 {
+font-family: sans-serif; font-size: 16pt; font-weight: bold; color: rgb(0,0,0); background: rgb(210,210,210); border: solid 1px black; padding: 5px; text-align: center;
+}
+.xml_processing_instruction {
+color: rgb(0,0,0); font-weight: bold; font-style: italic;
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">script</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;text/javascript&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><br /><span class="xml_plain">function&#160;init()</span><br /><span class="xml_plain">{</span><br /><span class="xml_plain">&#160;&#160;var&#160;latlng&#160;=&#160;new&#160;google.maps.LatLng(&#160;47.498,&#160;19.041);</span><br /><span class="xml_plain">&#160;&#160;</span><br /><span class="xml_plain">&#160;&#160;var&#160;opciok&#160;=&#160;{</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;zoom:&#160;11,</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;center:&#160;latlng,</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;mapTypeId:&#160;google.maps.MapTypeId.ROADMAP</span><br /><span class="xml_plain">&#160;&#160;};</span><br /><span class="xml_plain">&#160;&#160;</span><br /><span class="xml_plain">&#160;&#160;map&#160;=&#160;new&#160;google.maps.Map(</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;document.getElementById(&quot;map_canvas&quot;),</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;opciok</span><br /><span class="xml_plain">&#160;&#160;);</span><br /><span class="xml_plain">}&#160;&#160;</span><br /><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">script</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /></div>
+</div>
+<div class="paragraph">A BODY onload attributumával futtatjuk az init függvényt, hogy akkor töltse be a térképet, amikor már felépült a DOM.
+</div>
+<div class="paragraph">
+<div class="code codetext"><style>.xml_plain {
+color: rgb(0,0,0);
+}
+.xml_tag_name {
+color: rgb(0,55,255);
+}
+.xml_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);
+}
+.xml_tag_symbols {
+color: rgb(0,59,255);
+}
+.xml_rife_tag {
+color: rgb(0,0,0); background-color: rgb(228,230,160);
+}
+.xml_attribute_value {
+color: rgb(193,0,0);
+}
+.xml_attribute_name {
+color: rgb(0,0,0); font-weight: bold;
+}
+.xml_char_data {
+color: rgb(0,0,0);
+}
+code {
+color: rgb(0,0,0); font-family: monospace; font-size: 12px; white-space: nowrap;
+}
+.xml_rife_name {
+color: rgb(0,0,196); background-color: rgb(228,230,160);
+}
+h1 {
+font-family: sans-serif; font-size: 16pt; font-weight: bold; color: rgb(0,0,0); background: rgb(210,210,210); border: solid 1px black; padding: 5px; text-align: center;
+}
+.xml_processing_instruction {
+color: rgb(0,0,0); font-weight: bold; font-style: italic;
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">body</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">onload</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;init();&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /></div>
+</div>
+<h3>A teljes kód</h3> 
+<div class="paragraph">
+<div class="code codetext"><style>.xml_plain {
+color: rgb(0,0,0);
+}
+.xml_tag_name {
+color: rgb(0,55,255);
+}
+.xml_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);
+}
+.xml_tag_symbols {
+color: rgb(0,59,255);
+}
+.xml_rife_tag {
+color: rgb(0,0,0); background-color: rgb(228,230,160);
+}
+.xml_attribute_value {
+color: rgb(193,0,0);
+}
+.xml_attribute_name {
+color: rgb(0,0,0); font-weight: bold;
+}
+.xml_char_data {
+color: rgb(0,0,0);
+}
+code {
+color: rgb(0,0,0); font-family: monospace; font-size: 12px; white-space: nowrap;
+}
+.xml_rife_name {
+color: rgb(0,0,196); background-color: rgb(228,230,160);
+}
+h1 {
+font-family: sans-serif; font-size: 16pt; font-weight: bold; color: rgb(0,0,0); background: rgb(210,210,210); border: solid 1px black; padding: 5px; text-align: center;
+}
+.xml_processing_instruction {
+color: rgb(0,0,0); font-weight: bold; font-style: italic;
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="xml_tag_symbols">&lt;</span><span class="xml_plain">!</span><span class="xml_attribute_name">DOCTYPE</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">HTML</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">PUBLIC</span><span class="xml_plain">&#160;</span><span class="xml_attribute_value">&quot;-//W3C//DTD&#160;HTML&#160;4.01&#160;Transitional//EN&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">html</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">head</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">meta</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">http-equiv</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;content-type&quot;</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">content</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;text/html;&#160;charset=utf-8&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">meta</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">name</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;generator&quot;</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">content</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;PSPad&#160;editor,&#160;www.pspad.com&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">title</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">32.&#160;&oacute;ra</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">title</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">script</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;text/javascript&quot;</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">src</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;http://maps.google.com/maps/api/js?sensor=false&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">script</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">script</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;text/javascript&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain">&#160;</span><br /><span class="xml_plain">var&#160;map;</span><br /><span class="xml_plain"></span><br /><span class="xml_plain">function&#160;init()</span><br /><span class="xml_plain">{</span><br /><span class="xml_plain">&#160;&#160;var&#160;latlng&#160;=&#160;new&#160;google.maps.LatLng(&#160;47.498,&#160;19.041);</span><br /><span class="xml_plain">&#160;&#160;</span><br /><span class="xml_plain">&#160;&#160;var&#160;opciok&#160;=&#160;{</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;zoom:&#160;11,</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;center:&#160;latlng,</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;mapTypeId:&#160;google.maps.MapTypeId.ROADMAP</span><br /><span class="xml_plain">&#160;&#160;};</span><br /><span class="xml_plain">&#160;&#160;</span><br /><span class="xml_plain">&#160;&#160;map&#160;=&#160;new&#160;google.maps.Map(</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;document.getElementById(&quot;map_canvas&quot;),</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;opciok</span><br /><span class="xml_plain">&#160;&#160;);&#160;</span><br /><span class="xml_plain">}&#160;&#160;</span><br /><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">script</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">head</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">body</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">onload</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;init();&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_plain">&#160;&#160;</span><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">div</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;map_canvas&quot;</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">style</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;width:&#160;100%;&#160;height:&#160;600px;&#160;background-color:#cccccc&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_plain"></span><br /><span class="xml_plain">&#160;&#160;</span><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">div</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">body</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;/</span><span class="xml_tag_name">html</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /></div>
+</div>
+<h2>2. Jelölők a térképen </h2>
+<div class="paragraph">
+<div class="code codetext"><style>.xml_plain {
+color: rgb(0,0,0);
+}
+.xml_tag_name {
+color: rgb(0,55,255);
+}
+.xml_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);
+}
+.xml_tag_symbols {
+color: rgb(0,59,255);
+}
+.xml_rife_tag {
+color: rgb(0,0,0); background-color: rgb(228,230,160);
+}
+.xml_attribute_value {
+color: rgb(193,0,0);
+}
+.xml_attribute_name {
+color: rgb(0,0,0); font-weight: bold;
+}
+.xml_char_data {
+color: rgb(0,0,0);
+}
+code {
+color: rgb(0,0,0); font-family: monospace; font-size: 12px; white-space: nowrap;
+}
+.xml_rife_name {
+color: rgb(0,0,196); background-color: rgb(228,230,160);
+}
+h1 {
+font-family: sans-serif; font-size: 16pt; font-weight: bold; color: rgb(0,0,0); background: rgb(210,210,210); border: solid 1px black; padding: 5px; text-align: center;
+}
+.xml_processing_instruction {
+color: rgb(0,0,0); font-weight: bold; font-style: italic;
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="xml_plain">function&#160;init()</span><br /><span class="xml_plain">{</span><br /><span class="xml_plain">&#160;&#160;...</span><br /><span class="xml_plain">&#160;&#160;putMarker();</span><br /><span class="xml_plain">}&#160;&#160;</span><br /><span class="xml_plain"></span><br /><span class="xml_plain"></span><br /><span class="xml_plain">function&#160;putMarker()</span><br /><span class="xml_plain">{</span><br /><span class="xml_plain">&#160;&#160;var&#160;marker&#160;=&#160;new&#160;google.maps.Marker({</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;position:&#160;new&#160;google.maps.LatLng(47,20),</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;map:&#160;map</span><br /><span class="xml_plain">&#160;&#160;});</span><br /><span class="xml_plain">}</span><br /></div>
+</div>
+<h2>3. GEO-kódolás avagy címek keresése</h2>
+<h3>HTML</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.xml_plain {
+color: rgb(0,0,0);
+}
+.xml_tag_name {
+color: rgb(0,55,255);
+}
+.xml_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);
+}
+.xml_tag_symbols {
+color: rgb(0,59,255);
+}
+.xml_rife_tag {
+color: rgb(0,0,0); background-color: rgb(228,230,160);
+}
+.xml_attribute_value {
+color: rgb(193,0,0);
+}
+.xml_attribute_name {
+color: rgb(0,0,0); font-weight: bold;
+}
+.xml_char_data {
+color: rgb(0,0,0);
+}
+code {
+color: rgb(0,0,0); font-family: monospace; font-size: 12px; white-space: nowrap;
+}
+.xml_rife_name {
+color: rgb(0,0,196); background-color: rgb(228,230,160);
+}
+h1 {
+font-family: sans-serif; font-size: 16pt; font-weight: bold; color: rgb(0,0,0); background: rgb(210,210,210); border: solid 1px black; padding: 5px; text-align: center;
+}
+.xml_processing_instruction {
+color: rgb(0,0,0); font-weight: bold; font-style: italic;
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">input</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;text&quot;</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">id</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;address&quot;</span><span class="xml_tag_symbols">/&gt;</span><span class="xml_plain"></span><br /><span class="xml_tag_symbols">&lt;</span><span class="xml_tag_name">input</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">type</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;button&quot;</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">value</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;Keres&eacute;s&quot;</span><span class="xml_plain">&#160;</span><span class="xml_attribute_name">onclick</span><span class="xml_tag_symbols">=</span><span class="xml_attribute_value">&quot;search();&quot;</span><span class="xml_tag_symbols">&gt;</span><span class="xml_plain"></span><br /></div>
+</div>
+<h3>Javascript</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.xml_plain {
+color: rgb(0,0,0);
+}
+.xml_tag_name {
+color: rgb(0,55,255);
+}
+.xml_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);
+}
+.xml_tag_symbols {
+color: rgb(0,59,255);
+}
+.xml_rife_tag {
+color: rgb(0,0,0); background-color: rgb(228,230,160);
+}
+.xml_attribute_value {
+color: rgb(193,0,0);
+}
+.xml_attribute_name {
+color: rgb(0,0,0); font-weight: bold;
+}
+.xml_char_data {
+color: rgb(0,0,0);
+}
+code {
+color: rgb(0,0,0); font-family: monospace; font-size: 12px; white-space: nowrap;
+}
+.xml_rife_name {
+color: rgb(0,0,196); background-color: rgb(228,230,160);
+}
+h1 {
+font-family: sans-serif; font-size: 16pt; font-weight: bold; color: rgb(0,0,0); background: rgb(210,210,210); border: solid 1px black; padding: 5px; text-align: center;
+}
+.xml_processing_instruction {
+color: rgb(0,0,0); font-weight: bold; font-style: italic;
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="xml_plain">...</span><br /><span class="xml_plain">var&#160;geocoder;</span><br /><span class="xml_plain">...</span><br /><span class="xml_plain"></span><br /><span class="xml_plain">function&#160;init()</span><br /><span class="xml_plain">{</span><br /><span class="xml_plain">&#160;&#160;...</span><br /><span class="xml_plain">&#160;&#160;geocoder&#160;=&#160;new&#160;google.maps.Geocoder();</span><br /><span class="xml_plain">}</span><br /><span class="xml_plain"></span><br /><span class="xml_plain">function&#160;putMarker(pos)</span><br /><span class="xml_plain">{</span><br /><span class="xml_plain">&#160;&#160;var&#160;marker&#160;=&#160;new&#160;google.maps.Marker({</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;position:&#160;pos,</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;map:&#160;map</span><br /><span class="xml_plain">&#160;&#160;});</span><br /><span class="xml_plain">}</span><br /><span class="xml_plain"></span><br /><span class="xml_plain">function&#160;search()</span><br /><span class="xml_plain">{</span><br /><span class="xml_plain">&#160;&#160;var&#160;cim&#160;=&#160;document.getElementById(&quot;address&quot;).value;</span><br /><span class="xml_plain">&#160;&#160;</span><br /><span class="xml_plain">&#160;&#160;geocoder.geocode(</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;{address:cim},</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;function(results,&#160;status)&#160;{</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;if(status&#160;==&#160;google.maps.GeocoderStatus.OK){</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;putMarker(results[0].geometry.location);</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;map.fitBounds(results[0].geometry.viewport);</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;else&#160;{</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;alert(&quot;keres&eacute;si&#160;hiba!&quot;);&#160;&#160;</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;}</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;}</span><br /><span class="xml_plain">&#160;&#160;);&#160;&#160;</span><br /><span class="xml_plain">}</span><br /></div>
+</div>
+<h2>4. Információk a jelölőn</h2>
+<div class="paragraph">
+<div class="code codetext"><style>.xml_plain {
+color: rgb(0,0,0);
+}
+.xml_tag_name {
+color: rgb(0,55,255);
+}
+.xml_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);
+}
+.xml_tag_symbols {
+color: rgb(0,59,255);
+}
+.xml_rife_tag {
+color: rgb(0,0,0); background-color: rgb(228,230,160);
+}
+.xml_attribute_value {
+color: rgb(193,0,0);
+}
+.xml_attribute_name {
+color: rgb(0,0,0); font-weight: bold;
+}
+.xml_char_data {
+color: rgb(0,0,0);
+}
+code {
+color: rgb(0,0,0); font-family: monospace; font-size: 12px; white-space: nowrap;
+}
+.xml_rife_name {
+color: rgb(0,0,196); background-color: rgb(228,230,160);
+}
+h1 {
+font-family: sans-serif; font-size: 16pt; font-weight: bold; color: rgb(0,0,0); background: rgb(210,210,210); border: solid 1px black; padding: 5px; text-align: center;
+}
+.xml_processing_instruction {
+color: rgb(0,0,0); font-weight: bold; font-style: italic;
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="xml_plain">function&#160;putMarker(result)</span><br /><span class="xml_plain">{</span><br /><span class="xml_plain">&#160;&#160;var&#160;marker&#160;=&#160;new&#160;google.maps.Marker({</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;position:&#160;result.geometry.location,</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;map:&#160;map,</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;title:&#160;result.formatted_address</span><br /><span class="xml_plain">&#160;&#160;});</span><br /><span class="xml_plain">}</span><br /><span class="xml_plain"></span><br /><span class="xml_plain">function&#160;search()</span><br /><span class="xml_plain">{</span><br /><span class="xml_plain">&#160;&#160;var&#160;cim&#160;=&#160;document.getElementById(&quot;address&quot;).value&#160;;</span><br /><span class="xml_plain">&#160;&#160;</span><br /><span class="xml_plain">&#160;&#160;geocoder.geocode(</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;{address:cim},</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;function(results,&#160;status)&#160;{</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;if(status&#160;==&#160;google.maps.GeocoderStatus.OK){</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;putMarker(results[0]);</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;map.fitBounds(results[0].geometry.viewport);</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;else&#160;{</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;alert(&quot;keres&eacute;si&#160;hiba!&quot;);&#160;&#160;</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;&#160;&#160;}</span><br /><span class="xml_plain">&#160;&#160;&#160;&#160;}</span><br /><span class="xml_plain">&#160;&#160;);&#160;&#160;</span><br /><span class="xml_plain">}</span><br /></div>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/32ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:08:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

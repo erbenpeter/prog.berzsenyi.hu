@@ -1,0 +1,312 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0506/06ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 21:12:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="06ora.html" class="tab_normal">Nézet</a><a href="06orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0506d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0506d067.html?page=print">2005/2006</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="06orad067.html?page=print">6. óra</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="06orad067.html?page=print">6. óra</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>6. óra</h1>
+<div style="text-align: center;">2005. 11. 14. (Fehér Gábor)</div>
+<h3>Algoritmusok sebessége</h3>
+<ul>
+<li>Egy algoritmus futási ideje a végrehajtásához szükséges elemi (konstans idejű) utasítások számával fejezhető ki.</li>
+<li>Ez a szám természetesen függ a bemenetre kapott adatok <span class="mathspan">$n$</span> számától.</li>
+<li>Minket valójában ez az összefüggés érdekel: vegyünk például egy rendezőalgoritmust, ami
+<span class="mathspan">$n$</span> számot <span class="mathspan">$50n^3+600n^2+36\log{\left(n\right)}+2000$</span> utasítás alatt rendez növekvő sorrendbe.</li>
+<li>(A <span class="mathspan">$2000$</span> utasítás a rendezendő számok számától függetlenül mindig végrehajtódik.)</li>
+<li>Ha nagyon sok számot kell rendezni, akkor ezek közül a tagok közül az 50<span class="mathspan">$n^3$</span>
+fog a leggyorsabban növekedni, és egy idő után a többi tag "elenyészik hozzá képest".
+</li>
+<li>Tehát egy algoritmus sebessége jól jellemezhető a futási idejének legnagyobb növekedési ütemű tagjával, ami esetünkben <span class="mathspan">$50n^3$</span></li>
+<li>Az <span class="mathspan">$50$</span>-es konstans szorzó viszont nagyban függ az algoritmus konkrét leprogramozásától, és a fordítóprogramtól, tehát az algoritmusok elméleti értékelésénél nem vesszük figyelembe.</li>
+<li>
+Tehát ennek az algoritmusnak a futási idejét az <span class="mathspan">$n^3$</span> számmal jellemezhetjük. Azt mondjuk ilyenkor, hogy az lefut <span class="mathspan">$O\left(n^3\right)$</span> időben. Tehát ez azt jelenti, hogy a futási ideje <span class="mathspan">$n^3$</span>-el arányos.
+</li>
+</ul>
+<h3>Megjegyzések</h3>
+<ul>
+<li>A példánkban adott rendezési algoritmus igencsak ügyetlenke, ugyanis az egyszerű cserés rendezés költsége csupán
+<span class="mathspan">$O\left(n^2\right)$</span>. Ráadásul még annál is létezik gyorsabb algoritmus: <a href="../../../elmelet/alg/rend/rendalgd067.html?page=print">Rendezési algoritmusok</a>
+</li>
+<li>
+Ha a futási idő <span class="mathspan">$O\left(n\right)$</span>, akkor lineáris algoritmusokról beszélünk, ha
+<span class="mathspan">$O\left(a_k n^k + a_{k-1}n^{k-1}+...+a_0\right)$</span>, ahol <span class="mathspan">$a_k > 0$</span> akkor polinomiálisról, ha pedig
+<span class="mathspan">$O\left( e^n \right) $</span> akkor exponenciálisról. Az exponenciális is lehet használható, ha csak elég kis <span class="mathspan">$n$</span>-ekkel dolgozunk.
+</li>
+<li>
+Versenyeken a leprogramozásra rendelkezésre álló időt is figyelembe kell vennünk...
+</li>
+</ul>
+<h2>Feladat</h2>
+<div class="paragraph">
+<a href="06ora/virusd067.html?page=print">Vírus</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Adminisztrátor;
+        utolsó módosítás:
+        2009-11-07 23:32:42
+        (Adminisztrátor)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0506/06ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 21:12:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

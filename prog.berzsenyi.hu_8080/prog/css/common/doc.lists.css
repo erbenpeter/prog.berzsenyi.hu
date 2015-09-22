@@ -1,0 +1,58 @@
+div.document ol {
+    margin-top : 3px;
+    margin-bottom: 3px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+div.document div.paragraph ol {
+    margin-left: 0; margin-right: 0;
+  }
+
+div.document ul {
+    margin-top : 3px;
+    margin-bottom: 3px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+div.document div.paragraph ul {
+    margin-left: 0; margin-right: 0;
+  }
+
+div.document dl {
+    margin-top : 3px;
+    margin-bottom: 3px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+div.document div.paragraph dl {
+    margin-left: 0; margin-right: 0;
+  }
+
+
+div.document li {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+
+div.document dt {
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+div.document dd {
+    margin-left: 40px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+

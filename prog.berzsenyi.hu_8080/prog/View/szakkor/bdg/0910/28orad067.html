@@ -1,0 +1,478 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/28ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:27:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="28ora.html" class="tab_normal">Nézet</a><a href="28orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0910d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0910d067.html?page=print">2009/2010</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="28orad067.html?page=print">28. óra</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="28orad067.html?page=print">28. óra</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>28. óra</h1>
+<div class="paragraph">Előző óráról maradt: <a href="27ora/haromszogelesd067.html?page=print">Sokszög háromszögelése</a></div>
+<h2>Az algoritmus áttekintése</h2>
+<div class="paragraph">
+Az alapötlet a következő: kiválasztunk egy belső átlót, ezzel kettévágjuk a sokszöget, az átlót hozzáadjuk a háromszögeléshez, a két részre pedig rekurzív megoldjuk a problémát.
+Ismer tétel, hogy mindig választható belső átló.
+</div>
+<h3>Belső átló kiválasztása</h3>
+<div class="paragraph">
+<ol>
+<li>Vesszük a legbaloldalibb legalsó pontot, legyen ez <span class="mathspan">$v$</span>.
+(<span class="mathspan">$O(n)$</span> lépés)</li>
+<li>A <span class="mathspan">$v$</span> szomszédai <span class="mathspan">$u$</span> és <span class="mathspan">$w$</span>. (Megfelelő adatszerkezettel ez konstans lépés, ügyetlenebb módszerrel <span class="mathspan">$O(n)$</span>.)</li>
+<li> Teszteljük az <span class="mathspan">$uvw$</span> háromszöget (<span class="mathspan">$O(n)$</span> lépés): ha nincs benne és határán pont, akkor <span class="mathspan">$uw$</span> jó átló. Ha van belső pont, akkor a belső pontok közül az <span class="mathspan">$uw$</span>-től legtávolabbival (<span class="mathspan">$v'$</span>) jó átló lesz <span class="mathspan">$vv'$</span>.</li>
+</ol>
+</div>
+<div class="paragraph">
+<div style="text-align: center;"><img src="../../../../Download5060.png?node=5022" alt="" class=""/></div>
+</div>
+<h3>Kettévágás</h3>
+<div class="paragraph">
+Ha az eredeti csúcsok ciklikus sorrendben <span class="mathspan">$1,2,3,...,n$</span>, a megtalált átló pedig <span class="mathspan">$uw$</span>, ahol <span class="mathspan">$u<w$</span>, akkor a két új rész:<br/>
+<ul>
+<li><span class="mathspan">$u,u+1,u+2,...,w$</span></li>
+<li><span class="mathspan">$w,w+1,...,n,1,2,...,u-1$</span></li>
+</ul>
+</div>
+<div class="paragraph">
+A csúcsok eredeti sorrendjét megtartva a részek csúcsainak is helyes lesz a ciklikus rendezése.
+</div>
+<h2>Geometriai segédeszközök</h2>
+<h3>Forgásirány</h3>
+<div class="paragraph">
+Az olimpiai selejtező egyik feladatában írtak alapján:<br/>
+A forgásirány függvény (<span class="mathspan">$fi(P,Q,R)$</span>) értéke 1, ha a P pont a
+Q-R szakasztól balra esik; 0, ha vele egy egyenesre esik; illetve -1, ha tőle jobbra esik.
+
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_keyword">F&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;fi</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">,</span><span class="metahun_plain">Q</span><span class="metahun_separator">,</span><span class="metahun_plain">R</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_plain">cr</span><span class="metahun_operator">:=</span><span class="metahun_separator">(</span><span class="metahun_plain">R</span><span class="metahun_separator">.</span><span class="metahun_plain">x</span><span class="metahun_operator">-</span><span class="metahun_plain">Q</span><span class="metahun_separator">.</span><span class="metahun_plain">x</span><span class="metahun_separator">)</span><span class="metahun_operator">*</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">.</span><span class="metahun_plain">y</span><span class="metahun_operator">-</span><span class="metahun_plain">Q</span><span class="metahun_separator">.</span><span class="metahun_plain">Y</span><span class="metahun_separator">)</span><span class="metahun_operator">-</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">.</span><span class="metahun_plain">x</span><span class="metahun_operator">-</span><span class="metahun_plain">Q</span><span class="metahun_separator">.</span><span class="metahun_plain">x</span><span class="metahun_separator">)</span><span class="metahun_operator">*</span><span class="metahun_separator">(</span><span class="metahun_plain">R</span><span class="metahun_separator">.</span><span class="metahun_plain">y</span><span class="metahun_operator">-</span><span class="metahun_plain">Q</span><span class="metahun_separator">.</span><span class="metahun_plain">y</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;cr&#160;</span><span class="metahun_operator">&lt;</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;fi&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">-1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">k&uuml;l&ouml;nben</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;cr</span><span class="metahun_operator">&gt;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;fi&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">k&uuml;l&ouml;nben</span><span class="metahun_plain">&#160;fi&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">F&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+</div>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../../../Download993c.png?node=5029" alt="" class=""/>
+</div>
+</div>
+<div class="paragraph">
+A fenti függvény a <span class="mathspan">$\overrightarrow{QR}\,$</span> és <span class="mathspan">$\overrightarrow{QP}\,$</span> (XY síkbeli) vektorok vektoriális szorzatának "z" koordinátáját határozza meg, aminek előjele megadja a két vektor egymáshoz viszonyított forgásirányát.
+</div>
+<h3>Háromszög belső pontja</h3>
+<div class="paragraph">
+Felveszünk egy körüljárást, majd megnézzük, hogy a vizsgált pont mindig ugyanarra az oldalára esik-e. A PAB, PBC, PCA forgásirányokat kell kiszámítani.
+</div>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../../../Download64b3.png?node=5030" alt="" class=""/>
+</div>
+</div>
+<div class="paragraph">
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_keyword">F&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;belső_pont</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">,</span><span class="metahun_plain">A</span><span class="metahun_separator">,</span><span class="metahun_plain">B</span><span class="metahun_separator">,</span><span class="metahun_plain">C</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_plain">belső_pont&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;&#160;&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">fi</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">,</span><span class="metahun_plain">A</span><span class="metahun_separator">,</span><span class="metahun_plain">B</span><span class="metahun_separator">)</span><span class="metahun_operator">&gt;=</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">&eacute;s</span><span class="metahun_plain">&#160;fi</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">,</span><span class="metahun_plain">B</span><span class="metahun_separator">,</span><span class="metahun_plain">C</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&gt;=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">&eacute;s</span><span class="metahun_plain">&#160;fi</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">,</span><span class="metahun_plain">C</span><span class="metahun_separator">,</span><span class="metahun_plain">A</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&gt;=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">vagy</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">fi</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">,</span><span class="metahun_plain">A</span><span class="metahun_separator">,</span><span class="metahun_plain">B</span><span class="metahun_separator">)</span><span class="metahun_operator">&lt;=</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">&eacute;s</span><span class="metahun_plain">&#160;fi</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">,</span><span class="metahun_plain">B</span><span class="metahun_separator">,</span><span class="metahun_plain">C</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&lt;=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">&eacute;s</span><span class="metahun_plain">&#160;fi</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">,</span><span class="metahun_plain">C</span><span class="metahun_separator">,</span><span class="metahun_plain">A</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&lt;=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_keyword">F&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+</div>
+<h3>Távolság két ponton átmenő egyenestől</h3>
+<div class="paragraph">
+Az egyenes egyenletének általános alakja: <span class="mathspan">$e~:~Ax+By+C=0$</span>. A normálegyenlet:
+<span class="mathspan">$f(x,y)=\frac{Ax+By+C}{\sqrt{A^2+B^2}}=0$</span>. Pont és egyenes távolsága: <span class="mathspan">$d(P(x_0,y_0),e)=|f(x_0,y_0)|$</span>.
+A távolságok rendezéséhez a nevező nem szükséges.
+</div>
+<div class="paragraph"> 
+Ha a két pont <span class="mathspan">$(x_1,y_1)$</span> és <span class="mathspan">$(x_2,y_2)$</span>, akkor a rajtuk átmenő egyenes egyenlete:<br/> <span class="mathspan">$(y-y_1)(x_2-x_1)=(x-x_1)(y_2-y_1)$</span>,<br/> átrendezve:<br/>
+<span class="mathspan">$0=(x-x_1)(y_2-y_1)-(y-y_1)(x_2-x_1)=x(y_2-y_1)+y(x_1-x_2)+(x_2y_1-y_2x_1)$</span>.
+</div>
+<div class="paragraph">
+Tehát a rendezéshez használhatjuk a következő távolságfüggvényt:<br/>
+<span class="mathspan">$d(x,y)=|x(y_2-y_1)+y(x_1-x_2)+(x_2y_1-y_2x_1)|$</span>.
+</div>
+<div class="paragraph">
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_keyword">F&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;t&aacute;vols&aacute;g</span><span class="metahun_separator">(</span><span class="metahun_plain">P</span><span class="metahun_separator">,</span><span class="metahun_plain">A</span><span class="metahun_separator">,</span><span class="metahun_plain">B</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_plain">t&aacute;vols&aacute;g&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">|</span><span class="metahun_plain">P</span><span class="metahun_separator">.</span><span class="metahun_plain">x</span><span class="metahun_operator">*</span><span class="metahun_separator">(</span><span class="metahun_plain">B</span><span class="metahun_separator">.</span><span class="metahun_plain">y</span><span class="metahun_operator">-</span><span class="metahun_plain">A</span><span class="metahun_separator">.</span><span class="metahun_plain">y</span><span class="metahun_separator">)</span><span class="metahun_operator">+</span><span class="metahun_plain">P</span><span class="metahun_separator">.</span><span class="metahun_plain">y</span><span class="metahun_operator">*</span><span class="metahun_separator">(</span><span class="metahun_plain">A</span><span class="metahun_separator">.</span><span class="metahun_plain">x</span><span class="metahun_operator">-</span><span class="metahun_plain">B</span><span class="metahun_separator">.</span><span class="metahun_plain">x</span><span class="metahun_separator">)</span><span class="metahun_operator">+</span><span class="metahun_separator">(</span><span class="metahun_plain">B</span><span class="metahun_separator">.</span><span class="metahun_plain">x</span><span class="metahun_operator">*</span><span class="metahun_plain">A</span><span class="metahun_separator">.</span><span class="metahun_plain">y</span><span class="metahun_operator">-</span><span class="metahun_plain">B</span><span class="metahun_separator">.</span><span class="metahun_plain">y</span><span class="metahun_operator">*</span><span class="metahun_plain">A</span><span class="metahun_separator">.</span><span class="metahun_plain">x</span><span class="metahun_separator">)</span><span class="metahun_operator">|</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain"></span><br /><span class="metahun_keyword">F&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-05-18 17:11:15
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/28ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:27:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

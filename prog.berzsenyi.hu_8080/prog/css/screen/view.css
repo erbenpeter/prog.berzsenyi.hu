@@ -1,0 +1,29 @@
+/* screen */
+
+html, body {
+    background-color : #f6f6f6;
+  }
+
+div#fullcode {
+    background-color: #e6e6e6;
+    overflow: auto;
+}
+
+
+div.download {
+    background-color: #FFF1C0;
+}
+
+div#rightbase {
+    background-color : white;
+    border-bottom-color : black;
+    border-bottom-style : solid;
+    border-bottom-width : 1px;
+    border-left-color : black;
+    border-left-style : solid;
+    border-left-width : 1px;
+  }
+
+div.infotext {
+	background-color: #e3e3e3;
+}

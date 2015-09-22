@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/prg_kor?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:50:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="prg_kor.html" class="tab_normal">Nézet</a><a href="prg_kord067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../progbevd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../progbevd067.html?page=print">Programozás bevezető</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="prg_kord067.html?page=print">Programozási környezetek</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="prg_kord067.html?page=print">Programozási környezetek</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Programozási környezetek</h1>
+<h2>Mi értünk programozási környezet alatt?</h2>
+<div class="paragraph">
+<img src="../../Downloaddf9d.png?node=5581" alt="" class=""/>
+</div>
+<h3>Operációs rendszer</h3>
+<div class="paragraph">
+Kicsit általánosabban <i>platform</i>. A programokat mindig valamilyen platformra 
+fejlesztjük. A választott platform befolyásolja, milyen eszközöket használhatunk, milyen korlátoknak kell megfelelnünk. A nyílt forráskódú fejlesztések jelentős része
+<i>multiplatform</i>, ami azt jelenti, hogy különböző operációs rendszerek alatt működő, lényegében azonos funkcionalitású változataik léteznek.
+</div>
+<h3>Programozási könyvtárak</h3>
+<div class="paragraph">
+A nagyobb fejlesztések általában előre gyártott komponenseket (is) használnak.
+A komponensek leggyakrabban programozási könyvtárakba csoportosítva érhetők el. 
+Ahhoz, hogy felhasználhassuk programunkban a komponenseket, hozzá kell szerkesztenünk a megfelelő könyvtárakat.
+</div>
+<div class="paragraph">
+A programozási könyvtárak szerkesztése lehet <i>statikus</i> vagy <i>dinamikus</i>. 
+</div>
+<h3>Fejlesztő környezet</h3>
+<div class="paragraph">
+A fejlesztői környezet legfontosabb elemei:
+<ul>
+<li><b>szövegszerkesztő (source editor)</b>: ezzel készítjük el a program <i>forráskódját</i>, ami egy adott programozási nyelven írt egyszerű szöveges állomány</li>
+<li><b>fordítóprogram (compiler)</b>: a forráskódot lefordítja, jelzi a szintaktikai hibákat, ha pedig ilyen hiba nincs, elkészíti a <i>tárgykódot</i></li>
+<li><b>szerkesztő (linker)</b>: a tárgykódból (vagy tárgykódokból), és esetlegesen programozási könyvtárakból szerkeszti össze a <i>futtatható</i> programot</li>
+<li><b>hibakereső (debugger)</b>: ha a fordítóprogram elhelyezett a tárgykódban bizonyos extra információkat, akkor a hibakereső lehetővé teszi, hogy a programot lépésenként futtassuk, és a lépések között ellenőrizhetjük a változók értékét</li>
+</ul>
+
+</div>
+<h2>Példák</h2>
+<h3>Geany</h3>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../Download5826.png?node=4621" alt="" class=""/>
+</div>
+</div>
+<h3>Netbeans</h3>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../Download669f.png?node=5582" alt="" class=""/>
+</div>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2011-01-18 13:33:23
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/prg_kor?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:50:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,427 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/sqlselect by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 15:44:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/screen/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/screen/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+            
+                <div id="leftdiv">
+                    
+
+
+
+
+
+
+
+<div id="maintitle">
+    <a href="../index.html" class="maintitle">
+        Informatika gyűjtemény
+    </a>
+</div>
+
+<div id="leftpanel">
+    
+
+
+
+<div id="favlinks">
+    <a href="../index.html">Főoldal</a> |
+    <a href="../szakkor/bdg/1011.html">Algoritmus szakkör</a>
+    <br />
+    <a href="../doku/info/articles.html">Cikkek</a> | 
+    <a href="../verseny/nttv/00table.html">Feladatok</a> |
+    <a href="../doku/info/projects.html">Projektek</a>
+    <br />
+    <a href="../doku/info/contr.html">Készítők</a> |
+    <a href="../doku/info/links.html">Linkek</a>
+</div>
+
+    <div id="seacrhbox">
+        <form action="http://prog.berzsenyi.hu:8080/prog/Search/ab/sqlselect" method="post" accept-charset="UTF-8">
+            <div style="text-align:left;">
+                <input type="text" id="searchbox" name="stitle" value="" /><br />
+            </div>
+            <div style="text-align: right;">
+                <input type="submit" name="submit" value="Keres" />
+                <input type="submit" name="submit" value="Töröl" />
+            </div>
+        </form>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+
+    <div id="contextmenu">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../ab.html">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        <b><a href="sqlselect.html">SQL SELECT</a></b><br />
+        
+                
+        
+        
+    </div>
+
+
+    
+
+
+
+
+    
+
+
+
+    <!-- <a href="?page=admin&amp;a=/">Admin</a> -->
+</div>
+
+                </div>
+                <!-- RIGHT -->
+                <div id="rightdiv">
+                    
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="sqlselect.html" class="tab_selected_white">Nézet</a><a href="sqlselectd067.html?page=print" class="tab_normal">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../ab.html">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../View.html">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../ab.html">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="sqlselect.html">SQL SELECT</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="sqlselect.html">SQL SELECT</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>SQL SELECT</h1>
+<div class="paragraph">
+A SELECT után soroljuk fel a megjelenítendő oszlopokat és oszlopkifejezéseket. A "SELECT * " minden oszlopot megmutat.
+</div>
+
+<div class="paragraph">
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;*<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;sorozatok</div>    
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;cim,nemzet<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;sorozatok</div>    
+</div>    
+<div class="paragraph">
+Az oszlopokra mezőnevekkel hivatkozhatunk. Az oszlopkifejezések aritmetikai műveletekkel és függvényekkel képezhetők. Az eredménytábla oszlopai átnevezhetők az AS paranccsal. MySql-ben ékezet nélküli mezőneveket és táblaneveket használunk.
+</div>
+
+<div class="paragraph">
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;név,&nbsp;fizetés&nbsp;+&nbsp;jutalom<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;bérek<br />&nbsp;&nbsp;&nbsp;&nbsp;</div>    
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;AVG(&nbsp;fizetés)<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;bérek<br />&nbsp;&nbsp;&nbsp;&nbsp;</div>    
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;AVG(&nbsp;fizetés&nbsp;)&nbsp;AS&nbsp;átlagfizetés<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;bérek</div>
+</div>    
+
+<h2> Összesítő függvények </h2>
+
+<div class="paragraph">
+Az összesítő függvények a tábla valamelyik oszlopa alapján egyetlen értéket számolnak ki.
+<ul>
+    <li> összeg : SUM()</li>
+    <li> átlag : AVG()</li>
+    <li> darabszám : COUNT()</li>
+    <li> minimum : MIN()</li>
+    <li> maximum : MAX() </li>
+</ul>
+</div>
+
+<div class="paragraph">
+A COUNT nem számolja a NULL értékeket. A COUNT(DISTINCT mezőnév) azt adja meg, hány különböző érték szerepel az oszlopban.
+</div>
+
+<div class="paragraph">
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;SUM(&nbsp;bevétel),&nbsp;SUM(&nbsp;kiadás&nbsp;)<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;könyvelés</div>    
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;COUNT(DISTINCT&nbsp;rendező&nbsp;)<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;filmek</div>
+    
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;AVG(&nbsp;jegy&nbsp;)&nbsp;AS&nbsp;osztályátlag<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;dolgozatok</div>
+</div>    
+<h2>Kifejezések a SELECT záradékban</h2>
+<h3>Aritmetika</h3>
+<div class="paragraph">
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;2+2<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;4</div>
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;2*3<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;6</div>
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;POW(2,&nbsp;5)<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;32</div>
+
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;8&nbsp;/&nbsp;5<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;0.60</div>
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;8&nbsp;DIV&nbsp;5<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;1</div>
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;MOD(8,&nbsp;5)<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;3</div>
+
+</div>
+<h3>Dátumkezelés</h3>
+<div class="paragraph">
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;NOW()<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;2010-01-08&nbsp;08:26:24</div>
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;YEAR(&nbsp;NOW()&nbsp;)<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;2010</div>
+
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;DATE_ADD(&nbsp;NOW(),&nbsp;INTERVAL&nbsp;100&nbsp;DAY&nbsp;)<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;2010-04-18&nbsp;08:28:24</div>
+</div>
+<h3>Logika</h3>
+<div class="paragraph">
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;IF(&nbsp;4&nbsp;&gt;&nbsp;3,&nbsp;'rendben',&nbsp;'baj&nbsp;van')</div>
+</div>
+<h3>Karakterlánc kezelés</h3>
+<div class="paragraph">
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;LEFT('Berzsenyi&nbsp;Dániel&nbsp;Gimázium',&nbsp;9)<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;-&gt;&nbsp;'Berzsenyi'</div>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-01-08 08:29:02
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+        <br /><br />
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img src="../../img/valid-xhtml10-blue.png" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border: 0pt none ; width: 88px; height: 31px;" src="../../img/valid-css-blue.png" alt="Valid CSS!" />
+        </a>
+        <br />
+     
+    
+    
+    <br /><br />
+
+
+</div>
+                </div>
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/sqlselect by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 15:44:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg_progbev/0809/04ora/musicplayer?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:35:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="musicplayer.html" class="tab_normal">Nézet</a><a href="musicplayerd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../04orad067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdg_progbevd067.html?page=print">ProgBev Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../0809d067.html?page=print">2008: C#</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../04orad067.html?page=print">4. óra - "zenélés"</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="musicplayerd067.html?page=print">ZeneLejátszó</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="musicplayerd067.html?page=print">ZeneLejátszó</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Zenelejátszó</h1>
+<h2>Első rész</h2>
+<div class="paragraph">
+Készíts programot, ami lejátszik a számítógép belső hangszóróján egy dallamot. A dallam egy stringben van, ami a programkód első sorában van definiálva. (Ezt később könnyű lehet továbbfejleszteni fájlból beolvasásra.) Tehát ehhez hasonlóan nézzen ki a program:
+</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_keyword">using</span><span class="csharp_plain">&#160;System</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain"></span><br /><span class="csharp_keyword">class</span><span class="csharp_plain">&#160;Program</span><br /><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">public</span><span class="csharp_plain">&#160;</span><span class="csharp_keyword">static</span><span class="csharp_plain">&#160;</span><span class="csharp_type">void</span><span class="csharp_plain">&#160;Main</span><span class="csharp_separator">(</span><span class="csharp_type">string</span><span class="csharp_separator">[]</span><span class="csharp_plain">&#160;args</span><span class="csharp_separator">)</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_type">string</span><span class="csharp_plain">&#160;music&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;C8C8G8G8&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;A8A8G4&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;F8F8E8E8&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;D8D8C4&quot;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;C8C8G8G8&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;A8A8G4&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;F8F8E8E8&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;D8D8C4&quot;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;G8G8F8F8&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;E8E8D4&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;G8G8F8F8&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;E8E8D4&quot;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;C8C8G8G8&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;A8A8G4&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;F8F8E8E8&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;D8D8C4&quot;</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_comment">//ne&#160;feledd</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_comment">//hogy&#160;ez&#160;egy&#160;k&ouml;z&ouml;ns&eacute;ges&#160;string,&#160;csak&#160;az&#160;olvashat&oacute;s&aacute;g</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_comment">//&eacute;rdek&eacute;ben&#160;van&#160;t&ouml;bb&#160;darabb&oacute;l&#160;&ouml;sszefűzve</span><span class="csharp_plain"></span><br /><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_comment">//&eacute;s&#160;ide&#160;j&ouml;n&#160;a&#160;lej&aacute;tsz&oacute;program</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+És a string tartalma: az első, és aztán minden páratlanadik karakter egy nagybetű, és egy zenei hangot jelöl. A hangoknak eltérhet az időtartama, ezt a betű utáni szám jelöli. A 4 jelentése 1/4, a nyolcs jelentése 1/8. Egész ütemnek vehető például 2 másodperc.
+</div>
+<h3>Extrák</h3>
+<div class="paragraph">
+A program mindig írja ki az lejátszott hang betűjét.
+</div>
+<h3>Javasolt technikák</h3>
+<div class="paragraph">
+<a href="../csharp/ford067.html?page=print">for</a>, <a href="../csharp/stringd067.html?page=print">string</a>, <a href="../csharp/Consoled067.html?page=print">Console.Beep</a>
+</div>
+
+<h3>Hangok</h3>
+
+<table>
+<thead>
+<td colspan="3">
+	<a href="http://www.oktopus.hu/index.php?WG_NODE=WebOldal&amp;WG_PARENTOID=PAFf_887f10b&amp;WG_OID=PAGf_962d21c">A zenei hangoknak megfelelő frekvenciák</a></td></thead>
+<tr><td>Hang</td><td>Rendes név</td><td>Frekvencia (Hz, kerekítve)
+</td></tr>
+<tr><td>C</td><td/><td>262</td></tr>
+<tr><td>#C, bD</td><td>Cisz, Desz</td><td>277</td></tr>
+<tr><td>D</td><td/><td>294</td></tr>
+<tr><td>#D, bE</td><td>Disz, Esz</td><td>311</td></tr>
+<tr><td>E</td><td/><td>330</td></tr>
+<tr><td>F</td><td/><td>350</td></tr>
+<tr><td>#F, bG</td><td>Fisz, Gesz</td><td>370</td></tr>
+<tr><td>G</td><td/><td>392</td></tr>
+<tr><td>#G, bA</td><td>Gisz, Asz</td><td>415</td></tr>
+<tr><td>A</td><td/><td>440</td></tr>
+<tr><td>#A, bH</td><td>Aisz, B</td><td>466</td></tr>
+<tr><td>H</td><td/><td>494</td></tr>
+<tfoot><td colspan="3">
+Egy oktávval feljebb a frekvenciák duplázódnak, lejjebb pedig feleződnek.
+</td></tfoot>
+</table>
+<h2>Második rész</h2>
+<div class="paragraph">
+Az előbbi programmal bonyolultabb zenéket nem lehet lejátszani:
+</div>
+<ul>
+<li>nincsenek félhangok</li>
+<li>nem tud szünetet</li>
+<li>csak egy oktávot tud</li>
+<li>nem tud 1/N-től eltérő hosszúságú hangot kiadni. Például: 3/4-et. Ilyenekre pedig szükség lehet, pl.: pontozott kotta, összevonás v áthajlás v mi... (Ha egy 1/4-el és egy 1/2-el próbálkoznál egymás után, akkor maradna közöttük egy pici szünet)</li>
+</ul>
+<div class="paragraph">
+Ezeken a következő "zeneformátummal" próbálunk segíteni. Legyen a hangok leírásának a hossza a stringben 4 karakter: <span class="codetext">eHxy</span>.
+</div>
+<ul>
+<li><span class="codetext">e</span>: az előjegyzés, értéke lehet <span class="codetext">#</span> (plusz félhang) vagy <span class="codetext">b</span> (minusz félhang) vagy szóköz (eredeti hang)</li>
+<li><span class="codetext">H</span>: a hang. Ha nagybetű akkor olyan mint az előző részben, ha kisbetű, akkor egy oktávval lejjebb van, ha aláhúzás <span class="codetext">_</span>, akkor pedig szünet.</li>
+<li><span class="codetext">x</span>: az ütem, a feladat első részéhez hasonlóan</li>
+<li><span class="codetext">y</span>: ütem-hosszabbítás, ha értéke 0 akkor nincs hatása, ha 1 és 9 közötti, akkor az általa jelzett ütemmel meghosszabbodik a hang, vagyis <span class="mathspan">$N\cdot\left(\frac{1}{x}+\frac{1}{y}\right)$</span> lesz a hossza.</li>
+</ul>
+<div class="paragraph">
+Vagy például a <span class="codetext">#C48</span> egy C plusz fél, azaz Cisz hang lesz, 1/4+1/8 = 3/8 ütem hosszúságban.<br/><br/>
+Vagy például a <span class="codetext">#_42</span> egy szünet lesz, 1/4+1/2 = 3/4 ütem hosszúságban.<br/><br/>
+Vagy például a hull-a-pelyhes így fog kinézni:
+</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_type">string</span><span class="csharp_plain">&#160;music&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;C80&#160;C80&#160;G80&#160;G80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;A80&#160;A80&#160;G40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;F80&#160;F80&#160;E80&#160;E80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;D80&#160;D80&#160;C40&quot;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;C80&#160;C80&#160;G80&#160;G80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;A80&#160;A80&#160;G40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;F80&#160;F80&#160;E80&#160;E80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;D80&#160;D80&#160;C40&quot;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;G80&#160;G80&#160;F80&#160;F80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;E80&#160;E80&#160;D40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;G80&#160;G80&#160;F80&#160;F80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;E80&#160;E80&#160;D40&quot;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;C80&#160;C80&#160;G80&#160;G80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;A80&#160;A80&#160;G40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;F80&#160;F80&#160;E80&#160;E80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;D80&#160;D80&#160;C40&quot;</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /></div>
+<h3>Örömóda</h3>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_type">string</span><span class="csharp_plain">&#160;music&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;h40&#160;h40&#160;C40&#160;D40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;D40&#160;C40&#160;h40&#160;a40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;g40&#160;g40&#160;a40&#160;h40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;h48&#160;a80&#160;a20&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;h40&#160;h40&#160;C40&#160;D40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;D40&#160;C40&#160;h40&#160;a40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;g40&#160;g40&#160;a40&#160;h40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;a48&#160;g80&#160;g20&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;a40&#160;a40&#160;h40&#160;g40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;a40&#160;h80&#160;C80&#160;h40&#160;g40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;a40&#160;h80&#160;C80&#160;h40&#160;a40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;g40&#160;a40&#160;d40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;h20&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;h40&#160;C40&#160;D40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;D40&#160;C40&#160;h40&#160;a40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;g40&#160;g40&#160;a40&#160;h40&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;&#160;a48&#160;g80&#160;g20&quot;</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /></div>
+<h3>Funkytown</h3>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_type">string</span><span class="csharp_plain">&#160;music&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;C80&#160;C80bh80&#160;C40&#160;g40&#160;g80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;C80&#160;F80&#160;E80&#160;C84&#160;_40&quot;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;C80&#160;C80bh80&#160;C40&#160;g40&#160;g80&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_string_literal">&quot;&#160;C80&#160;F80&#160;E80&#160;C84&#160;_40&quot;</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /></div>
+<h3>Javasolt további technikák</h3>
+<div class="paragraph">
+<a href="../csharp/chard067.html?page=print">char</a>, <a href="../csharp/chard067-2.html?page=print">char.IsLower</a>, <a href="../csharp/chard067-3.html?page=print">char.ToUpper</a>
+</div>
+<h2>Extrák / házi feladat</h2>
+<div class="paragraph">
+1. Lejátszás előtt kérje be a program a lejátszás sebességét (egy egész ütem hosszát) és az alapoktáv számát. (0: a táblázatban szereplő, pozitív szám efölötti, negatív szám pedig ezalatti oktávot jelöl.
+</div>
+<div class="paragraph">
+2. A zene stringjét egy fájl első sorából olvassa be a program, a fájl nevét pedig a billentyűzetről kérje be. Így lehet egy fájlból egy sort olvasni:
+</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_plain">StreamReader&#160;sr</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_type">string</span><span class="csharp_plain">&#160;filename&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;c:\\music.txt&quot;</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_type">string</span><span class="csharp_plain">&#160;music</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">sr&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;File</span><span class="csharp_separator">.</span><span class="csharp_plain">OpenText</span><span class="csharp_separator">(</span><span class="csharp_plain">filename</span><span class="csharp_separator">);</span><span class="csharp_plain"></span><br /><span class="csharp_plain">music&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;sr</span><span class="csharp_separator">.</span><span class="csharp_plain">ReadLine</span><span class="csharp_separator">();</span><span class="csharp_plain"></span><br /><span class="csharp_plain">sr</span><span class="csharp_separator">.</span><span class="csharp_plain">Close</span><span class="csharp_separator">();</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+És a program elejére, a <span class="codetext">using System</span> után még kell egy <span class="codetext">using System.IO</span>:
+</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_keyword">using</span><span class="csharp_plain">&#160;System</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_keyword">using</span><span class="csharp_plain">&#160;System</span><span class="csharp_separator">.</span><span class="csharp_plain">IO</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+3. A sebesség és az alapoktáv száma a fájl második és harmadik soraiban legyen.
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Feh&eacute;r G&aacute;bor;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Feh&eacute;r G&aacute;bor)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg_progbev/0809/04ora/musicplayer?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:35:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

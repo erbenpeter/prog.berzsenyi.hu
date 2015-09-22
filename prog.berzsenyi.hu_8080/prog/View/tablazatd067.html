@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/tablazat?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 16:06:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="tablazat.html" class="tab_normal">Nézet</a><a href="tablazatd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../Viewd067.html?page=print">
+                    <img src="../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="tablazatd067.html?page=print">Táblázatkezelés</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="tablazatd067.html?page=print">Táblázatkezelés</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Táblázatkezelés</h1>
+<h2>Elmélet</h2>
+<h3>Alapok</h3>
+<div class="paragraph">
+Egy állományban egy <i>munkafüzet</i> tárolódik. A munkafüzet <i>munkalapokból</i> áll, a munkalapok sorokba és oszlopokba rendezett <i>cellákban</i> tartalmazzák az információt. 
+</div>
+<div class="paragraph">
+<img src="../Download1df6.png?node=3367" alt="" class=""/>
+</div>
+
+<h3>Méretek</h3>
+<table>
+
+<tr><td/><td>
+Open Office Calc
+</td></tr>
+
+<tr><td>
+kiterjesztés
+</td><td>
+.ods
+</td></tr>
+
+
+<tr><td>
+sor / oszlop
+</td><td>
+65536 / 1024
+</td></tr>
+
+<tr><td>
+munkalapok
+</td><td>
+256
+</td></tr>
+</table>
+
+
+<h3>Cellák</h3>
+<div class="paragraph">
+A cellákat (legalább) három megközelítésben kell vizsgálnunk, ha érteni akarjuk, mi történik egy táblázatban.
+</div>
+<div class="paragraph">
+<b>Cella tartalma: </b><br/>
+Amit begépeltünk vagy bemásoltunk a cellába. Lehet <i>konstans</i> (szám, szöveg, dátum, logikai érték), vagy <i>képlet</i>. A képletek konstansokból, cellahivatkozásokból, aritmetikai műveletekből és munkalap függvényekből építhetők fel.
+</div>
+<div class="paragraph">
+<b>Cella értéke: </b><br/>
+Konstans tartalom esetén a konstans maga, képlet esetén a kiértékeléskor kapott érték.
+</div>
+
+<div class="paragraph">
+<b>Cella megjelenése: </b><br/>
+A cella értéke a beállított <i>cellaformátumtól</i> függően többféle módon jelenhet meg.
+Bonyolítja a helyzetet, hogy a táblázatkezelő a cella tartalmának megadásakor megpróbálja automatikusan beállítani a cella formátumát.
+</div>
+<div class="paragraph">
+Az, hogy a cella nem rendelkezik típussal (mint a programozási nyelvek változói), csupán megjelenési formátummal, egészen komoly hibákhoz vezethet. Erre mutatunk az alábbiakban példát:
+</div>
+<div class="paragraph">
+A cella típustalanságának veszélyei egy <a href="tablazat/tipushibad067.html?page=print">példán bemutatva</a>.
+</div>
+<h3>Képletek</h3>
+<div class="paragraph">
+Képleteket egyenlőségjellel kezdve gépelhetünk a cellákba. A képletekben használhatók az alapműveletek.
+</div>
+<table>
+<tr><td>Összeadás</td><td> = 12 + 45</td></tr>
+<tr><td>Kivonás</td><td> = 32 - 11</td></tr>
+<tr><td>Szorzás</td><td> = 6 * 7</td></tr>
+<tr><td>Osztás</td><td> = 12 / 7</td></tr>
+<tr><td>Hatványozás</td><td> = 2 ^ 8 </td></tr>
+</table>
+
+<h3>Hivatkozások</h3>
+<div class="paragraph">
+A képletekben különböző módokon hivatkozhatunk cellák és tartományok értékeire
+</div>
+<table>
+<tr><td/><td>Open Office Calc</td><td>MS Excel</td></tr>
+
+<tr><td>
+Cellahivatkozás<br/>
+abszolút / relatív / vegyes
+</td><td>
+$A$1 / A1 / $A1 és A$1
+</td><td>
+$A$1 / A1 / $A1 és A$1
+</td></tr>
+
+<tr><td>
+Tartomány hivatkozás
+</td><td>
+A1:C4 <br/>vagy tartomány neve
+</td><td>
+A1:C4 <br/>vagy tartomány neve
+</td></tr>
+
+<tr><td>
+Hivatkozás másik munkalapra, állományra
+</td><td>
+'állománynév'#Munkalapnév.A1
+</td><td>
+[állománynév]Munkalapnév!A1
+</td></tr>
+</table>
+
+<div class="paragraph">
+Néhány <a href="tablazat/hivd067.html?page=print">példa hivatkozásokra</a>.
+</div>
+<h3>Tartományok elnevezése</h3>
+<div class="paragraph">
+Cellatartományok (és cellák) elnevezhetők, képletekben névvel is hivatkozhatunk rájuk.
+A képletben szereplő név abszolút hivatkozásként működik másoláskor.
+<a href="tablazat/tartnevd067.html?page=print">Példa cellatartományok elnevezésére</a>
+</div>
+<h3>Függvények</h3>
+<div class="paragraph">
+A munkalapfüggvények 
+<div class="code codetext">  =függvénynév(paraméter1; paraméter2; ...) </div> 
+alakban használhatók. Tetszőleges mélységig egymásba ágyazhatjuk a függvényhívásokat, tehát egy
+paraméter helyén állhat függvény is, ami kiszámítja a megfelelő paraméter értékét.
+<div class="code codetext"> =függvény1(függvény2(a;b;c);d;e;függvény3(x;y))</div> 
+</div>
+<div class="paragraph">
+A függvényeknek lehetnek nem kötelező paraméterei, ezek mindig a paraméterlista végén helyezkednek el.
+</div>
+
+<div class="paragraph"><a href="tablazat/tabla_alapd067.html?page=print">Leggyakrabban használt függvények</a> </div>
+<div class="paragraph"><a href="tablazat/tabla_keresd067.html?page=print">Kereső függvények</a> </div>
+<div class="paragraph"><a href="tablazat/tabla_abd067.html?page=print">Adatbázis függvények</a> </div>
+<div class="paragraph"><a href="tablazat/tabla_matd067.html?page=print">Matematikai függvények</a> </div>
+<div class="paragraph"><a href="tablazat/tabla_datumd067.html?page=print">Dátum és idő függvények</a> </div>
+<div class="paragraph"><a href="tablazat/tabla_stringd067.html?page=print">Karakterlánc függvények</a> </div>
+<div class="paragraph"><a href="tablazat/tabla_logikad067.html?page=print">Logikai függvények</a> </div>
+<div class="paragraph"><a href="tablazat/tabla_statisztikad067.html?page=print">Statisztikai függvények és eszközök</a> </div>
+
+<h3>Rendezés</h3>
+<div class="paragraph">
+<a href="tablazat/rendd067.html?page=print">Rendezés</a>
+</div>
+<h3>Szűrés</h3>
+<div class="paragraph">
+Ha egy adathalmazból előre nem meghatározható számú sort kell kiválasztanunk, akkor szűrőket használhatunk.
+</div>
+<div class="paragraph">
+<a href="tablazat/szurokd067.html?page=print">Szűrők</a>
+</div>
+<h3>Formázás</h3>
+<h3>Grafikonok</h3>
+<div class="paragraph">
+<a href="tablazat/grafikonokd067.html?page=print">Grafikon típusok</a>
+</div>
+
+<h3>Matematikai eszközök</h3>
+<div class="paragraph">
+<a href="tablazat/celertekd067.html?page=print">Célérték keresés</a><br/>
+<a href="tablazat/solverd067.html?page=print">Megoldó</a>
+</div>
+
+
+<h3>Adatok importálása szöveges dokumentumból (txt, csv)</h3>
+<div class="paragraph">
+<a href="http://user.services.openoffice.org/en/forum/viewtopic.php?f=9&amp;t=22539&amp;start=0">http://user.services.openoffice.org/en/forum/viewtopic.php?f=9&t=22539&start=0</a>
+</div>
+<h2>Feladatok</h2>
+<h3>Bevezető</h3>
+<div class="paragraph">
+<a href="tablazat/alapd067.html?page=print">Alapfeladatok</a><br/>
+<a href="tablazat/sejtd067.html?page=print">Sejtautomaták</a><br/>
+<a href="tablazat/fvid067.html?page=print">Fej vagy írás?</a><br/>
+<a href="tablazat/eremtablad067.html?page=print">Éremtábla</a><br/>
+</div>
+<h3>Haladó</h3>
+<div class="paragraph">
+<a href="tablazat/haladod067.html?page=print">Haladó feladatok</a>
+</div>
+<h3>Érettségi</h3>
+<div class="paragraph">
+<a href="tablazat/erettsegid067.html?page=print">Érettségi feladatok</a>
+</div>
+<h3>Projektek</h3>
+<div class="paragraph">Nagyobb feladatok, megoldásuk több napig is tarthat, célszerű tervezni, részfeladatokra bontani és csapatban dolgozni.</div>
+<div class="paragraph">
+<a href="tablazat/projektd067.html?page=print">Projekt feladatok</a>
+</div>
+<h2>Dolgozatok</h2>
+<div class="paragraph">
+<a href="tablazat/dolgozatokd067.html?page=print">Dolgozatok</a>
+</div>
+
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-11-29 21:02:41
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/tablazat?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 16:06:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

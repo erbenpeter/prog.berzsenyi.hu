@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/erettsegi/sms?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:08:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="sms.html" class="tab_normal">Nézet</a><a href="smsd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../erettsegid067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../progbevd067.html?page=print">Programozás bevezető</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../erettsegid067.html?page=print">Érettségi feladatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="smsd067.html?page=print">SMS</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="smsd067.html?page=print">SMS</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>SMS</h1>
+<div class="paragraph">
+Esemes Ernő szenvedélyes SMS-küldő, ezért a MaMobil nevű cég tesztelésre kérte fel.
+Ehhez egy új, kézreálló telefont adnak, amelynek tesztüzemben egyetlen hátránya, hogy legfeljebb az először érkező 10 darab, egyenként legfeljebb 100 karakteres üzenetet tud eltárolni.
+Ha ettől több üzenet van, akkor azokat korlátlan számban a szolgáltató őrzi meg a hangpostához hasonlóan, tehát azokhoz csak bizonyos díj fejében juthat hozzá. Az üzenetek nem tartalmazhatnak ékezetes karaktereket.
+</div>
+<div class="paragraph">
+Az <a href="sms/smsd067.html?page=print">sms.txt</a> állomány első sorában az a k szám olvasható, amely megadja, hogy hány
+üzenet érkezett a készülékre a mai napon. Az érkező üzenetek száma legalább egy, de nem
+haladja meg a 100 darabot. Minden üzenethez 2 sor tartozik. Az első sor szerkezete a következő: először az érkezés órája (szám), érkezés perce (szám), telefonszám (pontosan 9 jegyű
+szám), a másodikban pedig az üzenet (legfeljebb 100 karakternyi szöveg) található. Az állományban az üzenetek számát követően k×2 sor szerepel. Az üzenetek érkezési idő szerint
+növekvően rendezettek.
+
+</div>
+<div class="paragraph">
+Például:
+<pre>
+30
+9 11 123456789
+Szia, mikor jossz?
+9 13 434324223
+Nem kerek ebedet!
+9 14 434324223
+Hova menjek erted?
+9 20 123456789
+Hozd el a mintas pulcsimat!
+9 21 434324223
+Nyertunk a palyazaton!
+...
+</pre>
+</div>
+<div class="paragraph">
+Készítsen programot sms néven, amely az alábbi kérdésekre válaszol! Ügyeljen arra, hogy
+a program forráskódját a megadott helyre mentse!<br/>
+A képernyőre írást igénylő részfeladatok eredményének megjelenítése előtt írja a képernyőre a feladat sorszámát! (Például 3. feladat: )
+</div>
+<h2>Feladatok</h2>
+<div class="paragraph">
+<ol>
+<li> Olvassa be az sms.txt állományban talált adatokat, s annak felhasználásával oldja meg a
+következő feladatokat! Ha az állományt nem tudja beolvasni, akkor a benne található adatok közül az első tíz üzenet adatait jegyezze be a programba, s úgy oldja meg a feladatokat!
+</li><li> A fájlban tárolt utolsó üzenet érkezésekor melyik üzenet a legfrissebb a telefon memóriájában? Írja az üzenet szövegét a képernyőre!
+</li><li> Adja meg a leghosszabb és a legrövidebb üzenetek adatait! Ha több azonos hosszúságú
+üzenet van, akkor elegendő csak egyet-egyet megadnia! A képernyőn óra, perc, telefonszám, üzenet formában jelenítse meg az adatokat!
+
+</li><li> Készítsen karakterhossz szerinti statisztikát: 1-20, 21-40, 41-60, 61-80, 81-100!
+Az intervallumok mellé a hozzájuk tartozó üzenetek darabszámát írja, mint eredményt a
+képernyőre!
+</li><li> Ha Ernő minden óra 0. percében elolvasná a memóriában lévő üzeneteket (az éppen ekkor
+érkező üzeneteket nem látja), majd ki is törölné, akkor hány olyan üzenet lenne, amelynek
+elolvasásához fel kellene hívnia a szolgáltatót? Írja ezt a számot a képernyőre! (Az üzeneteket először 1, utoljára 24 órakor olvassa el.)
+</li><li> Ernő barátnője gyakran küld sms-t az 123456789-es számról. Mennyi volt a leghosszabb
+idő, amennyi eltelt két üzenete között? Ha legfeljebb 1 üzenet érkezett tőle, akkor írja ki,
+hogy „nincs elegendő üzenet”, egyébként pedig adja meg a leghosszabb időtartamot óra
+perc alakban!
+</li><li> Egy üzenet véletlenül késett. Olvassa be a billentyűzetről ennek az sms-nek az adatait,
+majd tárolja el a memóriában a többihez hasonlóan!
+</li><li> Az smski.txt állományban készítsen egy listát az üzenetekről telefonszám szerinti csoportosításban, telefonszám szerint növekvő sorrendben! Egy csoporthoz tartozó első sorban a feladó telefonszáma szerepeljen! Az alatta lévő sorokban a feladás ideje, majd a tőle
+újabb szóközzel elválasztva az üzenet szövege szerepeljen!
+</li>
+</ol>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-12-05 09:31:17
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/erettsegi/sms?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:08:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

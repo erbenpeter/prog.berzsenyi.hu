@@ -1,0 +1,564 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/1011/03ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 17:08:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="03ora.html" class="tab_normal">Nézet</a><a href="03orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../1011d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../1011d067.html?page=print">2010/2011</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="03orad067.html?page=print">3. óra</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="03orad067.html?page=print">3. óra</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>3. óra</h1>
+<div class="paragraph">
+Előző óráról tudunk nagy egészeket beolvasni, kiírni és összeadni. Következik a szorzás, majd a maradékos osztás. Végső cél az euklideszi algoritmus nagy számokon.
+</div>
+<h2>Nagy számok összeadása</h2>
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_keyword">f&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;ad</span><span class="metahun_separator">(</span><span class="metahun_plain">a</span><span class="metahun_separator">,</span><span class="metahun_plain">b</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;c&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><span class="metahun_comment">{Nagy&#160;sz&aacute;m&#160;nulla.}</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;r&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_separator">;</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;i&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_operator">-</span><span class="metahun_plain">t&oacute;l&#160;</span><span class="metahun_num_literal">100</span><span class="metahun_operator">-</span><span class="metahun_plain">ig</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_operator">+</span><span class="metahun_plain">b</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_operator">+</span><span class="metahun_plain">r</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;mod&#160;</span><span class="metahun_num_literal">10</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;r&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_operator">+</span><span class="metahun_plain">b</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_operator">+</span><span class="metahun_plain">r</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;div&#160;</span><span class="metahun_num_literal">10</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_operator">&gt;</span><span class="metahun_num_literal">0</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">h&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">i</span><span class="metahun_num_literal">+1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_comment">{Az&#160;eredm&eacute;ny&#160;c-ben&#160;van}</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">f&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+<h2>Nagy számok szorzása</h2>
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_keyword">f&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;szor</span><span class="metahun_separator">(</span><span class="metahun_plain">a</span><span class="metahun_separator">,</span><span class="metahun_plain">b</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;c&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><span class="metahun_comment">{Nagy&#160;sz&aacute;m&#160;nulla.}</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;i&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_operator">-</span><span class="metahun_plain">t&oacute;l&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">b</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">)</span><span class="metahun_operator">-</span><span class="metahun_plain">ig&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;r&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;j&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_operator">-</span><span class="metahun_plain">t&oacute;l&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">)</span><span class="metahun_operator">-</span><span class="metahun_plain">ig</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;t&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_operator">+</span><span class="metahun_plain">j</span><span class="metahun_separator">]</span><span class="metahun_operator">+</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">j</span><span class="metahun_separator">]</span><span class="metahun_operator">*</span><span class="metahun_plain">b</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_operator">+</span><span class="metahun_plain">r</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_operator">+</span><span class="metahun_plain">j</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;t&#160;mod&#160;</span><span class="metahun_num_literal">10</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;r&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;t&#160;div&#160;</span><span class="metahun_num_literal">10</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_operator">+</span><span class="metahun_plain">j</span><span class="metahun_num_literal">+1</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;r&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_comment">{itt&#160;eddig&#160;0&#160;volt,&#160;teh&aacute;t&#160;nincs&#160;&aacute;tvitel}</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;t&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><span class="metahun_operator">+</span><span class="metahun_plain">b</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">t</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">]</span><span class="metahun_operator">&gt;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">h&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;t&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">k&uuml;l&ouml;nben</span><span class="metahun_plain">&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">h&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;t</span><span class="metahun_num_literal">-1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_comment">{Az&#160;eredm&eacute;ny&#160;c-ben&#160;van}</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">f&uuml;ggv&eacute;ny</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+<h3>Szakköri tapasztalat a for-ciklusokról</h3>
+<div class="paragraph">A szorzás leprogramozásakor tapasztaltuk, hogy a "for-ciklus"
+máshogy működik Pascal-ban és C#-ban.</div>
+<div class="paragraph">pascal</div>
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">for</span><span class="pascal_plain">&#160;i&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">to</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">10</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">do</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="pascal_comment">{ciklusmag}</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">end</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;writeln</span><span class="pascal_separator">(</span><span class="pascal_plain">i</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_comment">{EREDM&Eacute;NY:&#160;10}</span><span class="pascal_plain"></span><br /></div>
+
+<div class="paragraph">c#</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">for</span><span class="csharp_separator">(</span><span class="csharp_plain">i&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">1</span><span class="csharp_separator">;</span><span class="csharp_plain">&#160;i&#160;</span><span class="csharp_operator">&lt;=</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">10</span><span class="csharp_separator">;</span><span class="csharp_plain">&#160;i</span><span class="csharp_operator">++</span><span class="csharp_separator">)</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_comment">//ciklusmag</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;Console</span><span class="csharp_separator">.</span><span class="csharp_plain">WriteLine</span><span class="csharp_separator">(</span><span class="csharp_plain">i</span><span class="csharp_separator">);</span><span class="csharp_plain"></span><br /><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_comment">//EREDM&Eacute;NY:&#160;11</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">Ennek oka, hogy a java/C++/C# "for-ciklus" ezt jelenti:</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">for</span><span class="csharp_separator">(</span><span class="csharp_plain">i&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">1</span><span class="csharp_separator">;</span><span class="csharp_plain">&#160;i&#160;</span><span class="csharp_operator">&lt;=</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">10</span><span class="csharp_separator">;</span><span class="csharp_plain">&#160;i</span><span class="csharp_operator">++</span><span class="csharp_separator">)</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_comment">//ciklusmag</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_comment">//Ugyanaz,&#160;mint:</span><span class="csharp_plain"></span><br /><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;i&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">1</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">while</span><span class="csharp_separator">(</span><span class="csharp_plain">&#160;i&#160;</span><span class="csharp_operator">&lt;=</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">10</span><span class="csharp_plain">&#160;</span><span class="csharp_separator">)</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_comment">//ciklusmag</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;i</span><span class="csharp_operator">++</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /></div>
+
+<h2>Nagy számok osztása 2-vel</h2>
+<div class="paragraph">
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">&#160;&#160;&#160;&#160;r&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;c&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_separator">;</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;i&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">)</span><span class="metahun_operator">-</span><span class="metahun_plain">t&oacute;l&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_operator">-</span><span class="metahun_plain">ig&#160;</span><span class="metahun_separator">(</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">)</span><span class="metahun_operator">-</span><span class="metahun_plain">es&eacute;vel</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;r&#160;</span><span class="metahun_operator">*</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">10</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;div&#160;</span><span class="metahun_num_literal">2</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;r&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_separator">(</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;r&#160;</span><span class="metahun_operator">*</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">10</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;mod&#160;</span><span class="metahun_num_literal">2</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">jegy</span><span class="metahun_separator">[</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><span class="metahun_operator">:=</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><span class="metahun_num_literal">-1</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">k&uuml;l&ouml;nben</span><span class="metahun_plain">&#160;c</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><span class="metahun_operator">:=</span><span class="metahun_plain">a</span><span class="metahun_separator">.</span><span class="metahun_plain">h</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+</div>
+<h2>Nagy számok összehasonlítása</h2>
+
+
+<h2>Feladat</h2>
+<div class="paragraph">
+<a href="03ora/collatzd067.html?page=print">Collatz-sorozat</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-09-28 10:01:44
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/1011/03ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 17:08:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

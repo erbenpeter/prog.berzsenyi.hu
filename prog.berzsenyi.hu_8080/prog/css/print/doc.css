@@ -1,0 +1,13 @@
+div.document div.paragraph div.code {
+	background-color: white;
+}
+
+div.document div.code {
+        margin-left: 20%;
+        margin-right: 20%;
+}
+
+div.document img.decoration {
+    display: none;
+
+}

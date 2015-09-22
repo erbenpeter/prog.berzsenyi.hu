@@ -1,0 +1,118 @@
+table.aligner {
+    border-width: 0px;
+    left : 0px;
+    margin-bottom : 0px;
+    margin-left : 0px;
+    margin-right : 0px;
+    margin-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    text-align : left;
+    vertical-align : top;
+  }
+
+table.aligner td {
+    left : 0px;
+    margin-bottom : 0px;
+    margin-left : 0px;
+    margin-right : 0px;
+    margin-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    border-width: 0px;
+    text-align : left;
+    vertical-align : top;
+  }
+
+
+table.aligner tr {
+    left : 0px;
+    margin-bottom : 0px;
+    margin-left : 0px;
+    margin-right : 0px;
+    margin-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 0px;
+    padding-right : 0px;
+    padding-top : 0px;
+    border-width: 0px;
+    text-align : left;
+    vertical-align : top;
+  }
+
+  
+table.solid {
+    margin-right: auto;
+    margin-left: auto;
+    border : 1px solid black;
+    border-collapse : collapse;
+    margin-left : auto;
+    margin-right : auto;
+    font-family : arial, sans-serif;
+    font-size: 10pt;
+}
+
+table.solid td {
+    padding : 5px;
+    border : 1px solid black;
+    text-align : left;
+    vertical-align : top;
+}
+
+
+table.normal {
+    margin : 3px;
+    border : 1px solid black;
+    border-collapse : collapse;
+  }
+
+table.normal td {
+    padding : 5px;
+    border : 1px solid black;
+    text-align : left;
+    vertical-align : top;
+  }
+
+td.spacer {
+    padding : 5px;
+    text-align : left;
+    vertical-align : top;
+    border-width: 0px;
+  }
+  
+table.zpanel {
+    background-color : #c7ffce;
+/*    border-collapse : collapse;*/
+    margin: 4px;
+    border-width: 0px;
+  }
+
+td.zpanel, table.zpanel td {
+    background-color : #c7ffce;
+    text-align : left;
+    vertical-align : top;
+    padding: 3px;
+    margin: 4px;
+    border-width: 0px;    
+}
+
+table.zpanel thead td {
+    font-weight: bold;
+}
+
+table.downloadtable {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    border-collapse: collapse;
+}
+
+table.downloadtable td {
+    text-align: left;
+    padding: 4px;
+}

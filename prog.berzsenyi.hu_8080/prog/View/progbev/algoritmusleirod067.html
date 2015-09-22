@@ -1,0 +1,423 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/algoritmusleiro?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:49:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="algoritmusleiro.html" class="tab_normal">Nézet</a><a href="algoritmusleirod067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../progbevd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../progbevd067.html?page=print">Programozás bevezető</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="algoritmusleirod067.html?page=print">Algoritmusleíró eszközök</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="algoritmusleirod067.html?page=print">Algoritmusleíró eszközök</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Algoritmusleíró eszközök</h1>
+<h2>A példákhoz használt matematikai probléma</h2>
+<div class="paragraph">
+Egy 2300 éves algoritmikus probléma: határozzuk meg két pozitív egész legnagyobb közös osztóját! 
+</div>
+<h3>Példa</h3>
+<div class="paragraph">
+<span class="mathspan">$a = 360, b = 150$</span> esetén a legnagyobb közös osztó 
+<span class="mathspan">$(a,b)  = 30$</span>.
+</div>
+<h3>Iskolás módszer és ókori módszer</h3>
+<div class="paragraph">Középiskolában ezt úgy tanítják, hogy a számok prímtényezős felbontásából kell kiindulni, de Euklidesz annak idején egy ennél hatékonyabb eljárást adott, ami nagyon nagy számokra is jól működik, szemben a prímfelbontásos eljárással.
+</div>
+
+<div class="paragraph">
+
+</div>
+<h2>A megoldás matematikája</h2>
+<h2>Az algoritmus mondatszerű leírással</h2>
+<div class="paragraph">
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">&#160;&#160;&#160;&#160;BE</span><span class="metahun_separator">(</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;b&#160;</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;</span><span class="metahun_comment">//&#160;Feltessz&uuml;k,&#160;hogy&#160;&quot;a&quot;&#160;nagyobb...</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;r&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;a&#160;MOD&#160;b</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">am&iacute;g</span><span class="metahun_plain">&#160;r&#160;</span><span class="metahun_operator">&gt;</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;b</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;r</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;r&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;a&#160;MOD&#160;b</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;KI</span><span class="metahun_separator">(</span><span class="metahun_plain">&#160;b&#160;</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /></div>
+</div>
+<h2>Az algoritmus folyamatábrával</h2>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../Download8582.png?node=4664" alt="" class=""/>
+</div>
+</div>
+
+<h2>Az algoritmus struktorgrammal</h2>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../Download2481.png?node=4663" alt="" class=""/>
+</div>
+</div>
+<h2>Megvalósítás Pascal nyelven</h2>
+<div class="paragraph">
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="pascal_keyword">program</span><span class="pascal_plain">&#160;lnko</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">var</span><span class="pascal_plain">&#160;a</span><span class="pascal_separator">,</span><span class="pascal_plain">&#160;b</span><span class="pascal_separator">,</span><span class="pascal_plain">&#160;r</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_type">longint</span><span class="pascal_separator">;</span><span class="pascal_plain">&#160;&#160;&#160;</span><br /><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;writeln</span><span class="pascal_separator">(</span><span class="pascal_string_literal">'a,b=&#160;'</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;readln</span><span class="pascal_separator">(</span><span class="pascal_plain">a</span><span class="pascal_separator">,</span><span class="pascal_plain">b</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;r&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;a&#160;</span><span class="pascal_keyword">MOD</span><span class="pascal_plain">&#160;b</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">while</span><span class="pascal_plain">&#160;r&#160;</span><span class="pascal_operator">&gt;</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">0</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">do</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;b</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;r</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;r&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;a&#160;</span><span class="pascal_keyword">MOD</span><span class="pascal_plain">&#160;b</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">end</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;write</span><span class="pascal_separator">(</span><span class="pascal_string_literal">'LNKO(a,b)='</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;writeln</span><span class="pascal_separator">(</span><span class="pascal_plain">b</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">end</span><span class="pascal_separator">.</span><span class="pascal_plain"></span><br /></div>
+</div>
+
+<h2>Megvalósítás Java nyelven</h2>
+<div class="paragraph">
+<div class="code codetext"><style>.java_annotation {
+color: #0050d7;  font-weight: bold;
+}
+.java_javadoc_comment {
+color: rgb(147,147,147); font-style: italic;
+}
+.java_javadoc_tag {
+color: rgb(147,147,147); font-style: italic; font-weight: bold;
+}
+.java_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.java_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.java_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.java_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.java_type {
+color: rgb(128,0,0);
+}
+.java_operator {
+color: rgb(0,0,0);
+}
+.java_char_literal {
+color: rgb(255,0,255);
+}
+.java_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.java_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.java_num_literal {
+color: rgb(0,0,255);
+}
+.java_comment {
+color: rgb(147,147,147);  
+}
+.java_plain {
+color: rgb(0,0,0);
+}
+.java_string_literal {
+color: rgb(255,0,0);
+}
+.java_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="java_keyword">import</span><span class="java_plain">&#160;java</span><span class="java_separator">.</span><span class="java_plain">io</span><span class="java_separator">.</span><span class="java_operator">*</span><span class="java_separator">;</span><span class="java_plain"></span><br /><span class="java_plain"></span><br /><span class="java_keyword">public</span><span class="java_plain">&#160;</span><span class="java_keyword">class</span><span class="java_plain">&#160;lnko&#160;</span><span class="java_separator">{</span><span class="java_plain"></span><br /><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_keyword">public</span><span class="java_plain">&#160;</span><span class="java_keyword">static</span><span class="java_plain">&#160;</span><span class="java_type">void</span><span class="java_plain">&#160;main&#160;</span><span class="java_separator">(</span><span class="java_user_type">String</span><span class="java_plain">&#160;args</span><span class="java_separator">[])</span><span class="java_plain">&#160;</span><span class="java_keyword">throws</span><span class="java_plain">&#160;</span><span class="java_user_type">IOException</span><span class="java_plain">&#160;</span><span class="java_separator">{</span><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_type">int</span><span class="java_plain">&#160;a</span><span class="java_separator">,</span><span class="java_plain">b</span><span class="java_separator">,</span><span class="java_plain">r</span><span class="java_separator">;</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">out</span><span class="java_separator">.</span><span class="java_plain">println</span><span class="java_separator">(</span><span class="java_string_literal">&quot;a,b=&#160;&quot;</span><span class="java_separator">);</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_user_type">BufferedReader</span><span class="java_plain">&#160;br&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;</span><span class="java_keyword">new</span><span class="java_plain">&#160;</span><span class="java_user_type">BufferedReader</span><span class="java_separator">(</span><span class="java_keyword">new</span><span class="java_plain">&#160;</span><span class="java_user_type">InputStreamReader</span><span class="java_separator">(</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">in</span><span class="java_separator">));</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_user_type">String</span><span class="java_plain">&#160;sor&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;br</span><span class="java_separator">.</span><span class="java_plain">readLine</span><span class="java_separator">();</span><span class="java_plain">&#160;</span><span class="java_comment">//&#160;teljes&#160;sor&#160;beolvas&aacute;sa</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;a&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;</span><span class="java_user_type">Integer</span><span class="java_separator">.</span><span class="java_plain">parseInt</span><span class="java_separator">(</span><span class="java_plain">sor</span><span class="java_separator">.</span><span class="java_plain">split</span><span class="java_separator">(</span><span class="java_string_literal">&quot;&#160;&quot;</span><span class="java_separator">)[</span><span class="java_num_literal">0</span><span class="java_separator">]);</span><span class="java_plain">&#160;</span><span class="java_comment">//&#160;darabol&aacute;s&#160;sz&oacute;k&ouml;z&ouml;k&#160;ment&eacute;n</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;b&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;</span><span class="java_user_type">Integer</span><span class="java_separator">.</span><span class="java_plain">parseInt</span><span class="java_separator">(</span><span class="java_plain">sor</span><span class="java_separator">.</span><span class="java_plain">split</span><span class="java_separator">(</span><span class="java_string_literal">&quot;&#160;&quot;</span><span class="java_separator">)[</span><span class="java_num_literal">1</span><span class="java_separator">]);</span><span class="java_plain">&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;r&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;a&#160;</span><span class="java_operator">%</span><span class="java_plain">&#160;b</span><span class="java_separator">;</span><span class="java_plain">&#160;</span><span class="java_comment">//&#160;marad&eacute;kos&#160;oszt&aacute;s</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_keyword">while</span><span class="java_separator">(</span><span class="java_plain">&#160;r&#160;</span><span class="java_operator">&gt;</span><span class="java_plain">&#160;</span><span class="java_num_literal">0</span><span class="java_separator">){</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;a&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;b</span><span class="java_separator">;</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;b&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;r</span><span class="java_separator">;</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;r&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;a&#160;</span><span class="java_operator">%</span><span class="java_plain">&#160;b</span><span class="java_separator">;</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_separator">}</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">out</span><span class="java_separator">.</span><span class="java_plain">print</span><span class="java_separator">(</span><span class="java_string_literal">&quot;LNKO(a,b)=&#160;&quot;</span><span class="java_separator">);</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">out</span><span class="java_separator">.</span><span class="java_plain">println</span><span class="java_separator">(</span><span class="java_plain">b</span><span class="java_separator">);</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_separator">}</span><span class="java_plain"></span><br /><span class="java_separator">}</span><span class="java_plain"></span><br /></div>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-03-23 09:13:35
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/algoritmusleiro?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:49:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

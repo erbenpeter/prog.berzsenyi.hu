@@ -1,0 +1,42 @@
+/* common */
+
+html, body {
+    color : black;
+    font-family : arial, sans-serif;
+    font-size: 10pt;
+    margin : 0px;
+    padding: 0px;
+  }
+
+div#fullcode {
+        border-bottom: 1px solid black;
+        border-top-width: 0;
+        border-left-width: 0; 
+        border-right-width: 0;
+	padding: 2px;
+        white-space: pre;
+        margin: 0px;
+}
+
+.codetext {
+	font-family: monospace;
+	font-size: 14px;
+}
+
+div.download {
+    border-top: 1px solid green;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    padding: 2px;
+    margin: 0px;
+}
+
+div.infotext {
+	font-family: monospace;
+	font-size: 12px;
+
+	padding: 2px;
+        border: 1px solid black;
+        overflow: auto;
+}

@@ -1,0 +1,410 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 15:44:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="ab.html" class="tab_normal">Nézet</a><a href="abd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../Viewd067.html?page=print">
+                    <img src="../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="abd067.html?page=print">Adatbázisok</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="abd067.html?page=print">Adatbázisok</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Adatbázisok</h1>
+<h2>Bevezető</h2>
+<div class="paragraph">
+<a href="ab/abfogalomd067.html?page=print">Az adatbázis fogalma</a>
+</div>
+<h2>Adatbázis tervezés</h2>
+<h3>Egyed-kapcsolat modell</h3>
+<div class="paragraph">
+<a href="ab/ekmodelld067.html?page=print">Az Egyed-Kapcsolat modell</a><br/>
+<a href="ab/01erd067.html?page=print">Ullmann-jegyzet részletek</a>
+</div>
+
+<h3>Relációs modell</h3>
+<div class="paragraph">
+<a href="ab/relmodelld067.html?page=print">Relációs modell</a><br/>
+<a href="ab/02reld067.html?page=print">Ullmann-jegyzet részletek</a>
+</div>
+<h3>Kulcsok és függőségek</h3>
+<div class="paragraph">
+<a href="ab/kulcsokd067.html?page=print">Kulcsok és függőségek</a><br/>
+</div>
+<h3>Normalizálás</h3>
+<h3>UML-diagramm</h3>
+<h3>Méretek</h3>
+<h2>Lekérdezések</h2>
+<div class="paragraph">
+A relációs adatbázisok kezelésének szabványos eszköze az <b>SQL</b>.
+(SQL = Stuctured Query Language / Strukturált lekérdező nyelv) Ez egy nagyon egyszerű "programozási nyelv", ami lehetősget ad az adatbázis definiálására, módosítására és adatok lekérdezésére is.
+</div>
+<h3>DDL és DML</h3>
+<div class="paragraph">
+Az SQL-t szokás két részre osztani:
+</div>
+<ol>
+<li><b>DDL</b> (Data Definition Language / Adat definiáló nyelv) Az adatbázis séma definiálására használható. Segítségével egy teljes adatbázis lementhető ("backup") egy SQL parancsfájlba, amiből később újra létrehozható. Mivel az SQL nyílt szabvány, ezzel a módszerrel két tetszőleges - SQL-t beszélő - rendszer között lehet adatokat / adatbázisokat cserélni.</li>
+<li><b>DML</b> (Data Manipulation Language / Adat manipuláló nyelv) Adatok lekérdezésére, feltöltésére, módosítására és törlésére használható parancsok.</li>
+</ol>
+<h3>Az SQL lekérdezések sémája</h3>
+<div class="paragraph">
+Az SQL lekérdezések a következő részekből állnak:
+</div>
+<div class="paragraph">
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;oszlopkifejezés,...<br />&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;tábla,...<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;sorfeltétel<br />&nbsp;&nbsp;&nbsp;&nbsp;GROUP&nbsp;BY&nbsp;csoportosítás<br />&nbsp;&nbsp;&nbsp;&nbsp;HAVING&nbsp;csoportfeltétel<br />&nbsp;&nbsp;&nbsp;&nbsp;ORDER&nbsp;BY&nbsp;rendezési&nbsp;szempont</div>
+</div>
+<div class="paragraph">
+Nem része a szabványnak, de már sok SQL megvalósításban szerepel a következő kiegészítés:
+<div class="code codetext">&nbsp;&nbsp;&nbsp;&nbsp;SELECT&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;LIMIT&nbsp;megjelenítendő&nbsp;sorok&nbsp;száma</div>
+
+</div>
+<h3>Az SQL lekérdezések részletei</h3>
+<div class="paragraph">
+<ol>
+<li><a href="ab/sqlselectd067.html?page=print">SELECT</a></li>
+<li><a href="ab/sqlfromd067.html?page=print">FROM</a></li>
+<li><a href="ab/sqlwhered067.html?page=print">WHERE</a></li>
+<li><a href="ab/sqlorderd067.html?page=print">ORDER BY, LIMIT  és TOP</a></li>
+<li><a href="ab/sqlgroupd067.html?page=print">GROUP BY</a></li>
+<li><a href="ab/sqlhavingd067.html?page=print">HAVING</a></li>
+</ol>
+</div>
+<h3>Táblák összekapcsolása</h3>
+<div class="paragraph">
+<a href="ab/sql_joind067.html?page=print">Táblák összekapcsolása</a>
+</div>
+<h3>Allekérdezések (SUBSELECT)</h3>
+<div class="paragraph">
+<a href="ab/subselectd067.html?page=print">Allekérdezések</a>
+</div>
+<h3>Halmazműveletek</h3>
+<div class="paragraph">
+<ol>
+<li><a href="ab/sqluniond067.html?page=print">Unió</a></li>
+<li><a href="ab/sqlintersectiond067.html?page=print">Metszet</a></li>
+<li><a href="ab/sqlexceptd067.html?page=print">Különbség</a></li>
+</ol>
+</div>
+
+
+<h2>Adatok módosítása</h2>
+<h3>Beszúrás</h3>
+<div class="paragraph">
+Új rekordok beszúrása táblába. Megadhatjuk az összes mező értékét, 
+és az is lehet, hogy
+csak néhány mezőt töltünk ki.
+
+</div>
+<div class="paragraph">
+<div class="code codetext"><br />&nbsp;&nbsp;&nbsp;&nbsp;INSERT&nbsp;INTO&nbsp;tábla<br />&nbsp;&nbsp;&nbsp;&nbsp;VALUES&nbsp;(érték1,&nbsp;érték2,&nbsp;...)<br />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+
+<div class="code codetext"><br />&nbsp;&nbsp;&nbsp;&nbsp;INSERT&nbsp;INTO&nbsp;tábla&nbsp;(mező1,&nbsp;mező2,&nbsp;...)<br />&nbsp;&nbsp;&nbsp;&nbsp;VALUES&nbsp;(érték1,&nbsp;érték2,&nbsp;...)<br />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+
+
+<h3>Módosítás</h3>
+<div class="paragraph">
+Meglévő adatrekordok módosítása.
+</div>
+<div class="paragraph">
+<div class="code codetext"><br />&nbsp;&nbsp;&nbsp;&nbsp;UPDATE&nbsp;tábla&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;SET&nbsp;mező1&nbsp;=&nbsp;kifejezés1,&nbsp;mező2&nbsp;=&nbsp;kifejezés2,&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;feltétel<br />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+<h3>Törlés</h3>
+<div class="paragraph">
+Valamilyen feltételnek megfelelő sorokat törölhetünk egy táblából.
+
+</div>
+<div class="paragraph">
+<div class="code codetext"><br />&nbsp;&nbsp;&nbsp;&nbsp;DELETE&nbsp;FROM&nbsp;tábla<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;feltétel<br />&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+
+
+
+<h2>Adatbáziskezelés irodai programmal</h2>
+<h3>Adatbázis létrehozása, táblák importálása</h3>
+<div class="paragraph">
+
+</div>
+
+<h3>Lekérdező rács</h3>
+<div class="paragraph">
+Itt csak azokra a részletekre térünk ki, amik eltérnek a szabvány SQL használatától.
+</div>
+<div class="paragraph"><b>SQL motor</b></div>
+<div class="paragraph">Openoffice Base használatakor három különböző módban hajthatunk vége lekérdezéseket</div>
+<div class="paragraph">
+<ol>
+<li>Grafikus felület</li>
+<li>Grafikus felület - "SQL közvetlen végrehajtása" bekapcsolva</li>
+<li>Eszközök-&gt;SQL szövegdoboz</li>
+</ol>
+</div>
+
+<div class="paragraph"><b>Dátum konstans megadása lekérdezésben</b></div>
+<div class="paragraph">
+<ol>
+<li>MS: <span class="codetext">#2/18/2010#</span> hónap/nap/év alakban</li>
+<li>OO ("SQL közvetlen végrehajtása" kikapcsolva): <span class="codetext">{D '2010-02-18'}</span></li>
+<li>OO ("SQL közvetlen végrehajtása" bekapcsolva): <span class="codetext">'2010-02-18'</span></li>
+</ol>
+</div>
+
+<div class="paragraph"><b>Mezőnevek és táblanevek megadásának szintaxisa</b></div>
+<div class="paragraph">
+OO ("SQL közvetlen végrehajtása" bekapcsolva): Ilyenkor minden azonosítót idézőjelek közé kell zárni.
+<pre>
+
+	SELECT *
+	FROM "tábla" 
+	WHERE "dátum" &gt; '2009-12-31'
+
+</pre>
+</div>
+
+
+<h3>Jelentések</h3>
+<div class="paragraph">
+
+</div>
+
+
+<h2>Feladatok</h2>
+<div class="paragraph">
+<a href="http://www.berzsenyi.hu/erben/www/B05/ab.html">
+Feladatok a régi oldalon, részben megoldásokkal</a><br/>
+<a href="ab/abfeladatokd067.html?page=print">Adatbázis feladatok</a><br/>
+<a href="ab/erettsegid067.html?page=print">Érettségi feladatok</a>
+</div>
+<h2>Dolgozatok</h2>
+<div class="paragraph">
+<a href="ab/abdolgozatokd067.html?page=print">Adatbáziskezelés dolgozatok</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2011-01-05 19:07:51
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 15:44:02 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

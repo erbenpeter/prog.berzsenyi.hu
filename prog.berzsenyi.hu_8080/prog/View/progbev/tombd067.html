@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/tomb?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:51:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="tomb.html" class="tab_normal">Nézet</a><a href="tombd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../progbevd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../progbevd067.html?page=print">Programozás bevezető</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="tombd067.html?page=print">Tömb</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="tombd067.html?page=print">Tömb</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Tömb adattípus</h1>
+<div class="paragraph">
+Ha azonos típusú adatokból egyszer többet (általában sokat) szeretnénk a memóriában tartani, <i>tömbben</i> tárolhatjuk őket. A tömb tehát azonos típusú adatok sorozata, ahol bármelyik adat gyorsan elérhető, ha tudjuk a sorszámát. A sorszám alapján történő kiválasztást <i>indexelésnek</i> nevezzük.
+</div>
+<div class="paragraph">
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">Megnyit</span><span class="metahun_separator">(</span><span class="metahun_plain">f</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">i&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">am&iacute;g</span><span class="metahun_plain">&#160;nincs&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain">&#160;az&#160;f&#160;f&aacute;jlnak</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;i&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;i&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;Be</span><span class="metahun_separator">(</span><span class="metahun_plain">T</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">])</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">Bez&aacute;r</span><span class="metahun_separator">(</span><span class="metahun_plain">f</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /></div>
+</div>
+
+<h2>"C-típusú" és "Pascal-típusú" indexelés</h2>
+<h3>C</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.cpp_preproc {
+color: purple;
+}
+.cpp_doxygen_comment {
+color: rgb(147,147,147); background-color: rgb(247,247,247);  
+}
+.cpp_doxygen_tag {
+color: rgb(147,147,147); background-color: rgb(247,247,247); font-style: italic; font-weight: bold;
+}
+.cpp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.cpp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.cpp_type {
+color: rgb(128,0,0);
+}
+.cpp_operator {
+color: rgb(0,0,0);
+}
+.cpp_char_literal {
+color: rgb(255,0,255);
+}
+.cpp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.cpp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.cpp_num_literal {
+color: rgb(0,0,255);
+}
+.cpp_comment {
+color: rgb(147,147,147);  
+}
+.cpp_plain {
+color: rgb(0,0,0);
+}
+.cpp_string_literal {
+color: rgb(255,0,0);
+}
+.cpp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --></div>
+</div>
+
+<h3>Pascal</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --></div>
+</div>
+
+
+
+<h2>Tömbműveletek</h2>
+<h3>Indexelés</h3>
+<div class="paragraph">
+
+</div>
+
+<h3>Hossz megállapítása</h3>
+<div class="paragraph">
+
+</div>
+
+
+<h2>Példa program pascal nyelven</h2>
+<div class="paragraph">
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="pascal_keyword">program</span><span class="pascal_plain">&#160;tomb</span><span class="pascal_separator">;</span><span class="pascal_plain">&#160;</span><br /><span class="pascal_keyword">var</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;t&#160;</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">array</span><span class="pascal_separator">[</span><span class="pascal_num_literal">1</span><span class="pascal_separator">..</span><span class="pascal_num_literal">10</span><span class="pascal_separator">]</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">of</span><span class="pascal_plain">&#160;</span><span class="pascal_type">string</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;i&#160;</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_type">byte</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">for</span><span class="pascal_plain">&#160;i&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">to</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">10</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">do</span><span class="pascal_plain">&#160;readln</span><span class="pascal_separator">(</span><span class="pascal_plain">t</span><span class="pascal_separator">[</span><span class="pascal_plain">i</span><span class="pascal_separator">]);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">for</span><span class="pascal_plain">&#160;i&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">to</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">10</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">do</span><span class="pascal_plain">&#160;writeln</span><span class="pascal_separator">(</span><span class="pascal_plain">t</span><span class="pascal_separator">[</span><span class="pascal_num_literal">11</span><span class="pascal_operator">-</span><span class="pascal_plain">i</span><span class="pascal_separator">]);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;readln</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">end</span><span class="pascal_separator">.</span><span class="pascal_plain"></span><br /></div>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-20 08:03:37
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/tomb?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:51:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,411 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/30ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:08:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="30ora.html" class="tab_normal">Nézet</a><a href="30orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0809d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0809d067.html?page=print">2008/2009</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="30orad067.html?page=print">30. óra - Kifejezés kiértékelés</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="30orad067.html?page=print">30. óra - Kifejezés kiértékelés</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>29. óra - Kifejezés kiértékelés</h1>
+<div style="text-align: center;">Kriván Bálint</div>
+<div style="text-align: center;">Utólag belepiszkált: Erben Péter</div>
+
+<h2>Bevezetés</h2>
+<ol>
+ <li><i>Mit akarunk?</i><br/>
+  Kifejezéseket kiértékelni.</li>
+ <li><i>Mi az a kifejezés?</i> <br/> 
+A kifejezés egy olyan karaktersorozat, ami egy matematikai műveletsort ír le. A kifejezésben szerepelhetnek <b>számkonstansok</b>, <b>műveleti jelek</b>, <b>zárójelek</b>, haladó szinten pedig <b>függvények</b> és <b>változónevek</b> is. A kifejezéseket szeretjük <b>infix</b> alakban felírni. Ez azt jelenti,hogy ha egy művelet kétváltozós, akkor a két <i>operandus</i> közé írjuk a műveleti jelet. Például:
+<div class="code codetext">1+2</div>
+Az is jó, hogy lehet zárójelezni:
+<div class="code codetext">1+2*(3-4)/(5*(6+7))</div>
+
+</li>
+ <li><i>Mit szeretnénk a kifejezésekkel kezdeni?</i><br/> 
+Olyan programot írunk, ami helyesen értelmezi a kifejezést, és meghatározza az értékét.
+Itt több fontos részlet pontosítandó:
+<ul>
+<li>Mi a teendő, ha a kifejezés hibás, tehát nem felel meg a matematika szabályainak?</li>
+<li>Mi a teendő, ha a kiértékelés során nem megengedett műveletet kellene végezni (például osztás nullával)?</li>
+<li>Milyen számhalmazban keressük a végeredményt? Egész? Racionális? Dupla pontos "valós"?</li>
+</ul>
+ </li>
+
+<li><i>Miért jó ez?</i><br/>
+Ha sikerül algoritmikusan kiértékelni kifejezéseket, akkor tudunk olyan programot írni, ami mondjuk egy felhasználó által begépelt függvényt ábrázol. Készíthetünk nagypontosságú számológépet is.
+</li>
+<li><i>Hogy a legjobb?</i><br/>
+A kifejezést úgynevezett <a href="http://hu.wikipedia.org/wiki/Ford%C3%ADtott_lengyel_jel%C3%B6l%C3%A9s">fordított lengyel formára</a> hozzuk, majd ezt már egyszerű kiértékelni. A fordított lengyel forma elkészítésekor kiderülnek a formai (szintaktikai) hibák, és megszabadulunk a zárójelektől.</li>
+</ol>
+
+<h2>Tokenizálás</h2>
+<div class="paragraph">
+A kifejezések kiértékelésekor már nem karakterekkel, hanem <b>tokenekkel</b> szeretnénk dolgozni. A tokenek meghatározása a <b>tokenizálás</b>, más néven <b>lexikális elemzés</b>. Egy kifejezésben a következő tokenek fordulhatnak elő:
+<ul>
+<li>Szám. Lehet egész vagy tizedestört, esetleg a normálalak is megengedett. </li>
+<li>Zárójel.</li>
+<li>Műveleti jel. Egyváltozós vagy kétváltozós lehet.</li>
+<li>Függvény név.</li>
+<li>Függvény argumentumokat elválasztó vessző.</li>
+</ul>
+</div>
+<div class="paragraph">
+A tokenizálás egy lehetséges megoldása: <a href="30ora/tokend067.html?page=print">token.java</a>.
+</div>
+<h3>A tokenizálás során felmerülő kérdések és problémák</h3>
+<div class="paragraph">
+<ul>
+<li>Megengedünk-e olyan számkonstansokat, amelyek értéke feltehetően meghaladja a gépünk által ábrázolható legnagyobb (például 64-bites) értéket? Tehát hibaüzenetet adunk-e a következő kifejezésre:
+<div class="code codetext">123456789123456789123456789000000000+1</div>
+</li>
+<li>
+Ha függvényeket is akarunk használni, akkor hogyan különböztetjük meg a függvényparamétereket elválasztó vesszőt a tizedes vesszőtől?
+<div class="code codetext">3,14&nbsp;+&nbsp;max(3,14,&nbsp;4)</div>
+Egy programozó persze bátran használ pontot a tizedes vessző helyett, de ez nem csak rajta múlik, bizonyos nyelvek (például C#) beépített "nemzetköziesítéssel" vannak ellátva, és tudják, hogy Magyarországon vessző van pont helyett. Az ilyen nyelveknél a tokenizálás után a pontot vissza kell cserélni vesszőre.
+</li>
+<li>Használunk-e negatív számokat, vagy az "unáris minusz" segítségével valósítjuk meg őket? Halmozhatjuk-e az unáris minuszokat?
+<div class="code codetext">12+-----------23</div>
+</li> 
+<li>Használunk-e normálalakot?
+<div class="code codetext">42*6E23</div>
+</li>
+</ul>
+</div>
+<h2>Infixből Postfix avagy lengyelformára hozás</h2>
+<div class="paragraph">
+Ha lefutott a lexikális elemzés, akkor adott tokenek (elemek) egy sorozata. Ebből fogjuk előállítani a fordított lengyel formát. (A szaknyelv röviden lengyelformának is nevezi ezt.)
+</div>
+<h3>Példa</h3>
+<div class="paragraph">
+<table>
+<tr><td>INFIX</td><td>POSTFIX</td></tr>
+<tr><td><span class="codetext">(8 + 2 * 5)/(1 + 3 * 2 - 4)</span></td>
+<td><span class="codetext">8 2 5 * + 1 3 2 * + 4 - /</span></td></tr>
+</table>
+</div>
+<h3>Algoritmus</h3>
+<div class="paragraph">
+<a href="http://en.wikipedia.org/wiki/Shunting-yard_algorithm">Shunting-yard algoritmus</a> ("rendező pályaudvar")
+</div>
+<h3>Részletek</h3>
+<div class="paragraph">
+Tehát az algoritmus:
+<ul style="margin: 3px 3%">
+<li>Amíg van elem, addig olvasunk:</li>
+<ul style="margin: 3px 3%">
+<li>Beolvasunk egy elemet.</li>
+<li>Ha szám, akkor betesszük a <i>kimeneti sorba</i>.</li>
+<li>Ha egy függvény, akkor betesszük a verembe.</li>
+<li>Ha egy vessző (több argumentumos függvény):</li>
+<ul style="margin: 3px 3%">
+<li>Amíg a verem tetején nem találunk egy nyitó zárójelet, addig betesszük az összes operátort a kimeneti sorba. Ha nem találunk nyitó zárójelet, akkor hibás a kifejezés.</li>
+</ul>
+<li>Ha egy operátor (o<sub>1</sub>), akkor:</li>
+<ul style="margin: 3px 3%">
+<li>Amíg van egy o<sub>2</sub> operátor a verem tetején, és:<br/>
+- o<sub>1</sub> jobbról asszociatív és a precedenciája kisebb, mint o<sub>2</sub>-nek, vagy<br/>
+- o<sub>1</sub> nem asszociatív jobbról és a precedenciája kisebb vagy egyenlő o<sub>2</sub>-val, akkor:<br/>
+o<sub>2</sub>-et kivesszük a veremből és betesszük a kimeneti sorba;
+</li>
+<li>o<sub>1</sub>-et betesszük a verembe</li>
+</ul>
+<li>Ha egy nyitó zárójel, akkor betesszük a verembe.</li>
+<li>Ha egy záró zárójel:</li>
+<ul style="margin: 3px 3%">
+<li>Amíg az elem nem nyitó zárojel, betesszük a veremből a sorba.</li>
+<li>Kivesszük a nyitót a veremből</li>
+<li>Ha a következő elem függvény, akkor betesszük a sorba</li>
+<li>Ha nem találtunk nyitó zárójelet, akkor az kínos -&gt; hibás kifejezés</li>
+</ul>
+</ul>
+<li>Ha már nincs elem a bemenetből:</li>
+<ul style="margin: 3px 3%">
+<li>Amíg van még operátor a veremben:</li>
+<ul style="margin: 3px 3%">
+<li>Ha az operátor egy zárójel, akkor hibás a kifejezés</li>
+<li>Kivesszük a veremből és betesszük a kimeneti sorba.</li>
+</ul>
+</ul>
+<li>Vége.</li>
+</ul>
+</div>
+<div class="paragraph">
+Precedenciához: Jelen esetben én nagyobb számmal jelölöm a fontosabbat, ez lehet, hogy máshol nem így van. (prioritásnál általában kisebb a fontosabb, ezt mindenki maga döntse el, hogy neki hogy szimpatikusabb)
+</div>
+<h2>Postfix kiértékelése</h2>
+<ol>
+ <li>Az első részével megvagyunk, most ezt szeretnénk használni</li>
+ <li>Praktikusan legyünk képesek egy csak konstansokból álló kifejezést kiértékelni, tehát: <span class="codetext">(8 + 2 * 5)/(1 + 3 * 2 - 4)</span> bemenetre mondjuk azt, hogy: <span class="codetext">6</span></li>
+ <li>Tehát itt jön a kiértékelés algoritmusa, itt kitérünk az operátorok (1 és 2 argumentumú - unáris, bináris) szerepére, függvények stb.</li>
+</ol>
+<div class="paragraph">
+Ha ez hamar kész van, akkor lehet játszadozni, számológépet írni, függvény-ábrázolót kreálni (persze mint házi feladat). Akár az operandusoknál bevezetni nem csak konstanst, hanem ismeretleneket is (szimbolikus kiértékelés). De ezt nem tervezem órán, csak felvetjük, hogy van erre lehetőség, ha megfelelően generikusan oldjuk meg a problémákat. (Például már a legelejétől nem feltételezzük, hogy konkrét számokkal számolunk)
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Kriván Bálint;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Kriván Bálint)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/30ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:08:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

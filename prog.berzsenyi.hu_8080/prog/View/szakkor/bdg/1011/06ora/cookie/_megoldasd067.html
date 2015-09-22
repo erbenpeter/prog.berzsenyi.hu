@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/1011/06ora/cookie/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:28:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="_megoldas.html" class="tab_normal">Nézet</a><a href="_megoldasd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../cookied067.html?page=print">
+                    <img src="../../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../1011d067.html?page=print">2010/2011</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../06orad067.html?page=print">6. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../cookied067.html?page=print">Csokoládés keksz</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="_megoldasd067.html?page=print">Megoldás</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+                
+                <a href="../cookied067.html?page=print">Csokoládés keksz</a> (<a href="_megoldasd067.html?page=print">Megoldás</a>)
+            
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+            
+                
+                &gt;
+                <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+            
+                
+                &gt;
+                <a href="../../../1011d067.html?page=print">2010/2011</a>
+            
+                
+                &gt;
+                <a href="../../06orad067.html?page=print">6. óra</a>
+            
+            <br />
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h2>Algoritmusok</h2>
+<div class="paragraph">
+Feladatunk lecsupaszítva a következő: adott pontok véges halmaza a síkon. Keressük, hogy legfeljebb hány fedhető közülük egy adott sugarú körrel.
+</div>
+<h3>Első észrevétel</h3>
+<div class="paragraph">
+Ha a pontok túl messze vannak egymástól (messzebb, mint a kör átmérője), akkor legfeljebb
+egy pont fedhető.
+</div>
+<h3>Második észrevétel</h3>
+<div class="paragraph">
+Ha vannak pontok az átmérőnél közelebb, akkor van olyan optimális (maximális számú pontot fedő) kör, ami legalább két adott pontot határán tartalmaz.
+</div>
+<h3>Harmadik észrevétel</h3>
+<div class="paragraph">
+Az előző megjegyzés alapján a következő polinomiális algoritmus adódik: az elég közel lévő pontpárok mindegyikére illesztünk két-két adott sugarú kört (az egyenes mindkét oldalára lehet), és megnézzük, hány pontot fed a kör. Pontpárok: <span class="mathspan">$n^2$</span>, ellenőrzés: <span class="mathspan">$n$</span>, vagyis egy <span class="mathspan">$n^3$</span>-ös algoritmushoz jutottunk.
+</div>
+<h3>Matematikus módszer a körök ellenőrzésére</h3>
+<div class="paragraph">
+Egy adott húr és a sugár lehetővé teszi a kör egyenletének kiszámítását. Az egyenlet ismeretében eldönthető minden pontról, fedi-e a kör.
+</div>
+<h3>Informatikus módszer a körök ellenőrzésére</h3>
+<div class="paragraph">
+Ha el akarjuk kerülni a lebegőpontos aritmetikát, dolgozhatunk a kerületi szögek tétele alapján. Elég a szögek koszinuszát összehasonlítani, ami az egész koordinátákból egy racionális kifejezéssel pontosan megadható.
+</div>
+<div class="paragraph">
+Ha <span class="mathspan">$P$</span> az <span class="mathspan">$AB$</span> ugyanazon oldalán van, mint <span class="mathspan">$C$</span>, akkor pontosan abban az esetben esik az <span class="mathspan">$ABC$</span> köréírt körébe, ha 
+<span class="mathspan">$APB\angle \ge ACB \angle$</span>.
+</div>
+<h2>Kódok</h2>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-10-25 17:58:05
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/1011/06ora/cookie/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:28:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

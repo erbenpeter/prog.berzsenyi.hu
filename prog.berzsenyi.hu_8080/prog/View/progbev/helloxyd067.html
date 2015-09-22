@@ -1,0 +1,479 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/helloxy?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:49:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="helloxy.html" class="tab_normal">Nézet</a><a href="helloxyd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../progbevd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../progbevd067.html?page=print">Programozás bevezető</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="helloxyd067.html?page=print">Helló XY</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="helloxyd067.html?page=print">Helló XY</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Helló XY</h1>
+<h2>Változók</h2>
+<div class="paragraph">
+Egy program működése közben különböző adatokat tárol a memóriában, ezekkel műveleteket végez. Az adatok tárolására a programozási nyelvek bevezették a <b>változó</b> (<i>variable</i>) fogalmát. A változó egy névvel megjelölt memória-rész. Általában a következők jellemzők egy változóra:
+<ul>
+<li>a változó neve, ezzel hivatkozunk rá a programban</li>
+<li>a változó <b>típusa</b> (<i>type</i>) (típusos nyelvekben); ez dönti el, hogy milyen értékek tárolhatók a változóban, és milyen műveletek végezhetők vele</li>
+<li>a változó <b>hatásköre</b>; ami azt adja meg, hogy egy összetett program mely részein hivatkozhatunk a változóra</li>
+<li>a változó <b>élettartama</b>; ez határozza meg, hogy a program futása során mettől meddig létezik a változó</li> 
+</ul>
+</div>
+<h2>Változók deklarációja</h2>
+<div class="paragraph">
+Bizonyos programozási nyelvekben használat előtt <b>deklarálnunk</b> kell a változókat, más nyelvekben erre nincs szükség. A deklarációnál megadjuk a változó nevét és típusát.
+</div>
+<h2>Konzol bemenet és kimenet</h2>
+<div class="paragraph">
+Minden programhoz tartozik egy <b>szabványos bemenet</b> (<i>standard input</i>), és egy <b>szabványos kimenet</b> (<i>standard output</i>). Legtöbbször ez a bemenet és kimenet a "konzol", ami azt jelenti, hogy egy (szöveges) képernyőn begépelhetünk adatokat, és a program üzenetei is ezen a képernyőn jelennek meg.
+</div>
+<div class="paragraph">
+Az operációs rendszerek általában megengedik a szabványos bemenet és kimenet <b>átirányítását</b> (<i>redirection</i>), ami azt jelenti, hogy a bemenet egy állományból olvasható és egy másik állományba írható a kimenet.
+</div>
+<div class="paragraph">
+A bemenet és kimenet kezelése a programozás nyelvek egyik legbonyolultabb része, itt térnek el leginkább egymástól a különböző nyelvek. Később foglalkozunk részletesebben a kérdéssel, most csak egy rövid példát adunk. 
+</div>
+<h2>Példa</h2>
+<div class="paragraph">
+Egy karakterlánc típusú változóba beolvassuk a felhasználó nevét, majd köszönünk neki.
+</div>
+<h3>Pascal</h3>
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="pascal_keyword">program</span><span class="pascal_plain">&#160;helloxy</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">var</span><span class="pascal_plain">&#160;nev&#160;</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_type">string</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;write</span><span class="pascal_separator">(</span><span class="pascal_string_literal">'Mi&#160;a&#160;neved?'</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;readln</span><span class="pascal_separator">(</span><span class="pascal_plain">nev</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;writeln</span><span class="pascal_separator">(</span><span class="pascal_string_literal">'Hello&#160;'</span><span class="pascal_separator">,</span><span class="pascal_plain">nev</span><span class="pascal_separator">,</span><span class="pascal_string_literal">'!'</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">end</span><span class="pascal_separator">.</span><span class="pascal_plain"></span><br /></div>
+<h3>Java</h3>
+<div class="paragraph">
+Az újabb nyelveknél a bemenet kezelése elválaszthatatlan az objektumoktól és a kivételkezeléstől, ezért a java példa jóval bonyolultabb, mint a pascal nyelven írt. 
+</div>
+<div class="code codetext"><style>.java_annotation {
+color: #0050d7;  font-weight: bold;
+}
+.java_javadoc_comment {
+color: rgb(147,147,147); font-style: italic;
+}
+.java_javadoc_tag {
+color: rgb(147,147,147); font-style: italic; font-weight: bold;
+}
+.java_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.java_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.java_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.java_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.java_type {
+color: rgb(128,0,0);
+}
+.java_operator {
+color: rgb(0,0,0);
+}
+.java_char_literal {
+color: rgb(255,0,255);
+}
+.java_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.java_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.java_num_literal {
+color: rgb(0,0,255);
+}
+.java_comment {
+color: rgb(147,147,147);  
+}
+.java_plain {
+color: rgb(0,0,0);
+}
+.java_string_literal {
+color: rgb(255,0,0);
+}
+.java_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="java_keyword">import</span><span class="java_plain">&#160;java</span><span class="java_separator">.</span><span class="java_plain">io</span><span class="java_separator">.</span><span class="java_operator">*</span><span class="java_separator">;</span><span class="java_plain"></span><br /><span class="java_plain"></span><br /><span class="java_keyword">class</span><span class="java_plain">&#160;helloxy</span><br /><span class="java_separator">{</span><span class="java_plain">&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_keyword">public</span><span class="java_plain">&#160;</span><span class="java_keyword">static</span><span class="java_plain">&#160;</span><span class="java_type">void</span><span class="java_plain">&#160;main</span><span class="java_separator">(</span><span class="java_user_type">String</span><span class="java_plain">&#160;args</span><span class="java_separator">[])</span><span class="java_plain">&#160;</span><span class="java_keyword">throws</span><span class="java_plain">&#160;</span><span class="java_user_type">IOException</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_separator">{</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="java_user_type">String</span><span class="java_plain">&#160;nev</span><span class="java_separator">;</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="java_user_type">BufferedReader</span><span class="java_plain">&#160;br&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;</span><span class="java_keyword">new</span><span class="java_plain">&#160;</span><span class="java_user_type">BufferedReader</span><span class="java_separator">(</span><span class="java_keyword">new</span><span class="java_plain">&#160;</span><span class="java_user_type">InputStreamReader</span><span class="java_separator">(</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">in</span><span class="java_separator">));</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">out</span><span class="java_separator">.</span><span class="java_plain">print</span><span class="java_separator">(</span><span class="java_string_literal">&quot;Mi&#160;a&#160;neved?&#160;&quot;</span><span class="java_separator">);</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nev&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;br</span><span class="java_separator">.</span><span class="java_plain">readLine</span><span class="java_separator">();</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">out</span><span class="java_separator">.</span><span class="java_plain">println</span><span class="java_separator">(</span><span class="java_string_literal">&quot;Hello&#160;&quot;</span><span class="java_operator">+</span><span class="java_plain">nev</span><span class="java_operator">+</span><span class="java_string_literal">&quot;!&quot;</span><span class="java_separator">);</span><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_separator">}</span><span class="java_plain"></span><br /><span class="java_separator">}</span><span class="java_plain"></span><br /></div>
+<div class="paragraph">
+A Java 1.5 óta megjelent a Scanner osztály, ami picit kényelmesebbé teszi a konzol bemenet feldolgozását.
+</div>
+<div class="code codetext"><style>.java_annotation {
+color: #0050d7;  font-weight: bold;
+}
+.java_javadoc_comment {
+color: rgb(147,147,147); font-style: italic;
+}
+.java_javadoc_tag {
+color: rgb(147,147,147); font-style: italic; font-weight: bold;
+}
+.java_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.java_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.java_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.java_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.java_type {
+color: rgb(128,0,0);
+}
+.java_operator {
+color: rgb(0,0,0);
+}
+.java_char_literal {
+color: rgb(255,0,255);
+}
+.java_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.java_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.java_num_literal {
+color: rgb(0,0,255);
+}
+.java_comment {
+color: rgb(147,147,147);  
+}
+.java_plain {
+color: rgb(0,0,0);
+}
+.java_string_literal {
+color: rgb(255,0,0);
+}
+.java_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="java_keyword">import</span><span class="java_plain">&#160;java</span><span class="java_separator">.</span><span class="java_plain">util</span><span class="java_separator">.</span><span class="java_user_type">Scanner</span><span class="java_separator">;</span><span class="java_plain"></span><br /><span class="java_plain"></span><br /><span class="java_keyword">class</span><span class="java_plain">&#160;helloxy</span><br /><span class="java_separator">{</span><span class="java_plain">&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_keyword">public</span><span class="java_plain">&#160;</span><span class="java_keyword">static</span><span class="java_plain">&#160;</span><span class="java_type">void</span><span class="java_plain">&#160;main</span><span class="java_separator">(</span><span class="java_user_type">String</span><span class="java_plain">&#160;args</span><span class="java_separator">[])</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_separator">{</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="java_user_type">String</span><span class="java_plain">&#160;nev</span><span class="java_separator">;</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="java_user_type">Scanner</span><span class="java_plain">&#160;be&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;</span><span class="java_keyword">new</span><span class="java_plain">&#160;</span><span class="java_user_type">Scanner</span><span class="java_separator">(</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">in</span><span class="java_separator">);</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">out</span><span class="java_separator">.</span><span class="java_plain">print</span><span class="java_separator">(</span><span class="java_string_literal">&quot;Mi&#160;a&#160;neved?&#160;&quot;</span><span class="java_separator">);</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nev&#160;</span><span class="java_operator">=</span><span class="java_plain">&#160;be</span><span class="java_separator">.</span><span class="java_plain">nextLine</span><span class="java_separator">();</span><span class="java_plain"></span><br /><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="java_user_type">System</span><span class="java_separator">.</span><span class="java_plain">out</span><span class="java_separator">.</span><span class="java_plain">println</span><span class="java_separator">(</span><span class="java_string_literal">&quot;Hello&#160;&quot;</span><span class="java_operator">+</span><span class="java_plain">nev</span><span class="java_operator">+</span><span class="java_string_literal">&quot;!&quot;</span><span class="java_separator">);</span><span class="java_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><br /><span class="java_plain">&#160;&#160;&#160;&#160;</span><span class="java_separator">}</span><span class="java_plain"></span><br /><span class="java_separator">}</span><span class="java_plain"></span><br /></div>
+
+<h3>C#</h3>
+
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_keyword">using</span><span class="csharp_plain">&#160;System</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain"></span><br /><span class="csharp_keyword">class</span><span class="csharp_plain">&#160;helloxy</span><br /><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">public</span><span class="csharp_plain">&#160;</span><span class="csharp_keyword">static</span><span class="csharp_plain">&#160;</span><span class="csharp_type">void</span><span class="csharp_plain">&#160;Main</span><span class="csharp_separator">()</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_type">string</span><span class="csharp_plain">&#160;nev</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Console</span><span class="csharp_separator">.</span><span class="csharp_plain">Write</span><span class="csharp_separator">(</span><span class="csharp_string_literal">&quot;Mi&#160;a&#160;neved?&#160;&quot;</span><span class="csharp_separator">);</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nev&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;Console</span><span class="csharp_separator">.</span><span class="csharp_plain">ReadLine</span><span class="csharp_separator">();</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Console</span><span class="csharp_separator">.</span><span class="csharp_plain">WriteLine</span><span class="csharp_separator">(</span><span class="csharp_string_literal">&quot;Hello&#160;&quot;</span><span class="csharp_plain">&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;nev&#160;</span><span class="csharp_operator">+</span><span class="csharp_plain">&#160;</span><span class="csharp_string_literal">&quot;!&quot;</span><span class="csharp_separator">);</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /></div>
+
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2011-05-12 09:55:31
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/helloxy?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:49:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

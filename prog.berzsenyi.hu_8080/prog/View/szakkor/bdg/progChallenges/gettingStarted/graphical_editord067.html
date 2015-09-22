@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/graphical_editor?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:54:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="graphical_editor.html" class="tab_normal">Nézet</a><a href="graphical_editord067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../gettingStartedd067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../progChallengesd067.html?page=print">Programozási kihívások</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../gettingStartedd067.html?page=print">Bemelegítés</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="graphical_editord067.html?page=print">Grafikus szerkesztő</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="graphical_editord067.html?page=print">Grafikus szerkesztő</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Grafikus szerkesztő</h1>
+<div class="paragraph">
+Grafikus képszerkesztő programok, mint pl. a Photoshop lehetővé teszi, hogy a képeket pixelenként módosítsuk. A képeket egy <span class="mathspan">$M\times N$</span> pixeltömb reprezentálja, és mindegyiknek van egy adott színe.
+</div>
+<h2>Feladat</h2>
+<div class="paragraph">
+Írj programot, amely egy egyszerű képszerkesztő-programot szimulál.
+</div>
+
+<h2>Bemenet</h2>
+<div class="paragraph">
+A bemenet parancsok sorozatát tartalmazza, ahol is mindegyik parancsot egy nagybetű reprezentál a sor első karaktereként. Ha a parancs paraméterezhető, akkor ezek ugyanebben a sorban, szóközökkel elválasztva lesznek felsorolva.</div>
+<div class="paragraph">
+A pixeleket két egésszel reprezentáljuk, az oszlopszám 1 és <span class="mathspan">$M$</span> között, a sorszám 1 és <span class="mathspan">$N$</span> között, ahol <span class="mathspan">$1\leq M, N \leq 250$</span>. Az origó a kép balfelső sarka. A színeket nagy betűvel jelöljük.
+</div>
+<div class="paragraph">
+A következő parancsokat kell kezelnie a programnak:
+</div>
+<table>
+<tr>
+<td><b>Parancs</b></td>
+<td><b>Leírás</b></td>
+</tr>
+<tr>
+<td>
+<pre>
+I M N
+</pre>
+</td>
+<td>
+    Csinál egy új <span class="mathspan">$M\times N$</span> méretű képet az összes pixelét fehérre állítva.
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+C
+</pre>
+</td>
+<td>
+    Összes pixelt fehérre (0) állítja (magyarán törli a táblát)
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+L X Y C
+</pre>
+</td>
+<td>
+	Beszínezi az <span class="mathspan">$(X, Y)$</span> pixelt <span class="mathspan">$C$</span> színre.
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+V X Y1 Y2 C
+</pre>
+</td>
+<td>
+	Rajzol egy függőleges vonalat az <span class="mathspan">$X.$</span> oszlopban a <span class="mathspan">$[Y1,Y2]$</span> sorokban <span class="mathspan">$C$</span> színnel.
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+H X1 X2 Y C
+</pre>
+</td>
+<td>
+	Rajzol egy vízszintes vonalat az <span class="mathspan">$Y.$</span> sorban a <span class="mathspan">$[X1,X2]$</span> oszlopokban <span class="mathspan">$C$</span> színnel.
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+K X1 Y1 X2 Y2 C
+</pre>
+</td>
+<td>
+	Rajzol egy telített téglalapot, aminek <span class="mathspan">$(X1,Y1)$</span> a balfelső, <span class="mathspan">$(X2,Y2)$</span> a jobbalsó sarka, <span class="mathspan">$C$</span> színnel.
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+F X Y C
+</pre>
+</td>
+<td>
+	Beszínezi az <span class="mathspan">$R$</span> területet <span class="mathspan">$C$</span> színnel, ahol <span class="mathspan">$(X,Y)\in R$</span> és minden olyan pixel benne van még<br/> <span class="mathspan">$R$</span>-ben, aki ugyanolyan színű mint <span class="mathspan">$(X,Y)$</span> illetve bármelyik oldala közös az <span class="mathspan">$R$</span>-ben lévő <br/> bármelyik pixellel. (Ezt hívjuk "festékvödörnek", vagy "kitöltőnek")
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+S &lt;fájlneve&gt;
+</pre>
+</td>
+<td>
+	Kiírja a tartalmat egy fájlba.
+</td>
+</tr>
+<tr>
+<td>
+<pre>
+X
+</pre>
+</td>
+<td>
+	Befejezi a munkamenetet.
+</td>
+</tr>
+</table>
+
+<h2>Kimenet</h2>
+<div class="paragraph">
+Mindegyik <span class="codetext">S &lt;fájlnév&gt;</span> parancsra kiírja a kép tartalmát az adott fájlba. A kép sorait a fájl sorai reprezentálják (mindegyik karakter a kép egy pontjának színét jellemzi).
+</div>
+<div class="paragraph">
+Hagyd figyelmen kívül az egész sort, ha nem a következő karakterekkel kezdődik: <span class="codetext">I, C, L, V, H, K, F, S,</span> vagy <span class="codetext">X</span> és lépj tovább a következő parancsra. Bármilyen más hiba esetén a program kimenetet meghatározhatatlan.
+</div>
+
+<h2>Példa</h2>
+<table>
+<tr>
+<td>paint.be</td>
+<td><i>kimenetek</i></td>
+</tr>
+<tr>
+<td>
+<pre>
+I 5 6
+L 2 3 A
+S one.bmp
+G 2 3 J
+F 3 3 J
+V 2 3 4 W
+H 3 4 2 Z
+S two.bmp
+X
+</pre>
+</td>
+<td>
+&lt;one.bmp&gt;
+<pre>
+OOOOO
+OOOOO
+OAOOO
+OOOOO
+OOOOO
+OOOOO
+</pre>
+<br/>
+&lt;two.bmp&gt;
+<pre>
+JJJJJ
+JJZZJ
+JWJJJ
+JWJJJ
+JJJJJ
+JJJJJ
+</pre>
+</td>
+</tr>
+</table>
+
+<h2>Tesztadatok</h2>
+<div class="paragraph">
+<i>Coming soon...</i>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Kriván Bálint;
+        utolsó módosítás:
+        2009-11-07 23:24:38
+        (Kriván Bálint)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/graphical_editor?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:54:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

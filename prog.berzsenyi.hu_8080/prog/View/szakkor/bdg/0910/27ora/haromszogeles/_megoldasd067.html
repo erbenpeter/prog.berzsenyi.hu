@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/27ora/haromszogeles/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:46:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="_megoldas.html" class="tab_normal">Nézet</a><a href="_megoldasd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../haromszogelesd067.html?page=print">
+                    <img src="../../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../0910d067.html?page=print">2009/2010</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../27orad067.html?page=print">27. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../haromszogelesd067.html?page=print">Sokszög háromszögelése</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="_megoldasd067.html?page=print">Megoldás</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+                
+                <a href="../haromszogelesd067.html?page=print">Sokszög háromszögelése</a> (<a href="_megoldasd067.html?page=print">Megoldás</a>)
+            
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+            
+                
+                &gt;
+                <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+            
+                
+                &gt;
+                <a href="../../../0910d067.html?page=print">2009/2010</a>
+            
+                
+                &gt;
+                <a href="../../27orad067.html?page=print">27. óra</a>
+            
+            <br />
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h2>Algoritmus</h2>
+<div class="paragraph">
+Az alapötlet a következő: kiválasztunk egy belső átlót, ezzel kettévágjuk a sokszöget, az átlót hozzáadjuk a háromszögeléshez, a két részre pedig rekurzív megoldjuk a problémát.
+Ismer tétel, hogy mindig választható belső átló.
+</div>
+<h3>Belső átló kiválasztása</h3>
+<div class="paragraph">
+<ol>
+<li>Vesszük a legbaloldalibb legalsó pontot, legyen ez <span class="mathspan">$v$</span>.
+(<span class="mathspan">$O(n)$</span> lépés)</li>
+<li>A <span class="mathspan">$v$</span> szomszédai <span class="mathspan">$u$</span> és <span class="mathspan">$w$</span>. (Megfelelő adatszerkezettel ez konstans lépés, ügyetlenebb módszerrel <span class="mathspan">$O(n)$</span>.)</li>
+<li> Teszteljük az <span class="mathspan">$uvw$</span> háromszöget (<span class="mathspan">$O(n)$</span> lépés): ha nincs benne és határán pont, akkor <span class="mathspan">$uw$</span> jó átló. Ha van belső pont, akkor a belső pontok közül az <span class="mathspan">$uw$</span>-től legtávolabbival (<span class="mathspan">$v'$</span>) jó átló lesz <span class="mathspan">$vv'$</span>.</li>
+</ol>
+</div>
+<div class="paragraph">
+<div style="text-align: center;"><img src="../../../../../../Download5060.png?node=5022" alt="" class=""/></div>
+</div>
+<h3>Kettévágás</h3>
+<div class="paragraph">
+Ha az eredeti csúcsok ciklikus sorrendben <span class="mathspan">$1,2,3,...,n$</span>, a megtalált átló pedig <span class="mathspan">$uw$</span>, ahol <span class="mathspan">$u<w$</span>, akkor a két új rész:<br/>
+<ul>
+<li><span class="mathspan">$u,u+1,u+2,...,w$</span></li>
+<li><span class="mathspan">$w,w+1,...,n,1,2,...,u-1$</span></li>
+</ul>
+</div>
+<div class="paragraph">
+A csúcsok eredeti sorrendjét megtartva a részek csúcsainak is helyes lesz a ciklikus rendezése.
+</div>
+<h2>Kódok</h2>
+<div class="paragraph">
+Palincza Richárd (pascal, grafikával): <a href="_megoldas/pr_haromszogd067.html?page=print">pr_haromszog.pas</a>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-05-19 10:08:31
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/27ora/haromszogeles/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:46:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

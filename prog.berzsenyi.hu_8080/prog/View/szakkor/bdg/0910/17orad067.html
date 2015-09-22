@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/17ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:21:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="17ora.html" class="tab_normal">Nézet</a><a href="17orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0910d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0910d067.html?page=print">2009/2010</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="17orad067.html?page=print">17. óra</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="17orad067.html?page=print">17. óra</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>17. óra</h1>
+<h2>Elmélet</h2>
+<div style="text-align: center;">Forrás: Cormen-Rivest-Leiserson-Stein: Új algoritmusok</div>
+<div class="paragraph">
+Problémák egy általános csoportjáról egységesen bizonyítható, hogy mohó algoritmussal optimális megoldás adható rájuk. Ezt az általános probléma osztályt az úgynevezett <b>matroid</b> struktúrával szokás modellezni. (Az elnevezés a mátrixok elméletéből származik.) 
+</div>
+<h3>A matroid fogalma</h3>
+<div class="paragraph">
+Adott <span class="mathspan">$S$</span> véges halmazra az <span class="mathspan">$\mathcal{M}=(S,I)$</span> rendezett pár matroid, ha <span class="mathspan">$I$</span> (az úgynevezett <b>független</b> halmazok halmaza) az <span class="mathspan">$S$</span> részhalmazainak olyan halmaza, amelyre teljesül a következő három tulajdonság:
+<ol>
+<li><span class="mathspan">$I$</span> nem üres</li>
+<li><b>öröklődés:</b> Ha <span class="mathspan">$A\in I$</span> és <span class="mathspan">$B\subset A$</span>, akkor <span class="mathspan">$B\in I$</span>. Szavakkal: ha adott elemek egy független halmaza, akkor ezekből elhagyva néhány elemet, továbbra is független halmazt kapunk.</li>
+<li><b>bővíthetőség:</b> Ha <span class="mathspan">$A\in I$</span> és <span class="mathspan">$B\in I$</span>, továbbá
+<span class="mathspan">$|A|\lt |B|$</span>, akkor <span class="mathspan">$\exists x \in B \ A: A\cup\{x\}\in I$</span>. Szavakkal: ha két független halmaz számossága eltérő, akkor a nagyobból (a több elemet tartalmazóból) ki tudunk választani egy, a kisebb halmazban nem szereplő elemet úgy, hogy azt a kisebbe téve az így „bővített kisebb” halmaz is független.
+</li>
+</ol>
+</div>
+<div class="paragraph">
+Az axiómák következménye, hogy a matroid nem bővíthető független halmazainak elemszáma azonos. (Ellenkező esetben a kisebb bővíthető lenne 3. miatt úgy, hogy továbbra is független marad.)
+</div>
+<h3>Példák  matroidra</h3>
+<div class="paragraph">
+<ol>
+<li><span class="mathspan">$S$</span> = egy mátrix oszlopai, <span class="mathspan">$I$</span> = lineárisan független oszlopokból álló halmazok</li>
+<li><span class="mathspan">$S$</span> = egy gráf élei, <span class="mathspan">$I$</span> = élek körmentes halmazai</li>
+</ol>
+</div>
+<h3>Mohó algoritmus súlyozott matroidra</h3>
+<div class="paragraph">
+Ha az alaphalmaz elemeihez pozitív súlyokat rendelünk, akkor tipikus optimalizálási feladat a következő: határozzuk meg a maximális összsúlyú független halmazt. Bizonyítható, hogy matroid esetén a következő (mohó) algoritmus helyes megoldást ad:
+</div>
+<div class="paragraph">
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">H&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;&uuml;res&#160;halmaz</span><br /><span class="metahun_plain">Az&#160;elemek&#160;rendez&eacute;se&#160;s&uacute;ly&#160;szerint&#160;cs&ouml;kkenően</span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;minden&#160;x&#160;elemre&#160;a&#160;cs&ouml;kkenő&#160;sorrend&#160;szerint</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;H&#160;uni&oacute;&#160;x&#160;f&uuml;ggetlen&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;H&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;H&#160;uni&oacute;&#160;x</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_plain">eredm&eacute;ny&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;H</span><br /></div>
+</div>
+<h3>Az algoritmus helyessége</h3>
+<div class="paragraph">
+
+</div>
+
+
+
+<h2>Feladat</h2>
+
+<div class="paragraph">
+<a href="17ora/palyazatokd067.html?page=print">Pályázatok</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-02-09 20:20:38
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/17ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:21:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

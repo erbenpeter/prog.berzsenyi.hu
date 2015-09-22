@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/3n_1_problem?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:29:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="3n_1_problem.html" class="tab_normal">Nézet</a><a href="3n_1_problemd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../gettingStartedd067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../progChallengesd067.html?page=print">Programozási kihívások</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../gettingStartedd067.html?page=print">Bemelegítés</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="3n_1_problemd067.html?page=print">3n+1 probléma</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="3n_1_problemd067.html?page=print">3n+1 probléma</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../elmeletd067.html?page=print">Elmélet</a>
+            
+                
+                &gt;
+                <a href="../../../../elmelet/algd067.html?page=print">Algoritmusok</a>
+            
+                
+                &gt;
+                <a href="../../../../elmelet/alg/dpd067.html?page=print">Dinamikus programozás</a>
+            
+            <br />
+        
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>3n+1 probléma</h1>
+<div class="paragraph">
+Tekintsük a következő algoritmust, mely egy adott <span class="mathspan">$n$</span> számra a következő sorozatot adja:
+</div>
+<div class="paragraph">
+<span class="mathspan">$a_1=n$</span><br/>
+<span class="mathspan">$
+a_{i+1} = \left\{\begin{array}{l l}
+\frac{a_{i}}{2} & \textrm{ha } a_i \equiv 0 \textrm{ mod }(2),\\
+3a_{i}+1 & \textrm{ha } a_i \equiv 1 \textrm{ mod }(2).
+\end{array}\right.
+$</span>
+</div>
+<div class="paragraph">
+Ha <span class="mathspan">$a_i=1$</span>, akkor vége a sorozatnak. Például <span class="mathspan">$n=22$</span> esetén a sorozat:
+</div>
+<div class="paragraph">22 11 34 17 52 26 13 40 20 10 5 16 8 4 2 1</div>
+<div class="paragraph">
+A sejtés az, hogy a fenti algoritmus minden egész <span class="mathspan">$n$</span>-re (de legalábbis 1 és 1000000 között) véges sorozatot ad (utolsó eleme 1).
+</div>
+<h2>Feladat</h2>
+<div class="paragraph">
+Készíts programot (3N_1.PAS, 3N_1.C, ...), megy egy adott <span class="mathspan">$n\in[i,j]$</span> számokra meghatározza az algoritmus által generált sorozatok maximális elemszámát.
+</div>
+<h2>Bemenet</h2>
+<div class="paragraph">
+A 3N_1.BE szöveges állomány sorai <span class="mathspan">$i$</span> és <span class="mathspan">$j$</span> számpárokat tartalmaz (<span class="mathspan">$1\le i < j < 1000000$</span>).</div>
+<h2>Kimenet</h2>
+<div class="paragraph">
+A 3N_1.KI szöveges állomány soraiban az <span class="mathspan">$i$</span>, <span class="mathspan">$j$</span> és az <span class="mathspan">$[i,j]$</span> intervallum elemeire generált sorozatok maximális elemszáma (szóközökkel elválasztva).
+</div>
+<h2>Példa</h2>
+<div class="paragraph">
+<table>
+<tr>
+<td>3N_1.BE</td><td>3N_1.KI</td>
+</tr>
+<tr>
+<td>
+1 10<br/>
+100 200<br/>
+201 210<br/>
+900 1000
+</td>
+<td>
+1 10 <b>20</b><br/>
+100 200 <b>125</b><br/>
+201 210 <b>89</b><br/>
+900 1000 <b>174</b>
+</td>
+</tr>
+</table>
+</div>
+<h2>Tesztadatok</h2>
+<div class="paragraph">
+<a href="3n_1_problem/3n_1d067.html?page=print">3n_1.zip</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Kriván Bálint;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Kriván Bálint)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/3n_1_problem?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:29:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

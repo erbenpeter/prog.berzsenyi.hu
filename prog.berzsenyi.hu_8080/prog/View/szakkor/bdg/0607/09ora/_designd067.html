@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0607/09ora/_design?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:07:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="_design.html" class="tab_normal">Nézet</a><a href="_designd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../09orad067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../0607d067.html?page=print">2006/2007</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../09orad067.html?page=print">9. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="_designd067.html?page=print">Programtervezés</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="_designd067.html?page=print">Programtervezés</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../elmeletd067.html?page=print">Elmélet</a>
+            
+                
+                &gt;
+                <a href="../../../../elmelet/tervezesd067.html?page=print">Tervezés</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h2>Bevezetés</h2>
+<div class="paragraph">
+A következő írás a programok tervezésének szükségességéről és egyes fontosabb lépéseiről szól. Természetesen rengeteg különböző tervezési módszer létezik, amelyekről nem fogok szót ejteni, csupán egy adott példán keresztül bemutatom a legegyszerűbb és legfontosabb tervezési paradigmákat, amik a fejlesztést kísérik.
+</div>
+<h3>Miért szükséges a tervezés?</h3>
+<div class="paragraph">
+Mielőtt egy program írásába belekezdenénk, különösen fontos, hogy pontosan megtervezzük előre a programunk alapvető szerkezét. Ha nagyobb szoftvert írunk mindenféle tervezés nélkül, legyen az bármennyire is ésszerűen megvalósítva, az idő előrehaladtával a kódunkra egyre inkább az kuszaság és az instabilitás, a fejlesztésre pedig a lassú és nehézkes haladás lesz jellemző.
+</div><div class="paragraph">
+Alapos tervezés után csak implementálni kell az egyes függvényeket, és így szinte teljes mértékben kizárhatjuk az fejlesztés során fellépő, utólagos módosításokkal járó komoly problémákat. Persze gyakran előfordul, hogy egy programot annak befejezése után kell módosítani (pl. felhasználói kérésre). Ilyenkor nincs mit tenni, sajnos bele kell piszkálnunk a forráskódba.
+</div><div class="paragraph">
+A tervezés során arra is fel kell tehát készülni, hogy a program utólagos fejlesztése során valamennyi apróbb részlet könnyen módosítható legyen. Ezt úgy érhetjük el, hogy a programot önálló modulokra bontjuk szét, és az egyes modulok között laza kapcsolatot tartunk fenn. Egy jól megtervezett szoftver esetén egy módosítás csak nagyon kis, vagy semmilyen hatással nem lesz a program többi részére.
+</div>
+
+<h2>A fejlesztés lépései</h2>
+<h3>Specifikációanalízis</h3>
+<div class="paragraph">
+A legelső dolog, amit egy program fejlesztésekor meg kell tennünk, hogy alaposan átrágjuk magunkat a specifikáción. Ez nem egyenlő azzal, hogy nagyjából megértettük a feladatot. Sok időt lehet azzal tölteni, hogy a specifikáció szövegét átalakítjuk formális leírássá, ezzel mi most nem foglalkozunk.
+</div><div class="paragraph">
+A következő példában a Parcellák nevű feladatot fogjuk lépésről lépésre elemezni, illetve megtervezni az egyes részeit. A specifikáció pontos szövege <a href="../_09ora_parcd067.html?page=print">itt</a> megtalálható.
+A szöveget elemezve a következő alapvető állításokat kaphatjuk meg</div>
+<ul>
+  <li>A földműves parcellákra osztja a termőföldjét.</li>
+  <li>Egyszerre egy parcellát oszt fel 4 (vagy kevesebb) részre.</li>
+  <li>A termőföld és a parcellák téglalap alakúak.</li>
+  <li>A parcellák közé sétányokat helyez el.</li>
+  <li>Minden felosztáshoz egy metszéspont tartozik, amely jellemzi a felosztást.</li>
+</ul>
+<div class="paragraph">
+Lássuk, mik az egyes alanyai és tárgyai a mondatoknak:<br/>
+földműves, parcella, termőföld, sétány, felosztás, metszéspont
+</div><div class="paragraph">
+Ezekből a főnevekből, mint önálló egységekből kell nekünk összeállítani a programunk különböző moduljait (objektum-orientált nyelvekben osztályait). Ha szükséges, további modulokat felvehetünk még ezeken kívül is.
+</div><div class="paragraph">
+Nézzük az első szót: <u>földműves</u>. A földművesünk viszi véghez a földosztás műveleteit. Ő ismeri a termőföldet, illetve az azokon lévő parcellákat. Modulnak abszolút megfelel, felvehetjük.
+</div><div class="paragraph">
+Második szó: <u>parcella</u>. Őróla tudjuk, hogy téglalap alakú, tehát egy koordináta és két oldalhossz jellemzi. Tudnunk kell a területének nagyságát, és tudnunk kell felosztani. Őrá is szükségünk lesz.
+</div><div class="paragraph">
+Harmadik szó: <u>termőföld</u>. Nagyon hasonló tulajdonságokkal bír, mint a parcella. Tulajdonképpen ő a legnagyobb parcella, amit a későbbiekben felosztunk. Nem szükséges tehát megkülönböztetnünk a két fogalmat, így ennek nem kell külön, önálló modul.
+</div><div class="paragraph">
+Negyedik szó: <u>sétány</u>. A feladat megoldása szempontjából nem kell ismernünk a sétányokat, hiszen nem szükségesek ahhoz, hogy egy parcellát felosszunk, vagy megkeressük a legnagyobb méretű parcellát. Így tehát úgy döntünk, nem vesszük fel modulnak. De vigyázat! A program többi részét úgy kell megírni, hogyha időközben mégis szükséges volna kilistázni az egyes sétányokat, akkor utólag ezt könnyen megtehessük.
+</div><div class="paragraph">
+Ötödik szó: <u>felosztás</u>. Valójában ez nem egy önálló objektum, hanem egy művelet. (Igéből képzett főnév.) Így ő is kimaradhat. <i>(Megj.: ha mégis eltárolandó adatként kellene kezelnünk, egy parcella és egy metszéspont jellemezné.)</i>
+</div><div class="paragraph">
+Utolsó szó: <u>metszéspont</u>. Ő egy olyan koordináta, amely a felosztás művelethez tartozik. Máshol nincs rá szükség. De emlékezzünk csak: a parcelláknál is szükség volt koordinátákra. <i>(Megj.: Valójában egy parcellát egy koordináta-párral tudunk jellemezni. Pl. a téglalap bal felső és jobb alsó sarka.)</i> Így tehát elég felvennünk egy koordináta modult, amely jellemzi a termőföld egy adott egységnyi pontját.
+</div><div class="paragraph">
+Megkaptuk tehát a fő modulokat, amelyekre szükségünk lesz. Hogy ezek pontosan milyen adatszerkezeteket és műveleteket fognak tartalmazni, az csak a konkrétabb tervezés során derül ki.
+</div>
+
+<h3>Részletes tervezés</h3>
+<div class="paragraph"><i>
+A következőkben UML osztálydiagramokat használtam a C# nyelv szintaktikája szerint, hogy könnyebben el lehessen képzelni az egyes modulok (osztályok) szerkezeteit. Ha esetleg nem teljesen érthetőek, nyugodtan át lehet ugrani ezeket a részeket.</i>
+</div><div class="paragraph">
+Itt már pontosan végig kell gondolnunk, hogy milyen algoritmusokat, eljárásokat, függvényeket, adatforrásokat (pl. fájl, adatbázis), illetve felhasználói elemeket fogunk használni.
+</div><div class="paragraph">
+Példánk előzetes feladatkidolgozása <a href="../_09ora_parc/_megoldasd067.html?page=print">itt</a> olvasható.
+</div><div class="paragraph">
+<br/><u>Felülről lefelé tervezés</u>
+</div><div class="paragraph">
+A feladat szerint szükségünk lesz fájlból olvasó, illetve fájlba író műveletekre, amik az adatkezelést irányítják. Legyenek ezek a műveletek a programunk fő moduljában, amik a program indításakor, illetve annak végén meghívódnak. A beolvasás alatt a <i>Földműves</i> modul (vagy egy abból példányosított objektum) fogja elvégezni a földosztás műveleteit, rögtön az egyes <i>metszéspontok</i> beolvasását követően.
+</div><div class="paragraph">
+A legfőbb modul ezennel kész is, már csak az egyes almodulok maradtak hátra.
+</div>
+<div style="text-align: center;"><img src="../../../../../Download2359.png?node=1489" alt="" class=""/></div>
+<div class="paragraph">
+<i>Amikor a központi modulból haladunk lefelé egyre részletesebb képet kapva a programunkról, azt <b>felülről lefelé</b> tervezésnek hívják.</i>
+</div><div class="paragraph">
+<br/><u>Alulról felfelé tervezés</u>
+</div><div class="paragraph">
+A fenti eljárás fordítottja: elindulunk egy olyan független modulból, aki senki másra nem támaszkodik, és pontosan meghatározva az ő szerepét részletesen kidolgozzuk. (Itt szóba jöhet akár az implementálás, majd az ezt követő tesztelés lehetősége is, de ezzel lehetőleg ritkán éljünk.)
+</div><div class="paragraph">
+Példánkban a legprimitívebb modul a <u><i>Koordináta</i></u> volt, melyet az egyszerűség kedvéért hívjunk röviden <i>Mező</i>-nek. A mező nem ismeri az őt tartalmazó földet, csupán egy X, Y számpárból, mint koordinátából áll. Ezeket tudunk kell lekérdezni, illetve beállítani. Egyéb művelet nem tartozik a modulhoz.
+</div>
+<div style="text-align: center;"><img src="../../../../../Download40c3.png?node=1494" alt="" class=""/></div>
+<div class="paragraph">
+A következő kirészletezendő modul a <u><i>Parcella</i></u> lesz, mivel ő csak a Mező modult ismeri és használja. Egy parcellát sokféleképpen tárolhatunk. Ha ismerjük a bal felső sarokpontját, valamint oldalainak hosszát, megkaphatjuk azt a téglalapot, ami a parcellát jellemzi. Mivel a parcellák felosztásánál nehézkes lenne az oldalhosszokkal számolni, így a következő megoldás mellett maradunk: a parcellát megtestesítő téglalapot egy koordinátapárral írjuk le. A téglalap bal felső és jobb alsó sarokpontja pontosan meghatározza a parcella helyzetét és méreteit.
+</div><div class="paragraph">
+Egy parcelláról a további jellemzőket érdemes ismerni:
+</div>
+<ul>
+  <li>bal szélének pozíciója</li>
+  <li>jobb szélének pozíciója</li>
+  <li>felső szélének pozíciója</li>
+  <li>alsó szélének pozíciója</li>
+  <li>parcella szélessége</li>
+  <li>parcella hosszúsága</li>
+  <li>parcella területe</li>
+  </ul>
+<div class="paragraph">
+Mivel ezek a parcella adataiból könnyen kiolvashatók, nem kell módosítanunk az adatszerkezeten.
+</div><div class="paragraph">
+Nézzük tovább, milyen műveletekre lesz még szükségünk a parcelláknál. Egyedül a felosztás művelet kapcsolható hozzá, de azt tudjuk, hogy parcellát felosztani <b>nem</b> a parcella, hanem sokkal inkább az őt tartalmazó <u><i>Földműves</i> felelőssége</u>.
+</div><div class="paragraph">
+Jó lenne viszont tudni, hogy egy adott mező benne van-e a parcellában (szükséges a felosztási algoritmusunkhoz). Így az adatlekérdező és -módosító műveleteken kívül feldeszünk egy Tartalmaz(Mezo) függvényt is, amely egy igaz/hamis értékkel tér vissza, ha a mező a parcella része.
+</div>
+<div style="text-align: center;"><img src="../../../../../Downloadb981.png?node=1493" alt="" class=""/></div>
+<div class="paragraph">
+</div><div class="paragraph">
+Nézzük tovább: a következő modulunk a <i>Földműves</i>. Ő felel az algoritmusunk lebonyolításáért. Tudjuk, hogy az ő tulajdonában áll a földterület és annak összes parcellája. Pontosabban egy parcellahalmaz, amik tetszőleges sorrendben tartalmazhatják az egyes parcellákat. És most döbbenünk rá, hogy jól jönne egy külön parcellahalmaz modul, ami a parcellák tárolásáért felelős. A specifikációban nem szerepelt, így csak implementációs szinten derül ki, hogy szükség volna rá. Kivételesen most egy új segédmodult fogunk felvenni.
+</div><div class="paragraph">
+<u><i>Parcellahalmaz</i></u>: egy segédmodul, amely segít rendszerezni a parcellákat. Mivel nem szeretnénk dinamikusan tárolni az adatokat (lehetne, de ez meghaladja feladatunk nehézségi szintjét), így a halmazt jellemezni fogja egy maximális méret, úgynevezett kapacitás. <i>(Megj.: objektum-orientált nyelveknél célszerű a kapacitást az halmaz objektum konstruktorában megadni.)</i>
+</div><div class="paragraph">
+A halmazhoz alapvető adatok tartoznak: egy parcella objektumokból álló tömb és a halmaz mérete. <i>(Megj.: strukturális, azaz nem objektum-orientált nyelvekben is léteznek kezdetleges objektumok. Pascalban a recordot, C-ben pedig a structot használják erre a célra.)</i>
+</div><div class="paragraph">
+A halmazhoz csak a legfontosabb műveleteket rendeljük: elem hozzáadása, törlése, illetve kiolvasása adott index szerint, illetve a halmaz méretének lekérdezése. Más műveletet a halmazunknak nem kell tudnia.
+</div>
+<div style="text-align: center;"><img src="../../../../../Downloadf0f3.png?node=1492" alt="" class=""/></div>
+<div class="paragraph">
+Már csak egy utolsó, a <u><i>Földműves</i></u> modul maradt hátra. Neki ismernie kell a saját telkét (ami a legnagyobb parcella), továbbá annak egyes részparcelláit, vagyis az előbbiek szerinti parcellahalmazt. Ezek szerepelnek majd az ő adatszerkezetében. Mint fentebb már volt róla szó, a <i>Földműves</i> felelőssége a parcellák részparcellákra osztása. Így ez a művelet az ő moduljában fog szerepelni. Pontosabban: a kapott koordináta szerinti parcellát kiválasztja, azt törli a halmazból, majd megfelelő algoritmus szerint több részre osztja, ezeket a halmazhoz adja.
+</div>
+<div style="text-align: center;"><img src="../../../../../Downloadaa2c.png?node=1486" alt="" class=""/></div>
+<div class="paragraph">
+Egyetlen kérdés maradt hátra, mégpedig a legfontosabb. Kihez tartozik annak megválaszolása, hogy melyik a legnagyobb területű parcella? A válasz nem triviális, hiszen ketten is ismerik az összes parcellát: egyrészt a <i>Parcellahalmaz</i> tárolja a parcellákat, másrészt a <i>Földműves</i> ismeri a <i>Parcellahalmaz</i> összes elemét.
+</div><div class="paragraph">
+Logikailag nem illik egy halmaz modul struktúrájába olyan speciális művelet, mint a legnagyobb méretű parcella megkeresése (persze lehetne, de ez már a programozó döntésén múlik). Továbbá a főmodul, amely a fájlkezelésért felelős, csak a <i>Földművest</i> ismerheti, a felosztott parcellákat nem. Így abban maradunk, hogy a földműves felelőssége lesz a feladatban feltett kérdés megválaszolása.
+</div>
+<h3>Ellenőrzés</h3>
+<div class="paragraph">
+Most már készen állunk arra, hogy az előbbiekben felsorolt modulokat összekapcsoljuk egy nagy rendszerré, és még egyszer utoljára (immáron minden szükséges ismerettel) ellenőrizzük annak helyességét.
+</div>
+<div style="text-align: center;"><img src="../../../../../Downloadf9f0.png?node=1496" alt="" class=""/></div>
+
+<h3>Implementálás és tesztelés</h3>
+<div class="paragraph">
+Miután elkészültünk a tervvel, három dolog maradt hátra: a dokumentálás, az implementálás (hétköznapi nevén kódolás) és a program tesztelése. A dokumentálással itt most nem foglalkozunk, az utóbbi kettőt pedig mindenki a legjobb tudása alapján végezze el.
+</div>
+
+<h2>Végszó</h2>
+<div class="paragraph">
+A fentebb leírtak a szerző egyetemi tanulmányai és saját szoftverfejlesztési tapasztalatai alapján készültek. Remélhetőleg ez az írás sokaknak fog tudni segíteni a nagyobb programok elkészítésénél.
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Tihanyi Bal&aacute;zs;
+        utolsó módosítás:
+        2009-11-07 23:32:42
+        (Tihanyi Bal&aacute;zs)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0607/09ora/_design?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:07:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

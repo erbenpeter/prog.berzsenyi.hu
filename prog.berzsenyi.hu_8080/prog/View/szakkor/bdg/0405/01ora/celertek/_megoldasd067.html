@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0405/01ora/celertek/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:46:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="_megoldas.html" class="tab_normal">Nézet</a><a href="_megoldasd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../celertekd067.html?page=print">
+                    <img src="../../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../0405d067.html?page=print">2004/2005</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../01orad067.html?page=print">1. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../celertekd067.html?page=print">Célérték keresés</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="_megoldasd067.html?page=print">Megoldás</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+                
+                <a href="../celertekd067.html?page=print">Célérték keresés</a> (<a href="_megoldasd067.html?page=print">Megoldás</a>)
+            
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+            
+                
+                &gt;
+                <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+            
+                
+                &gt;
+                <a href="../../../0405d067.html?page=print">2004/2005</a>
+            
+                
+                &gt;
+                <a href="../../01orad067.html?page=print">1. óra</a>
+            
+            <br />
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h2>A megoldás algoritmusa</h2>
+
+<div class="paragraph">
+Végigpróbáljuk az első (legbelső) zárójel lehetséges értékeit a négy alapművelet alkalmazásával, így visszavezetjük a problémát négy darab eggyel rövidebb számsorozat célérték keresésére. Pl.:</div>
+<div class="code codetext">A&nbsp;feladat:&nbsp;&nbsp;&nbsp;&nbsp;(((5&nbsp;?&nbsp;6)&nbsp;?&nbsp;7)&nbsp;?&nbsp;8)&nbsp;=&nbsp;2<br />1.)&nbsp;5+6=11&nbsp;=&gt;&nbsp;(((&nbsp;&nbsp;&nbsp;11)&nbsp;?&nbsp;7)&nbsp;?&nbsp;8)&nbsp;=&nbsp;2&nbsp;<br />2.)&nbsp;5-6=-1&nbsp;=&gt;&nbsp;(((&nbsp;&nbsp;&nbsp;-1)&nbsp;?&nbsp;7)&nbsp;?&nbsp;8)&nbsp;=&nbsp;2&nbsp;<br />3.)&nbsp;5*6=30&nbsp;=&gt;&nbsp;(((&nbsp;&nbsp;&nbsp;30)&nbsp;?&nbsp;7)&nbsp;?&nbsp;8)&nbsp;=&nbsp;2<br />4.)&nbsp;5/6=&nbsp;0&nbsp;=&gt;&nbsp;(((&nbsp;&nbsp;&nbsp;&nbsp;0)&nbsp;?&nbsp;7)&nbsp;?&nbsp;8)&nbsp;=&nbsp;2<br />	(megj.:&nbsp;egész&nbsp;osztás)</div>
+
+<div class="paragraph">
+Ha ezt a műveletet még kétszer elvégezzük, akkor a 64 egész számot kapunk, amik közül ki kell választani a 2-höz legközelebbit, és az szám, illetve a hozzá tartozó műveletijel-sorrend lesz a megoldás.
+</div>
+
+<div class="paragraph">
+Tehát a probléma egy olyan függvénnyel oldható meg rekurzívan, ami egy számsorozatot visszavezet négy dabrab eggyel rövidebbre, majd ezekre alkalmazza önmagát. Mindezt egészen addig, amíg minden számsorozat helyett egyetlen szám nem marad eredménynek, és ezek közül az eredmények közül kell kiválasztani a célértékhez legközelebbit.
+</div>
+
+<div class="paragraph">
+A rekurzív függvényt pl. úgy valósíthatjuk meg, hogy paraméterként megkapja, hogy hányadik számjegyig vannak már összeolvasztva a számok, és azt, hogy mi az eredményük. (Ez az eredmény az egyel lerövidített számsorozat első eleme.) Ehhez az eredményhez aztán ő mind a négy művelettel hozzáadja a következő számjegyet, és meghívja önmagát ezen négy újabb eredménnyel, a következő számra. Amikor elfogytak a számok, akkor meg kell nézni, hogy az aktuális eredmény milyen közel van a célértékhez, és ha közelebb van az addigi legközlebbinél, akkor eltároljuk. Ha a függvényünk minden szinten eltárolta a műveleti jeleket, akkor a legjobb értékhez tartozó műveleti jelsorrendet is megkaphatjuk.
+</div>
+
+<div class="paragraph">Nem szabad elfelejtkeznünk arról sem, hogy nullával nem osztunk. Ha nem tesszük fel az inputról, hogy poztitív egészekből áll, az osztások előtt ellenőriznünk kell, nem nulla-e az osztó.</div>
+
+<div class="paragraph">
+A másik hasonló probléma pedig az, hogy ha túl sok nagy szám van a bemeneti számsorozatban, akkor a csupa szorzásjel esetének vizsgálata közben túlcsordulhat (és körbefodrulhat) az a változó, amiben az eredményt tároljuk. Ezért használjunk minél nagyobb egész típusokat, és túlcsordulás ellenőrzést. Pascalban és Delphiben: <span class="codetext">{$Q+}</span>
+</div>
+
+
+<div class="paragraph">Megoldásunk egyszerűen végignézi az összes <span class="mathspan">$4^n$</span> lehetőséget, és egy minimumkiválasztással eldönti, melyik érték van legközelebb a célhoz.</div>
+
+<div class="paragraph">Kicsit javíthat a hatékonyságon, ha megállunk abban az esetben, amikor pontosan "eltaláltuk" a célértéket.</div>
+
+<h2>Megoldások</h2>
+<ul>
+	<li><a href="_megoldas/tb_celd067.html?page=print">tb_cel.vb</a> (Tihanyi Balázs, Visual Basic.NET)</li>
+	<li><a href="_megoldas/tr_celd067.html?page=print">tr_cel.pas</a> (Torma Róbert, Pascal)<br/><i>Ebben van egy apró hiba, keresd meg!</i></li>
+	<li><a href="_megoldas/fg_celd067.html?page=print">fg_cel.pas</a> (Fehér Gábor, Pascal)</li>
+	<li><a href="_megoldas/fa_celd067.html?page=print">fa_cel.dpr</a> (Fejér Attila, Delphi)</li>
+</ul>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Feh&eacute;r G&aacute;bor;
+        utolsó módosítás:
+        2009-11-07 23:17:54
+        (Feh&eacute;r G&aacute;bor)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0405/01ora/celertek/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:46:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

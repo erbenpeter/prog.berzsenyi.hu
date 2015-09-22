@@ -1,0 +1,795 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg_progbev/0809/09ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:47:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="09ora.html" class="tab_normal">Nézet</a><a href="09orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0809d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdg_progbevd067.html?page=print">ProgBev Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0809d067.html?page=print">2008: C#</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="09orad067.html?page=print">9. óra - fájlkezelés 2</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="09orad067.html?page=print">9. óra - fájlkezelés 2</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>9. óra</h1>
+<h2>A múltórai feladvány helyes megoldása:</h2>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_keyword">using</span><span class="csharp_plain">&#160;System</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain"></span><br /><span class="csharp_keyword">namespace</span><span class="csharp_plain">&#160;Elso</span><br /><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">class</span><span class="csharp_plain">&#160;Program</span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">public</span><span class="csharp_plain">&#160;</span><span class="csharp_keyword">static</span><span class="csharp_plain">&#160;</span><span class="csharp_type">void</span><span class="csharp_plain">&#160;Main</span><span class="csharp_separator">(</span><span class="csharp_type">string</span><span class="csharp_separator">[]</span><span class="csharp_plain">&#160;args</span><span class="csharp_separator">)</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_type">int</span><span class="csharp_plain">&#160;i</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">for</span><span class="csharp_plain">&#160;</span><span class="csharp_separator">(</span><span class="csharp_plain">i&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">0</span><span class="csharp_separator">;</span><span class="csharp_plain">&#160;i&#160;</span><span class="csharp_operator">&lt;</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">11</span><span class="csharp_separator">;</span><span class="csharp_plain">&#160;i</span><span class="csharp_operator">++</span><span class="csharp_separator">)</span><span class="csharp_plain">&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Console</span><span class="csharp_separator">.</span><span class="csharp_plain">WriteLine</span><span class="csharp_separator">(</span><span class="csharp_plain">i</span><span class="csharp_separator">);</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+Alternatív (és még mindig helyes) megoldás:
+</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_keyword">using</span><span class="csharp_plain">&#160;System</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain"></span><br /><span class="csharp_keyword">class</span><span class="csharp_plain">&#160;Program</span><br /><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">public</span><span class="csharp_plain">&#160;</span><span class="csharp_keyword">static</span><span class="csharp_plain">&#160;</span><span class="csharp_type">void</span><span class="csharp_plain">&#160;Main</span><span class="csharp_separator">()</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_type">int</span><span class="csharp_plain">&#160;i</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_keyword">for</span><span class="csharp_plain">&#160;</span><span class="csharp_separator">(</span><span class="csharp_plain">i&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">0</span><span class="csharp_separator">;</span><span class="csharp_plain">&#160;i&#160;</span><span class="csharp_operator">&lt;</span><span class="csharp_plain">&#160;</span><span class="csharp_num_literal">11</span><span class="csharp_separator">;</span><span class="csharp_plain">&#160;i</span><span class="csharp_operator">++</span><span class="csharp_separator">)</span><span class="csharp_plain">&#160;</span><span class="csharp_separator">{</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Console</span><span class="csharp_separator">.</span><span class="csharp_plain">WriteLine</span><span class="csharp_separator">(</span><span class="csharp_plain">i</span><span class="csharp_separator">);</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /><span class="csharp_plain">&#160;&#160;&#160;&#160;</span><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /><span class="csharp_separator">}</span><span class="csharp_plain"></span><br /></div>
+<h2>Emlékeztető</h2>
+<h3>Megnyitás</h3>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_plain">StreamReader&#160;sr&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><span class="csharp_keyword">new</span><span class="csharp_plain">&#160;StreamReader</span><span class="csharp_separator">(</span><span class="csharp_string_literal">&quot;c:\\gabor\\pelda.txt&quot;</span><span class="csharp_separator">);</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+A <span class="codetext">c:\gabor\pelada.txt</span> elérési út alatt található fájlt mostantól az <span class="codetext">sr</span>-en keresztül lehet olvasni. (Írni nem.)
+</div>
+<h3>Így deklarálunk egy stringet:</h3>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_type">string</span><span class="csharp_plain">&#160;s</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+Mostantól <span class="codetext">s</span>-ben szöveget tudunk tárolni.
+</div>
+<h3>Beolvasás</h3>
+<div class="paragraph">A fájl következő sorát így lehet berakni egy stringbe:</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_plain">s&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;sr</span><span class="csharp_separator">.</span><span class="csharp_plain">ReadLine</span><span class="csharp_separator">();</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+Tehát a fent-említett <span class="codetext">sr</span> olvasón keresztül beolvassuk a következő sort az <span class="codetext">s</span> nevű stringbe.
+</div>
+<h3>Végül:</h3>
+<div class="paragraph">Ha készen vagyunk, ne felejtsük el a fájlt bezárni</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_plain">sr</span><span class="csharp_separator">.</span><span class="csharp_plain">Close</span><span class="csharp_separator">();</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+Ja és ez kell program elejére, hogy tudjunk egyáltalán fájl-műveleteket használni.
+</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_keyword">using</span><span class="csharp_plain">&#160;System</span><span class="csharp_separator">.</span><span class="csharp_plain">IO</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /></div>
+<h2>Fájlok</h2>
+<h3>1. kép</h3>
+<div class="paragraph">
+<a href="09ora/kep1_originald067.html?page=print">kep1_original.txt</a><br/>
+<a href="09ora/kep1_rasterd067.html?page=print">kep1_raster.txt</a><br/>
+<a href="09ora/kep1_c1d067.html?page=print">kep1_c1.txt</a><br/>
+<a href="09ora/kep1_c2d067.html?page=print">kep1_c2.txt</a><br/>
+</div>
+<h3>2. kép</h3>
+<div class="paragraph">
+<a href="09ora/kep2_rasterd067.html?page=print">kep2_raster.txt</a><br/>
+<a href="09ora/kep2_c1d067.html?page=print">kep2_c1.txt</a><br/>
+<a href="09ora/kep2_c2d067.html?page=print">kep2_c2.txt</a><br/>
+</div>
+<h3>3. kép</h3>
+<div class="paragraph">
+<a href="09ora/kep3_c2d067.html?page=print">kep3_c2.txt</a>
+</div>
+<h2>Formátumok</h2>
+
+<h3>Original</h3>
+<div class="paragraph">
+A rajzprogramnál is használt vezérlőkarakterek sorozata, egyetlen sorban.
+</div>
+<h3>Raster</h3>
+<div class="code codetext">sor&nbsp;(szám)<br />oszlop&nbsp;(szám)<br />szín&nbsp;(karakter/egy&nbsp;hosszú&nbsp;string)<br />...és&nbsp;így&nbsp;tovább...</div>
+<div class="paragraph">
+</div>
+<h3>C1</h3>
+<div class="code codetext">sor&nbsp;(szám)<br />oszlop1&nbsp;(szám)<br />oszlop2&nbsp;(szám)<br />szín&nbsp;(karakter/egy&nbsp;hosszú&nbsp;string)<br />...és&nbsp;így&nbsp;tovább...</div>
+<div class="paragraph">
+szín színű karaktert kell rajzolni a (sor, oszlop1), (sor, oszlop1+1), ... (sor, oszlop2-1) koordinátájú pontokba.
+</div>
+<h3>C2</h3>
+<div class="paragraph">
+	<span style="text-decoration: blink; font-weight: bold; color: red;">Értékes nyeremények várják a megfejtőket!!!</span>
+</div>
+<div class="code codetext">sor1&nbsp;(szám)<br />oszlop1&nbsp;(szám)<br />sor2&nbsp;(szám)<br />oszlop2&nbsp;(szám)<br />szín&nbsp;(karakter/egy&nbsp;hosszú&nbsp;string)<br />...és&nbsp;így&nbsp;tovább...</div>
+<h2>fájlból beolvasás spec. dolgok</h2>
+<div class="paragraph">
+Egymás utáni olvasások a fájlból mindig a következő sort olvassák.
+</div>
+<h3>szám</h3>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_type">int</span><span class="csharp_plain">&#160;i</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">i&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><span class="csharp_type">int</span><span class="csharp_separator">.</span><span class="csharp_plain">Parse</span><span class="csharp_separator">(</span><span class="csharp_plain">sr</span><span class="csharp_separator">.</span><span class="csharp_plain">ReadLine</span><span class="csharp_separator">());</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+Amennyiben <span class="codetext">sr</span> egy megnyitott <span class="codetext">StreamReader</span>...
+</div>
+<h3>karakter</h3>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_type">char</span><span class="csharp_plain">&#160;ch</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">ch&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;</span><span class="csharp_type">char</span><span class="csharp_separator">.</span><span class="csharp_plain">Parse</span><span class="csharp_separator">(</span><span class="csharp_plain">sr</span><span class="csharp_separator">.</span><span class="csharp_plain">ReadLine</span><span class="csharp_separator">());</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+vagy pedig
+</div>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_type">char</span><span class="csharp_plain">&#160;ch</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_type">string</span><span class="csharp_plain">&#160;s</span><span class="csharp_separator">;</span><span class="csharp_plain"></span><br /><span class="csharp_plain">s&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;sr</span><span class="csharp_separator">.</span><span class="csharp_plain">ReadLine</span><span class="csharp_separator">();</span><span class="csharp_plain"></span><br /><span class="csharp_plain">ch&#160;</span><span class="csharp_operator">=</span><span class="csharp_plain">&#160;s</span><span class="csharp_separator">[</span><span class="csharp_num_literal">0</span><span class="csharp_separator">];</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+Mindkét esetben, amennyiben <span class="codetext">sr</span> egy megnyitott <span class="codetext">StreamReader</span>...
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Feh&eacute;r G&aacute;bor;
+        utolsó módosítás:
+        2009-11-07 23:23:44
+        (Feh&eacute;r G&aacute;bor)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg_progbev/0809/09ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:47:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg_progbev/0809/csharp/char.IsUpper?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 05:56:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="char-6.html" class="tab_normal">Nézet</a><a href="chard067-6.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../csharpd067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdg_progbevd067.html?page=print">ProgBev Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../0809d067.html?page=print">2008: C#</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../csharpd067.html?page=print">C#</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="chard067-6.html?page=print">char.IsUpper</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="chard067-6.html?page=print">char.IsUpper</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+
+<h1>char.IsLower</h1>
+<div class="code codetext"><style>.csharp_directive {
+color: rgb(0,147,0);
+}
+.csharp_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.csharp_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.csharp_type {
+color: rgb(128,0,0);
+}
+.csharp_operator {
+color: rgb(0,0,0);
+}
+.csharp_char_literal {
+color: rgb(255,0,255);
+}
+.csharp_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.csharp_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.csharp_num_literal {
+color: rgb(0,0,255);
+}
+.csharp_comment {
+color: rgb(147,147,147);  
+}
+.csharp_plain {
+color: rgb(0,0,0);
+}
+.csharp_string_literal {
+color: rgb(255,0,0);
+}
+.csharp_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="csharp_keyword">static</span><span class="csharp_plain">&#160;</span><span class="csharp_type">bool</span><span class="csharp_plain">&#160;IsUpper</span><span class="csharp_separator">(</span><span class="csharp_type">char</span><span class="csharp_separator">);</span><span class="csharp_plain"></span><br /></div>
+<div class="paragraph">
+Akkor tér vissza igazzal, ha a paraméterül kapott karakter egy nagybetű.
+</div>
+<h2>Példák</h2>
+<div class="paragraph">
+Lásd: <a href="chard067.html?page=print">char</a>
+</div>
+<h2>Lásd még</h2>
+<div class="paragraph">
+	<a href="chard067.html?page=print">char</a> <br/>
+	<a href="chard067-2.html?page=print">char.IsLower</a> <br/>
+	<a href="chard067-5.html?page=print">char.ToLower</a> <br/>
+	<a href="chard067-3.html?page=print">char.ToUpper</a> <br/>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Feh&eacute;r G&aacute;bor;
+        utolsó módosítás:
+        2009-11-07 23:21:49
+        (Feh&eacute;r G&aacute;bor)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg_progbev/0809/csharp/char.IsUpper?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 05:56:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

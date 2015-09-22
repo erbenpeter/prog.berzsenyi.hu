@@ -1,0 +1,124 @@
+div.document {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.document table {
+    margin-right: auto;
+    margin-left: auto;
+    border : 1px solid black;
+    border-collapse : collapse;
+    margin-left : auto;
+    margin-right : auto;
+    font-family : arial, sans-serif;
+    font-size: 10pt;
+}
+
+div.document td {
+    padding : 5px;
+    border : 1px solid black;
+    text-align : left;
+    vertical-align : top;
+}
+
+div.document div.paragraph {
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 0px;
+}
+
+
+div.document h1 {
+    font : bold x-large sans-serif;
+    text-align : center;
+  }
+
+
+div.document h2 {
+    border-bottom-color : #ababab;
+    border-bottom-style : solid;
+    border-bottom-width : 1px;
+    border-left-style : none;
+    border-left-width : medium;
+    border-right-style : none;
+    border-right-width : medium;
+    border-top-style : none;
+    border-top-width : medium;
+    font-family : arial, sans-serif;
+    font-size : 14pt;
+    text-align : left;
+    text-transform : uppercase;
+  }
+
+
+div.document h3 {
+    font-family : arial, sans-serif;
+    font-size : 12pt;
+    font-weight : bold;
+    margin-bottom : 0;
+    margin-left : 5%;
+    margin-right : 5%;
+    margin-top : 0;
+    text-align : left;
+    text-decoration : underline;
+  }
+
+div.document left {
+    text-align: left;
+}
+
+div.document right {
+    text-align: right;
+}
+
+div.document center {
+    text-align: center;
+}
+
+div.document jusitfy {
+    text-align: justify;
+}
+
+div.document .ttpre {
+    font-family : monospace;
+    white-space : pre;
+}
+
+div.document div.tt {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: monospace;
+}
+
+div.document div.paragraph div.code {
+	padding: 2px;
+        border: 1px solid black;
+        overflow: auto;
+
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 4px;
+        margin-bottom: 4px;
+}
+
+div.document div.code {
+	padding: 2px;
+        border: 1px solid black;
+        overflow: auto;
+
+        /*a div.paragraph-ba agyazott div.code-al kell azonos szelesseg:
+        80% x 80% = 64%, a szeleken: (100-64)/2 = 18
+        */
+        margin-left: 18%;
+        margin-right: 18%;
+        margin-top: 4px;
+        margin-bottom: 4px;
+}
+
+
+div.document span.icode {
+    /*font : 12pt monospace; see: view.css/.codetext */
+  }

@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/check_the_check?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:54:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="check_the_check.html" class="tab_normal">Nézet</a><a href="check_the_checkd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../gettingStartedd067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../progChallengesd067.html?page=print">Programozási kihívások</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../gettingStartedd067.html?page=print">Bemelegítés</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="check_the_checkd067.html?page=print">Sakk vagy nem?</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="check_the_checkd067.html?page=print">Sakk vagy nem?</a>
+                
+                
+                    (<a href="check_the_check/_megoldasd067.html?page=print">Megoldás</a>)
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Sakk vagy nem?</h1>
+<h2>Feladat</h2>
+<div class="paragraph">
+Írj programot amely beolvas és felismer egy sakktáblát, majd megmondja, hogy a fekete vagy fehér király sakkban van-e. Fehér bábukat nagybetűkkel, fekete bábukat kisbetűkkel reprezentáljuk. Fehér oldal van a tábla alján, a fekete pedig a tetején.
+</div>
+<div class="paragraph">
+Figurák:
+<ul>
+<li>Paraszt: p/P</li>
+<li>Ló: n/N</li>
+<li>Futó: b/B</li>
+<li>Bástya: r/R</li>
+<li>Királynő: q/Q</li>
+<li>Király: k/K</li>
+</ul>
+</div>
+
+<h2>Bemenet</h2>
+<div class="paragraph">
+A bemenetben számos sakktábla található, mindegyik 8 karakterből álló 8 darab sorból áll. A "." jelöli az üres mezőt, a kis/nagy betűk pedig a fentiekben meghatározott figurákat. Nincs a bemenetben érvénytelen karakter, illetve nem lesz olyan felállás, ahol mindkét király sakkban van. A bemenetet egy teljesen üres tábla zárja (<span class="mathspan">$8\times 8$</span> darab "."). Összes táblán - kivéve az utolsót - 1 darab fehér, illetve 1 darab fekete király van.
+</div>
+
+<h2>Kimenet</h2>
+<div class="paragraph">
+Mindegyik felálláshoz a következő kimenetek egyikét kell írnod:
+<ul>
+<li><pre>Játék #d: fehér király sakkban.</pre></li>
+<li><pre>Játék #d: fekete király sakkban.</pre></li>
+<li><pre>Játék #d: egyik király sincs sakkban.</pre></li>
+</ul>
+ahol <span class="mathspan">$d$</span> a játék sorszámát jelöli (1-től indulva).
+</div>
+
+<h2>Példa</h2>
+<table>
+<tr>
+<td>sakk.be</td>
+<td>sakk.ki</td>
+</tr>
+<tr>
+<td>
+<pre>
+..k.....
+ppp.pppp
+........
+.R...B..
+........
+........
+PPPPPPPP
+K.......
+
+rnbqk.nr
+ppp..ppp
+....p...
+...p....
+.bPP....
+.....N..
+PP..PPPP
+RNBQKB.R
+
+........
+........
+........
+........
+........
+........
+........
+........
+</pre>
+</td>
+<td>
+<pre>
+Játék #1: fekete király sakkban.
+Játék #2: fehér király sakkban.
+</pre>
+</td>
+</tr>
+</table>
+
+<h2>Tesztadatok</h2>
+<div class="paragraph">
+<i>Coming soon...</i>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Kriván Bálint;
+        utolsó módosítás:
+        2009-11-07 23:24:41
+        (Kriván Bálint)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/check_the_check?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:54:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

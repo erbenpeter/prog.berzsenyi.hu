@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/relmodell?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:14:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="relmodell.html" class="tab_normal">Nézet</a><a href="relmodelld067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../abd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../abd067.html?page=print">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="relmodelld067.html?page=print">Relációs modell</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="relmodelld067.html?page=print">Relációs modell</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>A relációs modell</h1>
+
+
+
+<h2>A relációs modell elemei</h2>
+
+<div class="paragraph">
+A <b>relációs modell</b> az EK-modell alapján készíthető. 
+A ma használt adatbáziskezelő rendszerek relációs alapon működnek,
+tehát abből a modellből már létrehozható az adatbázis.<br/>
+A modell alapelemei a <b>táblák</b>. Az egyedeket mindig táblákkal adjuk meg,
+a kapcsolatok közül a több-több kapcsolatokat lehet táblákkal leírni.
+A táblák oszlopai a <b>mezők</b>, minden mezőnek <b>neve</b> és <b>típusa</b>
+van. A mezők felelnek meg az EK-modell attribútumainak. A táblák sorai a
+
+<b>rekordok</b>. Az absztrakt egyed konkrét példányait egy-egy rekord írja le. 
+</div>
+
+
+<h2>Relációs séma</h2>
+<div class="paragraph">
+A <b>relációs séma</b> rögzíti a táblák nevét, továbbá a mezők nevét és 
+típusát. (A típust nem mindig szokták feltüntetni.) A táblanév után zárójelben
+soroljuk fel a tábla mezőit, vesszővel elválasztva.
+</div>
+
+<h2>Példa</h2>
+<div class="paragraph">
+
+<pre>
+Diákok(név,évfolyam,osztály)
+Tanárok(név,tantárgy)
+Tanítja(tanár,diák)
+</pre>
+</div>
+
+<h2>Mezőtípusok</h2>
+<div class="paragraph">
+Általában a következő mezőtípusok használhatók:
+<ul>
+<li> Fix hosszú szöveg</li>
+<li> Változó hosszú szöveg</li>
+
+<li> Hosszú szöveg</li>
+<li> Egész szám</li>
+<li> Valós szám</li>
+<li> Felsorolás</li>
+<li> Dátum</li>
+<li> Logikai érték</li>
+<li> Bináris objektum</li>
+</ul>
+</div>
+
+
+
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:29:17
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/relmodell?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:14:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

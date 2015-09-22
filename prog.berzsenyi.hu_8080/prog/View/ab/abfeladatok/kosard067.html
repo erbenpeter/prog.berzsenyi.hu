@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/abfeladatok/kosar?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:45:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="kosar.html" class="tab_normal">Nézet</a><a href="kosard067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../abfeladatokd067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../abd067.html?page=print">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../abfeladatokd067.html?page=print">Adatbázis feladatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="kosard067.html?page=print">Kosárlabda statisztika</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="kosard067.html?page=print">Kosárlabda statisztika</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Kosárlabda statisztika</h1>
+<h2>Az adatbázis tartalma</h2>
+<div class="paragraph">
+Egy kosárlabdacsapat eredményeit szeretnénk tárolni és feldolgozni. 
+Ismert a csapat játékosainak neve, magassága és mezszáma. 
+A mérkőzések sorszámozva vannak. 
+Az időpontjukkal, a dobott és a kapott pontokkal jellemezzük. 
+Lényeges, hogy a mérkőzés hazai pályán, vagy idegenben történt. 
+A mérkőzésekről és a játékosokról statisztika készül. 
+Ebben jegyezzük fel, hogy az adott sorszámú mérkőzésen 
+az adott mezszámú játékos hány pontot szerzett, hány büntető dobást végzett, 
+illetve ebből mennyi ment be, 
+hány hárompontost dobott és hány személyi hibát gyűjtött be.
+</div>
+
+<h2>A relációs séma</h2>
+<div class="paragraph">
+<pre>
+jatekos(nev:szöveg, <u>mez</u>:szám, magassag:szám, poszt:szöveg)
+merkozes(<u>sor</u>:szám, ellen:szöveg, hazai:logikai, datum:dátum, sajatpont:szám, ellenpont:szám)
+statisztika(<u>sor</u>:szám, <u>mez</u>:szám, pont:szám, bkis:szám, bjo:szám, harmas:szám, fault:szám)
+</pre>
+</div>
+
+<h2>Kérdések</h2>
+<div class="paragraph">
+<ol>
+<li>Sorold fel a játékosokat (nevükkel és posztjukkal), magasságuk szerint növekvően rendezve!</li>
+<li>Írd ki a megnyert mérkőzések dátumát és az ellenfél nevét, dátum szerint rendezve!</li>
+<li>Ravasz Zoltán hány pontot dobott a TF csapata ellen?</li>
+<li>Sorold fel, hogy melyik játékos átlagosan hány pontot dob mérkőzésenként! A listát a pontátlag szerint csökkenően rendezd!</li>
+<li>Kik azok a játékosok, akik az év során legalább 10 hárompontost dobtak?</li>
+<li>Kik játszottak a legnagyobb pontkülönbséggel megnyert meccsen?</li>
+</ol>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:29:44
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/abfeladatok/kosar?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:45:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

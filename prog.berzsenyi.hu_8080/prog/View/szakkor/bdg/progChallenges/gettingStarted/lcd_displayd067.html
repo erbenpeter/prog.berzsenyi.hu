@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/lcd_display?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:54:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="lcd_display.html" class="tab_normal">Nézet</a><a href="lcd_displayd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../gettingStartedd067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../progChallengesd067.html?page=print">Programozási kihívások</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../gettingStartedd067.html?page=print">Bemelegítés</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="lcd_displayd067.html?page=print">LCD kijelző</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="lcd_displayd067.html?page=print">LCD kijelző</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>LCD kijelző</h1>
+<div class="paragraph">
+</div>
+<h2>Feladat</h2>
+<div class="paragraph">
+Az egyik barátot most vett egy új számológépet, eddig a legfejlettebb készüléke ami volt az egy zsebszámológép. Egy kicsit csalódott, mert nagyon kedvelte az LCD kijelzőjét a régi számológépét, jobban mint az új számítógép képernyőjét. Tedd boldoggá azzal, hogy írsz neki egy programot ami a számokat LCD kijelzőszerűen írja ki!
+</div>
+
+<h2>Bemenet</h2>
+<div class="paragraph">
+A bemenet több ábrázolandó számot fog tartalmazni, mindegyik 1-1 sorban. Minden sorban két egész található <span class="mathspan">$s$</span> és <span class="mathspan">$n$</span>, ahol <span class="mathspan">$n$</span> jelöli a kiírandó számot (<span class="mathspan">$0 \leq n \leq 99999999$</span>), <span class="mathspan">$s$</span> pedig a méretet, amekkorában ábrázolni kell (<span class="mathspan">$1 \leq s \leq 10$</span>). A bemenetet két darab 0-át tartalmazó sor zárja (értelemszerűen, ezt nem ábrázoljuk).
+</div>
+
+<h2>Kimenet</h2>
+<div class="paragraph">
+A kimenet tartalmazza a bemenetben meghatározott számokat LCD kijelzőszerűen a számokat, <span class="mathspan">$s$</span> darab <span class="codetext">-</span> jelet a vízszintes szegmensekhez és <span class="mathspan">$s$</span> darab <span class="codetext">|</span> jelet a függőleges szegmensekhez. Így minden számjegy pontosan <span class="mathspan">$s+2$</span> oszlopot és <span class="mathspan">$2s+3$</span> sort foglal el. Ne felejtsd el az utolsó számjegy üres helyet szóközökkel feltölteni (hogy a fenti feltétel teljesüljön). Minden számjegy után legyen egy üres oszlop, illetve minden szám kirajzolása után legyen egy üres sor.
+</div>
+
+<h2>Példa</h2>
+<table>
+<tr>
+<td>lcd.be</td>
+<td>lcd.ki</td>
+</tr>
+<tr>
+<td>
+<pre>
+2 12345
+3 67890
+0 0
+</pre>
+</td>
+<td>
+<pre>
+      --   --        -- 
+   |    |    | |  | |   
+   |    |    | |  | |   
+      --   --   --   -- 
+   | |       |    |    |
+   | |       |    |    |
+      --   --        -- 
+
+ ---   ---   ---   ---   --- 
+|         | |   | |   | |   |
+|         | |   | |   | |   |
+|         | |   | |   | |   |
+ ---         ---   ---       
+|   |     | |   |     | |   |
+|   |     | |   |     | |   |
+|   |     | |   |     | |   |
+ ---         ---   ---   --- 
+</pre>
+</td>
+</tr>
+</table>
+
+<h2>Tesztadatok</h2>
+<div class="paragraph">
+<a href="lcd_display/lcdd067.html?page=print">lcd.zip</a>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Kriván Bálint;
+        utolsó módosítás:
+        2009-11-07 23:24:35
+        (Kriván Bálint)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/lcd_display?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:54:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg_progbev/0809/03ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:46:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="03ora.html" class="tab_normal">Nézet</a><a href="03orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0809d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdg_progbevd067.html?page=print">ProgBev Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0809d067.html?page=print">2008: C#</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="03orad067.html?page=print">3. óra - stringek és for ciklusok</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="03orad067.html?page=print">3. óra - stringek és for ciklusok</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>3. óra - stringek és for ciklusok</h1>
+<h2>segítség</h2>
+<div class="paragraph">
+<a href="csharp/stringd067.html?page=print">string</a><br/>
+<a href="csharp/ford067.html?page=print">for</a>
+</div>
+<h2>feladatok</h2>
+<ol>
+	<li>Készíts programot, ami kiírja a számokat 1-től 100-ig</li>
+	<li>Készíts programot, ami kiírja a számokat 100-től 1-ig</li>
+	<li>Készíts programot, ami kiírja a szorzótáblát 1-től 10-ig</li>
+
+	<li>Készíts programot, ami kiírja egy beolvasott string karaktereit szóközökkel elválasztva</li>
+	<li>Készíts programot, ami megszámolja egy beolvasott stringben pl. az a betűket. (Aztán a keresett betűt is be lehessen olvasni.)</li>
+	<li>Készíts programot, ami kiír egy beolvasott stringet megfordítva</li>
+	<li>Készíts programot, ami létrehozza egy beolvasott string fordítottját egy másik stringben</li>
+	<li>Készíts programot, ami madárnyelvűvé alakít egy beolvasott stringet (tudsz így beszélni? -&gt; tu<b>vu</b>dsz í<b>ví</b>gy be<b>ve</b>szé<b>vé</b>lni<b>vi</b>?) Elsőre elég ha csak kiírja aztán alakítsd át, hogy új stringbe rakja.</li>
+	<li>Készíts programot, ami normálissá alakít egy beolvasott madárnyelvű stringet</li>
+	<li>Készíts programot, ami beolvas egy számot, és ha osztható 7-el, vagy van benne hetes számjegy akkor kiírja, hogy BUMM. <i>FIXME: int.ToString()</i></li>
+	<li>Készíts programot, ami tömörít egy stringet, így. (<span class="codetext">helló aabbccc</span> -&gt; <span class="codetext">1h1e2l1ó 2a2b3c</span>)</li>
+</ol>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Feh&eacute;r G&aacute;bor;
+        utolsó módosítás:
+        2009-11-07 23:21:33
+        (Feh&eacute;r G&aacute;bor)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg_progbev/0809/03ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:46:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

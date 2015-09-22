@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/minesweeper?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:54:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="minesweeper.html" class="tab_normal">Nézet</a><a href="minesweeperd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../gettingStartedd067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../progChallengesd067.html?page=print">Programozási kihívások</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../gettingStartedd067.html?page=print">Bemelegítés</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="minesweeperd067.html?page=print">Aknakereső</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="minesweeperd067.html?page=print">Aknakereső</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Aknakereső</h1>
+<div class="paragraph">
+Gondolom mindenki hallott már az Aknakereső játékról, amelyet a Tudjukmelyik operációs rendszer alapjátékai közt is fellelhetünk a Passziánsz mellett. A lényege, hogy az <span class="mathspan">$M\times N$</span> méretű táblán megtaláljuk az aknákat.
+</div>
+<div class="paragraph">
+A játékban a mezőn lévő szám jelzi, hogy a szomszédai között hány akna van (maximum 8, értelemszerűen). Tehát ha a baloldali aknaelhelyezést nézzük egy <span class="mathspan">$4\times 4$</span>-es táblán, akkor a jobboldali táblát kapjuk:
+</div>
+<table>
+<tr>
+<td>
+<pre>
+*...
+....
+.*..
+....
+</pre>
+</td>
+<td>
+<pre>
+*100
+2210
+1*10
+1110
+</pre>
+</td>
+</tr>
+</table>
+<h2>Feladat</h2>
+<div class="paragraph">
+Egy adott aknaelhelyezésből számoljuk ki, hogy melyik nem aknát tartalmazó mezőnek hány aknaszomszédja van.
+</div>
+
+<h2>Bemenet</h2>
+<div class="paragraph">
+A bemenetben tetszőleges számú tábla lesz/lehet. Mindegyik tábla egy <span class="mathspan">$M, N$</span> számpárossal kezdődik, amely rendre a tábla sorainak, illetve oszlopainak számát tartalmazza. Ezután következik a <span class="mathspan">$M\times N$</span> mező (<span class="mathspan">$M$</span> sor mely <span class="mathspan">$N$</span> mezőt tartalmaz - szóköz nélkül), mely vagy <span class="codetext">.</span> (üres mező) vagy <span class="codetext">*</span> (akna). A bemenet végét <span class="codetext">0 0</span> tartalmú sor zárja (magyarán egy üres tábla).
+</div>
+
+<h2>Kimenet</h2>
+<div class="paragraph">
+A kimenet tartalmazza a ,,megoldott'' táblákat, egy <span class="codetext">Tábla #id:</span> fejléccel. Minden tábla után egy üres sor legyen.
+</div>
+
+<h2>Példa</h2>
+<table>
+<tr>
+<td>akna.be</td>
+<td>akna.ki</td>
+</tr>
+<tr>
+<td>
+<pre>
+4 4
+*...
+....
+.*..
+....
+3 5
+**...
+.....
+.*...
+0 0
+</pre>
+</td>
+<td>
+<pre>
+Tábla #1:
+*100
+2210
+1*10
+1110
+
+Tábla #2:
+**100
+33200
+1*100
+</pre>
+</td>
+</tr>
+</table>
+
+<h2>Tesztadatok</h2>
+<div class="paragraph">
+<i>Coming soon...</i>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Kriván Bálint;
+        utolsó módosítás:
+        2009-11-07 23:24:31
+        (Kriván Bálint)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/progChallenges/gettingStarted/minesweeper?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 02:54:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

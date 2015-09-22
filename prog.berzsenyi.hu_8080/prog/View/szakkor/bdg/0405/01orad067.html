@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0405/01ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 20:06:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="01ora.html" class="tab_normal">Nézet</a><a href="01orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0405d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0405d067.html?page=print">2004/2005</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="01orad067.html?page=print">1. óra</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="01orad067.html?page=print">1. óra</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>1.óra - Bemelegítés</h1>
+<h2>Elmélet</h2>
+<h3>A programozási környezet kiválasztása</h3>
+<div class="paragraph">
+Programjaink hatékonyságát két szempont szerint vizsgáljuk: memóriaigény és futási idő. Általában igaz, hogy több memóriát felhasználva gyorsabb programokat lehet írni, illetve memóriát lehet megsprórolni, ha lemondunk a gyorsaságról.
+</div>
+<div class="paragraph">
+ Egy versenyen mérlegelni kell, hogy melyik szempontot mennyire érvényesítjük a megoldó algoritmus tervezésekor. A programozási környezet (és nem a nyelv!!!) megválasztása meghatározza, hogy milyen erőforráskorlátozások mellett kell dolgoznunk. Pascal programozóknak célszerű a Delphi környezetet választani a Borland/Turbo Pascal helyett, mert így a futási idejű verem (runtime stack) 1 MB lehet, míg TP/BP-ben csak 64K a megengedett méret, továbbá nem kell 64K-ba beférnie globális változóinknak. (A Delphi védett módban futó 32 bites alkalmazást fordít, a Pascal valós módban futó 16 bitest.)
+</div><div class="paragraph">
+ A stack mérete akkor kritikus, amikor rekurzív módon oldunk meg egy feladatot. (És ilyet gyakran fogunk csinálni.) A statikus adatterület méretétől függően nagy tömbök is használhatók, és látni fogjuk, hogy ez gyorsabb programot eredményezhet.
+</div><div class="paragraph">
+ Jó alternatíva a Free Pascal, illetve a linuxos GNU C, de ezek sajnos nem használhatók a NTSZ versenyen.
+</div>
+<h3>A delphi környzet használata</h3>
+<div class="paragraph">A Delphiből csak annyit használunk, hogy 32bites kódót fordít.</div>
+<div class="code codetext">File-&gt;New-&gt;Other-&gt;Console&nbsp;application</div>
+<div class="paragraph">Hasznos beállítások:</div>
+<div class="code codetext">Range&nbsp;checking&nbsp;[x]<br />Overflow&nbsp;cheking&nbsp;[x]<br />Stack&nbsp;frames&nbsp;[x]<br />Pentium-safe&nbsp;FDIV&nbsp;[x]</div>
+<div class="paragraph">
+Természetesen tesztelés után kikapcsoljuk ezeket, hiszen a futásidejű ellenőrzések lassítják a programot.
+</div>
+<h3>Rekurzív programok hatékonysága</h3>
+<div class="paragraph">
+Egy rekurzív program elemzésekor a rekurzíó maximális mélységét és a rekurzív hívások számát kell becsülnünk.
+</div><div class="paragraph">Első példánk a Fibonacci sorozat elemeinek kiszámításáról szól. (
+<span class="mathspan">$f_1 = f_2 = 1, f_n = f_{n-1} + f_{n-2}$</span>, ha <span class="mathspan">$n > 2$</span>.)
+ Naív megoldásunk a következő:
+</div>
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">Fibonacci</span><span class="metahun_separator">(</span><span class="metahun_plain">n</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;n&#160;</span><span class="metahun_operator">&lt;</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">3</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;Fibonacci&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;</span><span class="metahun_keyword">k&uuml;l&ouml;nben</span><span class="metahun_plain">&#160;Fibonacci&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;Fibonacci</span><span class="metahun_separator">(</span><span class="metahun_plain">n</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;Fibonacci</span><span class="metahun_separator">(</span><span class="metahun_plain">n</span><span class="metahun_num_literal">-2</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Elj&aacute;r&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+<div class="paragraph">
+Kis gondolkozás után rájövünk, hogy megoldásunk használhatatlan, ha <span class="mathspan">$n > 50$</span>. A probléma az, hogy majdnem minden <span class="mathspan">$f_i$</span> elemet többször is (sokszor) kiszámolunk. (Hányszor?) A baj orvosolható: feljegyezzük azokat az értékeket, melyeket már kiszámoltunk, és ha újra szükség van rájuk, egyszerűen kimásoljuk a feljegyzett értéket.
+</div>
+<h3>A feljegyzéses módszer</h3>
+<div class="paragraph">
+A javított változat egy globális cache (gyorsítótár) tömböt használ, a cache tömb minden eleme kezdetben 0.
+</div>
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">Fibonacci</span><span class="metahun_separator">(</span><span class="metahun_plain">n</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;cache</span><span class="metahun_separator">[</span><span class="metahun_plain">n</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;n&#160;</span><span class="metahun_operator">&lt;</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">3</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;cache</span><span class="metahun_separator">[</span><span class="metahun_plain">n</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">k&uuml;l&ouml;nben</span><span class="metahun_plain">&#160;cache</span><span class="metahun_separator">[</span><span class="metahun_plain">n</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;fib</span><span class="metahun_separator">(</span><span class="metahun_plain">n</span><span class="metahun_num_literal">-1</span><span class="metahun_separator">)</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;fib</span><span class="metahun_separator">(</span><span class="metahun_plain">n</span><span class="metahun_num_literal">-2</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;Fibonacci&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;cache</span><span class="metahun_separator">[</span><span class="metahun_plain">n</span><span class="metahun_separator">]</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Elj&aacute;r&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+<div class="paragraph">
+Jegyezzük meg, hogy az <span class="mathspan">$n$</span>. Fibonacci szám <span class="mathspan">$n-2$</span> összeadással előállítható, tehát a rekurzív megoldás még a második változatban sem a leggyorsabb megoldás, csak illusztráció a feljegyzéses módszerhez.
+</div>
+<h2>Feladatok</h2>
+<div class="paragraph">
+	<a href="01ora/particiod067.html?page=print">Partíció probléma</a><br/>
+	<a href="01ora/szorzbontd067.html?page=print">Szorzattá bontás</a><br/>
+	<a href="01ora/celertekd067.html?page=print">Célérték keresés</a><br/>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Adminisztrátor;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Adminisztrátor)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0405/01ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 20:06:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

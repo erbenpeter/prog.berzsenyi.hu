@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/06ora/bolgar/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:41:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="_megoldas.html" class="tab_normal">Nézet</a><a href="_megoldasd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../bolgard067.html?page=print">
+                    <img src="../../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../0809d067.html?page=print">2008/2009</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../06orad067.html?page=print">6. óra - Partíció</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../bolgard067.html?page=print">Bolgár szoliter</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="_megoldasd067.html?page=print">Megoldás</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+                
+                <a href="../bolgard067.html?page=print">Bolgár szoliter</a> (<a href="_megoldasd067.html?page=print">Megoldás</a>)
+            
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../szakkord067.html?page=print">Szakkörök</a>
+            
+                
+                &gt;
+                <a href="../../../../bdgd067.html?page=print">BDG Szakkör</a>
+            
+                
+                &gt;
+                <a href="../../../0809d067.html?page=print">2008/2009</a>
+            
+                
+                &gt;
+                <a href="../../06orad067.html?page=print">6. óra - Partíció</a>
+            
+            <br />
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h2>Algoritmus</h2>
+
+<div class="paragraph">
+Generáljuk az <i>n</i> szám összes partícióját, és mindegyikre elindítjuk a szolitert.
+</div>
+<h3>A kupacok ábrázolása</h3>
+<div class="paragraph">
+Célszerű a kupacok méretét egy csökkenően rendezett listában tárolni, ekkor mindig a lista végéről kell törölni (egyesek), és egy új elemet kell rendezetten beszúrni.
+</div>
+<h3>A periódus felderítése</h3>
+<div class="paragraph">
+Ahhoz, hogy észleljük az ismétlődést, tudnunk kell, milyen állapotokban jártunk eddig.
+Mivel az összes állapotból ki fogunk indulni, felépíthetjük az állapotátmenetek irányított gráfját. (Minden állapotból /partícióból/ egy él indul ki.) Ha olyan állapotba lépünk, ami már szerepelt, leállhatunk.
+</div>
+<div class="paragraph">
+A memóriaigény és a futási idő becsléséhez tudnunk kell, hogy <i>n</i>-től függően hány partíció van, vagy legalábbis kell egy jó felső becslés.
+</div>
+<h3>Partíciók száma</h3>
+<div class="paragraph">A partíciók számára nem ismert zárt formula, csak aszimptotikus becslések.</div>
+<div class="paragraph">Néhány példa, a nagyságrend érzékeléséhez:</div>
+<table>
+<tr><td>n</td><td>partíciók száma</td></tr>
+<tr><td>10</td><td>	42	</td></tr>
+<tr><td>50	</td><td>204226	</td></tr>
+<tr><td>100	</td><td>190569292	</td></tr>
+<tr><td>150	</td><td>40853235313	</td></tr>
+<tr><td>200	</td><td>3972999029388	</td></tr>
+<tr><td>250	</td><td>230793554364681	</td></tr>
+<tr><td>300	</td><td>9253082936723602</td></tr>
+</table>
+
+<h2>Elméleti érdekességek</h2>
+<div class="paragraph">
+Ismert, hogy ha <i>n</i> háromszögszám, akkor a bolgár szoliter véges sok lépésben az
+<span class="mathspan">$\{1,2,3,\ldots\}$</span> fixpontba érkezik, függetlenül a kiinduló állástól.
+</div>
+<div class="paragraph">
+Sejtés: a bolgár szoliter bármely elemszám esetén egyetlen ciklusba érkezik, ami független a kiinduló állástól.
+</div>
+<h2>Kódok</h2>
+<h3>Partíció generálás</h3>
+<div class="paragraph">
+Kramer András, (rekurzív változat), (C#): <a href="_megoldas/particiod067-2.html?page=print">particio.cs</a><br/> 
+Uray János, (iteratív változat), (C++): <a href="_megoldas/particiod067.html?page=print">particio.cpp</a>
+</div>
+<h3>Bolgár szoliter</h3>
+<div class="paragraph">
+Uray János, (C++): <a href="_megoldas/bolgard067.html?page=print">bolgar.cpp</a><br/> 
+Sztranyák Attila, (Pascal): <a href="_megoldas/bolgard067-2.html?page=print">bolgar.pas</a><br/> 
+Kriván Bálint, (Ruby): <a href="_megoldas/bolgard067-3.html?page=print">bolgar.rb</a><br/> 
+</div>
+
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:22:19
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/06ora/bolgar/_megoldas?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:41:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

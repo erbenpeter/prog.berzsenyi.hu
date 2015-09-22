@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0607/16ora/ketut?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:35:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="ketut.html" class="tab_normal">Nézet</a><a href="ketutd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../16orad067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../0607d067.html?page=print">2006/2007</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../16orad067.html?page=print">16. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="ketutd067.html?page=print">Két út</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="ketutd067.html?page=print">Két út</a>
+                
+                
+                    (<a href="ketut/_megoldasd067.html?page=print">Megoldas</a>)
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Két út</h1>
+<div class="paragraph">
+Egy vállalatnak <span class="codetext">N</span> városban van telephelye. 
+A városokat az <span class="codetext">1,...,N</span> számokkal azonosítjuk. 
+A központi telephely az 1. városban van. Alkatrészeket kell kiszállítani a központi telephelyről két különböző, <span class="codetext">U</span> és <span class="codetext">V</span> városba két kamionnal, az egyiknek az <span class="codetext">U</span>, a másiknak a <span class="codetext">V</span> városba kell mennie. Ismerjük, hogy mely városok között van közvetlen út. A korlátozások miatt a két kamion olyan útvonalon közlekedhet, amely különböző városokon keresztül halad.
+</div>
+
+
+<h2>Feladat</h2>
+<div class="paragraph">
+Készíts programot, amely kiszámít egy olyan <span class="codetext">U</span>-ba és egy olyan <span class="codetext">V</span>-be vezető útvonalat, hogy a két útvonalban csak a kiindulási pont (a központi telephely) közös!
+</div>
+
+<h2>Bemenet</h2>
+<div class="paragraph">
+A <span class="codetext">KETUT.BE</span> szöveges állomány első sorában 
+a városok <span class="codetext">N</span> száma (3<span class="mathspan">$\le$</span>N<span class="mathspan">$\le$</span>100) és az <span class="codetext">U</span> és <span class="codetext">V</span> város sorszáma (2<span class="mathspan">$\le$</span>U, V<span class="mathspan">$\le$</span>N, U<span class="mathspan">$\ne$</span>V) és a közvetlen utak <span class="codetext">M</span> (2<span class="mathspan">$\le$</span>M<span class="mathspan">$\le$</span>3000) száma van. A következő <span class="codetext">M</span> sor mindegyikében két szám van egy szóközzel elválasztva: <span class="codetext">X Y</span> ami azt jelenti, hogy <span class="codetext">X</span> városból van <span class="codetext">Y</span> városba út, amin <span class="codetext">X</span>-ből <span class="codetext">Y</span>-ba lehet menni, de fordítva nem. Minden közvetlen útra teljesül, hogy <span class="codetext">X&lt;Y</span>.
+</div>
+
+<h2>Kimenet</h2>
+<div class="paragraph">
+A <span class="codetext">KETUT.KI</span> szöveges állomány első sorába két egész számot kell írni, az <span class="codetext">U</span>-ba vezető útvonalon lévő városok <span class="codetext">r</span> számát, és a <span class="codetext">V</span>-be vezető útvonalon lévő városok <span class="codetext">s</span> számát (beleértve a kiindulási központi telephely 1 sorszámát)! A második sor az <span class="codetext">U</span>-ba vezető, a harmadik pedig a <span class="codetext">V</span>-be vezető útvonalat tartalmazza. Ha nincs megoldás, akkor a <span class="codetext">0 0</span> számpárt kell kiírni az első sorba. Több megoldás esetén bármelyik megadható.
+</div>
+
+<h2>Példa</h2>
+<div style="text-align: center;">
+<table>
+<tr> 
+<td>
+ketut.be
+</td>
+<td>
+ketut.ki
+</td>
+</tr>
+<tr>
+<td>
+10 9 5 12<br/>
+1 2<br/>
+1 3<br/>
+2 4<br/>
+3 6<br/>
+4 5<br/>
+5 7<br/>
+6 8<br/>
+7 9<br/>
+3 5<br/>
+4 7<br/>
+6 9<br/>
+9 10<br/>
+
+</td>
+<td>
+4 4<br/>
+1 3 6 9<br/>
+1 2 4 5<br/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<h2>Tesztadatok</h2>
+<div class="paragraph">
+<a href="ketut/ketutd067.html?page=print">ketut.zip</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0607/16ora/ketut?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:35:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

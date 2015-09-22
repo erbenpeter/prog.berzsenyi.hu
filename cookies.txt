@@ -1,0 +1,4 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+prog.berzsenyi.hu:8080	TRUE	/prog	FALSE	1999999999	JSESSIONID	130656dd509e809c75400a315e99
+

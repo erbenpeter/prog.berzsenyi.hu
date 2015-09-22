@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/erettsegi/anagramma?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:08:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="anagramma.html" class="tab_normal">Nézet</a><a href="anagrammad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../erettsegid067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../progbevd067.html?page=print">Programozás bevezető</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../erettsegid067.html?page=print">Érettségi feladatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="anagrammad067.html?page=print">Anagramma</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="anagrammad067.html?page=print">Anagramma</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Anagramma</h1>
+
+<div class="paragraph"> 
+Az anagramma a szójátékok egy fajtája, melyben értelmes szavak vagy mondatok betűinek
+sorrendjét úgy változtatjuk meg, hogy az eredmény szintén értelmes szó vagy mondat lesz.
+Sok anagramma esetén az eredeti szó és a végeredmény között humoros vagy egyéb kapcsolat
+van, ez növeli az anagramma érdekességét, értékét. Például a satu szó anagrammái: utas, tusa,
+suta.
+</div>
+<div class="paragraph">
+A <a href="anagramma/szotard067.html?page=print">szotar.txt</a> ASCII kódolású állomány legfeljebb 300 különböző szót tartalmaz.
+A szavak legalább 2, legfeljebb 30 karakter hosszúságúak, és csak az angol ábécé kisbetűit
+tartalmazzák. Az állományban az egyes szavak külön sorokban szerepelnek, és minden szó
+csak egyszer fordulhat elő.
+</div>
+<div class="paragraph">
+Például <br/>
+<span class="codetext">szotar.txt</span>:
+<pre>
+	eszesen
+	kereszt
+	keretes
+	keretez
+	nyertesek
+	hadartam
+	maradhat
+	...
+</pre>
+</div>
+
+<div class="paragraph">
+Készítsen programot, amely az alábbi kérdésekre válaszol! A program forráskódját
+anagram néven mentse! Ügyeljen arra, hogy programjának minden helyes tartalmú bemeneti
+állomány esetén működnie kell!
+</div>
+
+<div class="paragraph">
+Minden részfeladat megoldása előtt írja a képernyőre a feladat sorszámát! Ha a 
+felhasználótól kér be adatot, jelenítse meg a képernyőn, hogy milyen értéket vár (például az 1. feladat
+esetén: „Adja meg a szöveget:”)! A képernyőn megjelenített üzenetek esetén az ékezetmentes kiírás is elfogadott.
+
+</div>
+
+<h2>Feladatok</h2>
+<div class="paragraph">
+<ol>
+<li>Kérjen be a felhasználótól egy szöveget, majd határozza meg, hogy hány különböző
+karakter található a szövegben! A darabszámot és a karaktereket írja ki a képernyőre!
+</li><li> Olvassa be a <a href="anagramma/szotard067.html?page=print">szotar.txt</a> állományból a szavakat, és a következő feladatok megoldása
+során ezekkel dolgozzon! Amennyiben nem tudja beolvasni az állományból a szavakat,
+akkor az első 10 szóval dolgozzon!
+</li><li> Az állományból beolvasott szavakat alakítsa át úgy, hogy minden szó karaktereit
+egyenként tegye ábécérendbe! Az így létrehozott szavakat írja ki az <span class="codetext">abc.txt</span> állományba
+az eredeti állománnyal egyező sorrendben!<br/>
+Például:<br/>
+<table>
+<tr><td>Eredeti</td><td>Ábécé sorrendben lévő</td></tr>
+<tr><td>tervez<br/>nyugalom</td><td>eertvz<br/>aglmnouy</td></tr>
+</table><br/>
+</li><li> Kérjen be a felhasználótól két szót, és döntse el, hogy a két szó anagramma-e! Ha azok
+voltak, írja ki a képernyőre az „Anagramma” szót, ha nem, akkor pedig a „Nem
+anagramma” szöveget!
+</li><li> Kérjen be a felhasználótól egy szót! A <a href="anagramma/szotard067.html?page=print">szotar.txt</a> állomány szavaiból keresse meg
+a szó anagrammáit (a szót önmagát is annak tekintve)! Ha van találat, azokat egymás alá
+írja ki a képernyőre, ha nem volt találat, akkor írja ki a „Nincs a szótárban
+anagramma” szöveget!
+</li><li>Határozza meg, hogy a <a href="anagramma/szotard067.html?page=print">szotar.txt</a> állományban melyik a leghosszabb szó! Ha több,
+ugyanannyi karakterből álló leghosszabb szó volt, akkor az ugyanazokat a karaktereket
+tartalmazó szavakat (amelyek egymás anagrammái) közvetlenül egymás alá írja ki!
+A feltételnek megfelelő összes szó pontosan egyszer szerepeljen a kiírásban!
+</li><li> Rendezze a <a href="anagramma/szotard067.html?page=print">szotar.txt</a> állományban lévő szavakat a karakterek száma szerint növekvő
+sorrendbe! Az egyforma hosszúságú és ugyanazokat a karaktereket tartalmazó szavak
+(amelyek egymás anagrammái) szóközzel elválasztva ugyanabba a sorba kerüljenek!
+Az egyforma hosszúságú, de nem ugyanazokat a karaktereket tartalmazó szavak külön
+sorba kerüljenek! A különböző hosszúságú szavakat egy üres sorral különítse el egymás-
+tól! Az így rendezett szavakat írja ki a <span class="codetext">rendezve.txt</span> állományba!
+<br/>
+Például:
+<br/>
+<table>
+<tr><td>Eredeti</td><td>Rendezett</td></tr>
+<tr>
+<td>
+<pre>
+halat
+rakat
+ajak
+papi
+rakta
+ajka
+takar
+kaja
+satu
+vallat
+tarka
+pipa
+paplan
+</pre>
+</td>
+<td>
+<pre>
+ajak ajka kaja
+papi pipa
+satu suta tusa utas
+
+halat
+rakat rakta takar tarka
+
+vallat
+paplan
+</pre>
+</td></tr>
+</table><br/>
+</li>
+</ol>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-11-03 08:38:02
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/erettsegi/anagramma?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:08:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

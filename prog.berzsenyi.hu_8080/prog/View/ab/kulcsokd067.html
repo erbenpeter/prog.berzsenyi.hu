@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/kulcsok?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:14:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="kulcsok.html" class="tab_normal">Nézet</a><a href="kulcsokd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../abd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../abd067.html?page=print">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="kulcsokd067.html?page=print">Kulcsok és függőségek</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="kulcsokd067.html?page=print">Kulcsok és függőségek</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Kulcsok és függőségek</h1>
+
+
+
+<h2>Kulcs</h2>
+
+<div class="paragraph">
+A relációs adatbázis egy táblájában <b>kulcsnak</b> nevezzük azt a mezőt vagy 
+mezőhalmazt, amelynek értéke egyértelműen meghatároz egy rekordot. Tehát ha megadjuk
+a kulcs mezőinek értékét, akkor legfeljebb egy olyan sor lehet a táblában, ahol ezek 
+az értékek szerepelnek.
+</div>
+
+<div class="paragraph">
+A kulcs gyakran egyetlen (általában számláló típusú) mező, de állhat több
+mezőből is, ezért a tábla létrehozásakor végig kell gondolni, hogy megadunk
+egyedi értékeket tartalmazó, számláló típusú mezőt.
+</div>
+
+<h2>Példák</h2>
+<div class="paragraph">
+A sorozatok táblában az <span class="codetext">id</span> kulcs.<br/>
+
+Jelölés: <pre>sorozatok(<u>id</u>, cim, nemzet, tartalom, web, kezdet, evad)</pre>
+</div>
+<div class="paragraph">
+A szereplők táblában az id és a sorozat azonosító együtt határozza
+meg, hogy melyik rekordról van szó.<br/>
+Jelölés: <pre>szereplok(<u>id</u>, <u>sorozat</u>, nev, szinesz, jellem, fo, kep)</pre>
+</div>
+
+<h2>Függőség</h2>
+<div class="paragraph">
+Ha egy táblában egy <span class="codetext">A</span> mezőhalmazon vett érték egyértelműen
+meghatározza az <span class="codetext">X</span> mezőhalmazon vett értéket, akkor azt modjuk, hogy 
+<span class="codetext">X</span> <b>funkcionálisan függ</b> <span class="codetext">A</span>-tól. Speciálisan a kulcstól
+a teljes mezőhalmaz függ.
+
+</div>
+
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:29:19
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/kulcsok?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:14:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

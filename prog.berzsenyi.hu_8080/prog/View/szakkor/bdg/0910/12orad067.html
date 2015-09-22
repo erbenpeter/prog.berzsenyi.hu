@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/12ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:18:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="12ora.html" class="tab_normal">Nézet</a><a href="12orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0910d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0910d067.html?page=print">2009/2010</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="12orad067.html?page=print">12. óra</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="12orad067.html?page=print">12. óra</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>12. óra</h1>
+<div class="paragraph">
+Gráfalgoritmusokkal kezdünk foglalkozni. Az első témakör a gráfbejárásokat tartalmazza.
+</div>
+<div class="paragraph">
+A gráfbejárások a legalapvetőbb gráf-algoritmusok. Használhatók keresésre, összefüggő komponensek feltérképezésére, csúcsok gráfban mért távolságának meghatározására, feszítőfák előállítására, és sok más hasznos dologra. 
+</div>
+<div class="paragraph">A gráf-algoritmusok vizsgálatát érdemes azzal kezdeni, hogy tisztázzuk, mit is értünk gráf alatt.</div>
+<h2>Gráf</h2>
+<div class="paragraph">
+Sok problémát modellezhetünk úgy, hogy bizonyos "objektumok" közötti kapcsolatokat kell vizsgálnunk, de nem érdekel pontosan az objektumok mibenléte, inkább a kapcsolatok szerkezetére koncentrálunk. Az ilyen problémák kezelésére vezették be a gráf fogalmát:
+</div>
+<div class="paragraph">
+A <span class="mathspan">$G=(V,E)$</span> <b>gráf</b> csúcsok egy <span class="mathspan">$V$</span> halmazával és a csúcsok közötti élek <span class="mathspan">$E$</span> halmazával adható meg.
+</div>
+<h3>1. példa: osztógráf</h3>
+<div class="paragraph">A gráf csúcsai természetes számok. Az <span class="mathspan">$a$</span> csúcsból akkor megy él 
+<span class="mathspan">$b$</span>-be, ha <span class="mathspan">$a~|~b$</span> (és <span class="mathspan">$a\ne b$</span>).
+</div>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../../../Downloadcb8b.png?node=4435" alt="" class=""/>
+</div>
+</div>
+<div class="paragraph">Ebből a példából az is látható, hogy a gráf élei lehetnek <b>irányítottak</b>, ilyenkor
+számít, hogy egy összekötésnél melyik csúcsból melyik csúcsba mutat az él.</div>
+<h3>2. példa: metró-térkép</h3>
+<div class="paragraph">A gráf csúcsai metró-megállók, és két csúcs között akkor megy él, ha egy metrójárat egymás utáni megállói.</div>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../../../Download2308.png?node=4436" alt="" class=""/>
+</div>
+</div>
+
+<h2>Gráfok ábrázolása</h2>
+<div class="paragraph">A gráfokat különböző módszerekkel tárolhatjuk a memóriában. A három leggyakoribb ábrázolást mutatjuk be az alábbi gráfon:
+</div>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../../../Download74b3.png?node=4437" alt="" class=""/>
+</div>
+</div>
+<h3>Él-halmaz</h3>
+<div class="paragraph">
+<span class="mathspan">$
+\{a\rightarrow b, a\rightarrow c, b\rightarrow d, c\rightarrow d, d\rightarrow a, d\rightarrow b\}
+$</span>
+</div>
+<h3>Szomszédsági listák</h3>
+<div class="paragraph">
+a: {b,c}<br/>
+b: {d}<br/>
+c: {d}<br/>
+d: {a,b}<br/>
+</div>
+<h3>Szomszédsági mátrix</h3> 
+<div class="paragraph">
+<table>
+<tr><td/><td>a</td><td>b</td><td>c</td><td>d</td></tr>
+<tr><td>a</td><td/><td>x</td><td>x</td><td/></tr>
+<tr><td>b</td><td/><td/><td/><td>x</td></tr>
+<tr><td>c</td><td/><td/><td/><td>x</td></tr>
+<tr><td>d</td><td>x</td><td>x</td><td/><td/></tr>
+</table>
+</div>
+<h2>Gráfok szélességi bejárása</h2>
+<div class="paragraph">A szélességi bejárás a gráf egy csúcsából indul, és meglátogatja az összes olyan csúcsot, ami a kiinduló pontból éleken haladva elérhető. A meglátogatás sorrendje a kiinduló csúcstól való távolság szerinti, először a közvetlen szomszédok, utána a másodszomszédok, és így tovább ... kerülnek sorra.
+</div>
+<div class="paragraph">
+<div style="text-align: center;">
+<img src="../../../../Download4d63.png?node=4438" alt="" class=""/>
+</div>
+</div>
+<div class="paragraph">Az ábrán a csúcsokba írt számok azt jelzik, hogy hányadik lépésben ért a bejárás a csúcsba, a színek pedig azt, hogy mely csúcsok vannak azonos távolságra a 0-ás kiinduló csúcstól.</div>
+<h3>Algoritmus</h3>
+<div class="paragraph">
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain">Sz&eacute;less&eacute;gi&#160;bej&aacute;r&aacute;s</span><span class="metahun_separator">(</span><span class="metahun_plain">G</span><span class="metahun_separator">,</span><span class="metahun_plain">&#160;start</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_comment">{elők&eacute;sz&uuml;letek}</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;minden&#160;i&#160;cs&uacute;csra</span><span class="metahun_operator">:</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;sz&iacute;n</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;feh&eacute;r</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;t&aacute;v</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;v&eacute;gtelen</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;apa</span><span class="metahun_separator">[</span><span class="metahun_plain">i</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;null&#160;</span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_comment">{kiindul&oacute;&#160;cs&uacute;cs}</span><span class="metahun_plain"></span><br /><span class="metahun_plain">sz&iacute;n</span><span class="metahun_separator">[</span><span class="metahun_plain">start</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;sz&uuml;rke</span><br /><span class="metahun_plain">t&aacute;v</span><span class="metahun_separator">[</span><span class="metahun_plain">start</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain"></span><br /><span class="metahun_plain">apa</span><span class="metahun_separator">[</span><span class="metahun_plain">start</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;null</span><br /><span class="metahun_plain">Q&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;&Uuml;res</span><br /><span class="metahun_plain">Sorba</span><span class="metahun_separator">(</span><span class="metahun_plain">Q</span><span class="metahun_separator">,</span><span class="metahun_plain">start</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_comment">{bej&aacute;r&aacute;s}</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">am&iacute;g</span><span class="metahun_plain">&#160;Q&#160;</span><span class="metahun_keyword">nem</span><span class="metahun_plain">&#160;&uuml;res&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;u&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;Sorb&oacute;l</span><span class="metahun_separator">(</span><span class="metahun_plain">Q</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;u&#160;minden&#160;v&#160;szomsz&eacute;dj&aacute;ra</span><span class="metahun_operator">:</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;sz&iacute;n</span><span class="metahun_separator">[</span><span class="metahun_plain">v</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">=</span><span class="metahun_plain">&#160;feh&eacute;r&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;</span><span class="metahun_comment">{m&eacute;g&#160;nem&#160;j&aacute;rtunk&#160;itt}</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;sz&iacute;n</span><span class="metahun_separator">[</span><span class="metahun_plain">v</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;sz&uuml;rke</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;t&aacute;v</span><span class="metahun_separator">[</span><span class="metahun_plain">v</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;t&aacute;v</span><span class="metahun_separator">[</span><span class="metahun_plain">u</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;apa</span><span class="metahun_separator">[</span><span class="metahun_plain">v</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;u</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sorba</span><span class="metahun_separator">(</span><span class="metahun_plain">Q</span><span class="metahun_separator">,</span><span class="metahun_plain">v</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">El&aacute;gaz&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;sz&iacute;n</span><span class="metahun_separator">[</span><span class="metahun_plain">u</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;fekete&#160;</span><span class="metahun_comment">{ez&#160;k&eacute;sz}</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain"></span><br /><span class="metahun_keyword">Elj&aacute;r&aacute;s</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /></div>
+</div>
+<h3>Az algoritmus működése</h3>
+<div class="paragraph">
+Az algoritmus megértését segítendő szokás bevezetni a csúcsok színezését, ennek a működés szempontjából nincs igazi jelentőssége, enélkül is megírható a bejárás. A színek a következőt jelentik:
+<ul>
+<li>fehér: még nem jártunk ebben a csúcsban</li>
+<li>szürke: már jártunk a csúcsban, de azt még meg kell nézni, innen merre léphetünk tovább</li>
+<li>fekete: a csúcsot bejártuk, és összes szomszédját is felfedeztük már</li>
+</ul>
+</div>
+<div class="paragraph">
+A "start" csúcsból indulunk, ő fekete lesz és az összes belőle elérhető csúcsot berakjuk (valamilyen sorrendben) egy sorba. Ezután mindig az történik, hogy amíg van még csúcs a sorban, azt kivesszük (bejárjuk), és összes még nem bejárt szomszédját betesszük a sorba.
+</div>
+<div class="paragraph">
+A sor adatszerkezet garantálja, hogy így a starttól való távolság sorrendjében látogatjuk meg a gráf csúcsait, hiszen a korábban berakott csúcsokat korábban is vesszük ki a sorból.
+</div>
+<div class="paragraph">
+A megoldást a <span class="codetext">táv</span> és <span class="codetext">apa</span> mezőkben tároljuk. Ezeket a mezőket akkor lehet egy csúcsra kitölteni, amikor bekerül a sorba. A <span class="codetext">táv</span> azt adja meg, hány élre van a starttól, az <span class="codetext">apa</span> pedig azt, hogy melyik csúcsból léptünk rá. Az algoritmus futásának végén egy tetszőleges <span class="codetext">x</span> csúcsból indulva rekonstruálható egy legrövidebb út, az <span class="codetext">apa</span> "pointerek" végigkövetésével.
+</div>
+<h2>A sor adatszerkezet</h2>
+<div class="paragraph">
+A bejárás lelke a sor adatszerkezet, itt tartjuk nyilván, hogy melyik csúcsokat kell még bejárnunk, és milyen sorrendben. Bizonyos programozási nyelvekben van előre elkészített sor adattípus, máshol nekünk kell megírni. Megadunk egy lehetséges megvalósítást pascal nyelven.
+</div>
+<div class="paragraph">
+<a href="12ora/sord067.html?page=print">Sor adatszerkezet</a>
+</div>
+<h2>Feladat</h2>
+<div class="paragraph">
+<a href="12ora/bacond067.html?page=print">Kevin Bacon játék</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-12-08 08:13:19
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/12ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:18:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

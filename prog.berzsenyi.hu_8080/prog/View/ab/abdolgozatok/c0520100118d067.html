@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/abdolgozatok/c0520100118?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:45:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="c0520100118.html" class="tab_normal">Nézet</a><a href="c0520100118d067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../abdolgozatokd067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../abd067.html?page=print">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../abdolgozatokd067.html?page=print">Adatbáziskezelés dolgozatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="c0520100118d067.html?page=print">11C - 2010.01.18.</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="c0520100118d067.html?page=print">11C - 2010.01.18.</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>2. SQL témazáró</h1>
+<div class="paragraph">
+Az olimpia adatbázis magyar sportolók olimpiai érmeit tartalmazza, az első újkori olimpiától 2000-ig. 
+</div>
+<h2>Relációs séma</h2>
+<div class="paragraph">
+<pre>
+
+	olimpia(<u>ev</u>,varos,orszag)
+    	erem(ev,hely,vszam,<u>ekod</u>)
+    	siker(<u>skod</u>,<u>ekod</u>)
+    	sportolo(<u>skod</u>,nev,sportag,egyesulet,szul,ferfi)
+
+</pre>
+</div>
+<div class="paragraph">
+A táblák közötti kapcsolatokat mindig az azonos nevű mezők egyenlőségével adhatjuk meg.
+</div>
+<h2>Terv</h2>
+<div class="paragraph">
+<img src="../../../Downloadd5e4.png?node=4609" alt="" class=""/>
+</div>
+<h2>Kérdések</h2>
+<div class="paragraph">
+<ol>
+<li>Listázd a Ferencváros sportolóit, kor szerint rendezve. A legfiatalabb legyen a sor elején.</li>
+<li>Írd ki az 1979 utáni olimpiák helyszíneit. (Orszég, város, év.)</li>
+<li>Ábécé rendben jelenítsd meg a vízilabdázó olimpikonokat. (Név, egyesület, születési év.)</li>
+<li>Hány kézilabda érem szerepel az adatbázisban?</li>
+<li>Sorold fel Egerszegi Krisztina olimpiai érmeit. (Év, város, versenyszám, helyezés.)</li>
+<li>Írd ki, hogy Sydney-ben kik nyertek aranyérmet.</li>
+<li>Hol nyert és mikor nyert érmet Molnár Tamás?</li>
+<li>Kik azok a sportolók, akik nyertek érmet abban a városban, ahol Albert Flórián érmet nyert?</li>
+</ol>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-01-18 09:36:51
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/abdolgozatok/c0520100118?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:45:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

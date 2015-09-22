@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/sqlorder by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 15:44:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/screen/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/screen/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+            
+                <div id="leftdiv">
+                    
+
+
+
+
+
+
+
+<div id="maintitle">
+    <a href="../index.html" class="maintitle">
+        Informatika gyűjtemény
+    </a>
+</div>
+
+<div id="leftpanel">
+    
+
+
+
+<div id="favlinks">
+    <a href="../index.html">Főoldal</a> |
+    <a href="../szakkor/bdg/1011.html">Algoritmus szakkör</a>
+    <br />
+    <a href="../doku/info/articles.html">Cikkek</a> | 
+    <a href="../verseny/nttv/00table.html">Feladatok</a> |
+    <a href="../doku/info/projects.html">Projektek</a>
+    <br />
+    <a href="../doku/info/contr.html">Készítők</a> |
+    <a href="../doku/info/links.html">Linkek</a>
+</div>
+
+    <div id="seacrhbox">
+        <form action="http://prog.berzsenyi.hu:8080/prog/Search/ab/sqlorder" method="post" accept-charset="UTF-8">
+            <div style="text-align:left;">
+                <input type="text" id="searchbox" name="stitle" value="" /><br />
+            </div>
+            <div style="text-align: right;">
+                <input type="submit" name="submit" value="Keres" />
+                <input type="submit" name="submit" value="Töröl" />
+            </div>
+        </form>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+
+    <div id="contextmenu">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../ab.html">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        <b><a href="sqlorder.html">SQL ORDER BY, LIMIT  és TOP</a></b><br />
+        
+                
+        
+        
+    </div>
+
+
+    
+
+
+
+
+    
+
+
+
+    <!-- <a href="?page=admin&amp;a=/">Admin</a> -->
+</div>
+
+                </div>
+                <!-- RIGHT -->
+                <div id="rightdiv">
+                    
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="sqlorder.html" class="tab_selected_white">Nézet</a><a href="sqlorderd067.html?page=print" class="tab_normal">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../ab.html">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../View.html">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../ab.html">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="sqlorder.html">SQL ORDER BY, LIMIT  és TOP</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="sqlorder.html">SQL ORDER BY, LIMIT  és TOP</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>SQL ORDER BY, LIMIT és TOP</h1>
+<h2>Rendezés</h2>
+<div class="paragraph">Az <span class="codetext">ORDER BY</span> a választábla sorait rendezi. Azokat az oszlopokat (vagy sorszámukat) kell felsorolni, ami szerint rendezni szeretnénk a választ. Ha több oszlopot is megadunk, a második (,harmadik,...) csak akkor számít, ha az első (korábbi) szempont szerint "egyenlő" a két sor.
+</div>
+<div class="paragraph">
+A rendezés iránya alapból növekvő, ha csökkenő sorrendet szeretnénk, a <span class="codetext">DESC</span> módosítót kell alkalmazni.
+</div>
+<h3>Példák</h3>
+<div class="paragraph">
+<div class="code codetext">&nbsp;&nbsp;&nbsp;SELECT&nbsp;név,&nbsp;fizetés<br />&nbsp;&nbsp;&nbsp;FROM&nbsp;bérek<br />&nbsp;&nbsp;&nbsp;ORDER&nbsp;BY&nbsp;fizetés&nbsp;DESC</div>
+<div class="code codetext">&nbsp;&nbsp;&nbsp;SELECT&nbsp;osztály,&nbsp;név<br />&nbsp;&nbsp;&nbsp;FROM&nbsp;tanulók<br />&nbsp;&nbsp;&nbsp;ORDER&nbsp;BY&nbsp;1,&nbsp;2</div>
+<div class="code codetext">&nbsp;&nbsp;&nbsp;SELECT&nbsp;termék,&nbsp;ár<br />&nbsp;&nbsp;&nbsp;FROM&nbsp;katalógus<br />&nbsp;&nbsp;&nbsp;ORDER&nbsp;BY&nbsp;ár*(1+áfa)</div>
+</div>
+
+<div class="paragraph">
+Rendezhetünk olyan oszlop (vagy oszlopkifejezés) szerint is, ami nem szerepel a <span class="codetext">SELECT</span> után. Viszont ha az oszlop sorszámát adjuk meg a rendezésnél, az a <span class="codetext">SELECT</span> után felsorolt kifejezések közötti sorszámot jelenti.
+</div>
+<h2>Választábla részének kiválasztása</h2>
+<div class="paragraph">Előfordulhat, hogy a választábla egy részét akarjuk megjeleníteni. </div>
+<h3>Első néhány sor kiírása</h3>
+<div class="code codetext">&nbsp;&nbsp;&nbsp;SELECT&nbsp;...<br />&nbsp;&nbsp;&nbsp;FROM&nbsp;...<br />&nbsp;&nbsp;&nbsp;WHERE&nbsp;...<br />&nbsp;&nbsp;&nbsp;LIMIT&nbsp;10</div>
+<h3>Rész kiválasztása</h3>
+<div class="code codetext">&nbsp;&nbsp;&nbsp;SELECT&nbsp;...<br />&nbsp;&nbsp;&nbsp;FROM&nbsp;...<br />&nbsp;&nbsp;&nbsp;WHERE&nbsp;...<br />&nbsp;&nbsp;&nbsp;LIMIT&nbsp;100,20</div>
+<h3>Első néhány sor kiírása mashogy</h3>
+<div class="code codetext">&nbsp;&nbsp;&nbsp;SELECT&nbsp;TOP&nbsp;10&nbsp;előadó<br />&nbsp;&nbsp;&nbsp;FROM&nbsp;slágerlista<br />&nbsp;&nbsp;&nbsp;WHERE&nbsp;...</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-01-28 10:06:45
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+        <br /><br />
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img src="../../img/valid-xhtml10-blue.png" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border: 0pt none ; width: 88px; height: 31px;" src="../../img/valid-css-blue.png" alt="Valid CSS!" />
+        </a>
+        <br />
+     
+    
+    
+    <br /><br />
+
+
+</div>
+                </div>
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/sqlorder by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 15:44:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

@@ -1,0 +1,332 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/12ora/sor?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:45:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="sor.html" class="tab_normal">Nézet</a><a href="sord067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../12orad067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../0910d067.html?page=print">2009/2010</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../12orad067.html?page=print">12. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="sord067.html?page=print">Sor adatszerkezet</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="sord067.html?page=print">Sor adatszerkezet</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>A sor adatszerkezet, korlátozott számú beszúrás esetén</h1>
+<div class="paragraph">
+A sor beceneve a szakzsargonban FIFO (First-In-First-Out = először-be-először-ki). A szélességi bejárásnál a gráf minden csúcsa pontosan egyszer kerül a sorba, ezért egyszerűen egy olyan tömbbel dolgozhatunk, aminek mérete egyenlő a gráf csúcsainak számával.
+</div>
+<h2>Műveletek</h2>
+<div class="paragraph">
+<ul>
+<li>Üres: készít egy üres sort</li>
+<li>Üres?: megadja, hogy az adott sor üres-e</li>
+<li>Sorba: beszúr egy elemet a sor végére</li>
+<li>Sorból: kiveszi és visszaadja a sor első elemét</li>
+</ul>
+</div>
+<h2>Megvalósítás</h2>
+<div class="paragraph">
+A sor elemeit egy tömbben tároljuk. Két mutatóra van szükségünk, az egyik a következő beszúrás helyét tárolja, a másik pedig a sor aktuális első elemére mutat.
+</div>
+<h2>Példa</h2>
+<div class="paragraph">
+<img src="../../../../../Downloadcf59.png?node=4445" alt="" class=""/>
+</div>
+<h2>Program</h2>
+<div class="paragraph">
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="pascal_keyword">program</span><span class="pascal_plain">&#160;sorkezeles</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">const</span><span class="pascal_plain">&#160;MAX&#160;</span><span class="pascal_operator">=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">100</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">type</span><span class="pascal_plain">&#160;&#160;Telem&#160;</span><span class="pascal_operator">=</span><span class="pascal_plain">&#160;</span><span class="pascal_type">integer</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">var</span><span class="pascal_plain">&#160;&#160;&#160;sor&#160;&#160;&#160;</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">array</span><span class="pascal_separator">[</span><span class="pascal_num_literal">1</span><span class="pascal_separator">..</span><span class="pascal_plain">MAX</span><span class="pascal_separator">]</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">of</span><span class="pascal_plain">&#160;Telem</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;sorBE</span><span class="pascal_separator">,</span><span class="pascal_plain">&#160;sorKI&#160;</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;</span><span class="pascal_type">integer</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;</span><br /><span class="pascal_plain"></span><br /><span class="pascal_keyword">procedure</span><span class="pascal_plain">&#160;ures</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;sorBE&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;sorKI&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">end</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain"></span><br /><span class="pascal_plain"></span><br /><span class="pascal_keyword">procedure</span><span class="pascal_plain">&#160;sorba</span><span class="pascal_separator">(</span><span class="pascal_plain">e&#160;</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;Telem</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;sor</span><span class="pascal_separator">[</span><span class="pascal_plain">sorBE</span><span class="pascal_separator">]</span><span class="pascal_plain">&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;e</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;sorBE&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;sorBE&#160;</span><span class="pascal_operator">+</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">end</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain"></span><br /><span class="pascal_keyword">function</span><span class="pascal_plain">&#160;ures_e</span><span class="pascal_operator">:</span><span class="pascal_type">boolean</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;ures_e&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_separator">(</span><span class="pascal_plain">sorBE&#160;</span><span class="pascal_operator">=</span><span class="pascal_plain">&#160;sorKI</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">end</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain"></span><br /><span class="pascal_plain"></span><br /><span class="pascal_keyword">function</span><span class="pascal_plain">&#160;sorbol</span><span class="pascal_operator">:</span><span class="pascal_plain">Telem</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;sorbol&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;sor</span><span class="pascal_separator">[</span><span class="pascal_plain">sorKI</span><span class="pascal_separator">];</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;sorKI&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;sorKI&#160;</span><span class="pascal_operator">+</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">1</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">end</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain"></span><br /><span class="pascal_plain"></span><br /><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;ures</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;sorba</span><span class="pascal_separator">(</span><span class="pascal_num_literal">4</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;sorba</span><span class="pascal_separator">(</span><span class="pascal_num_literal">2</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;sorba</span><span class="pascal_separator">(</span><span class="pascal_num_literal">137</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;writeln</span><span class="pascal_separator">(</span><span class="pascal_plain">sorbol</span><span class="pascal_separator">());</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">end</span><span class="pascal_separator">.</span><span class="pascal_plain"></span><br /></div>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-12-08 10:24:34
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/12ora/sor?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 08 Aug 2012 01:45:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

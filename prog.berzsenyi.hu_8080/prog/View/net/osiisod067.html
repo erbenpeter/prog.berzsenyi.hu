@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/net/osiiso?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:44:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="osiiso.html" class="tab_normal">Nézet</a><a href="osiisod067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../netd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../netd067.html?page=print">Számítógép hálózatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="osiisod067.html?page=print">Az OSI/ISO referencia modell</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="osiisod067.html?page=print">Az OSI/ISO referencia modell</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Az OSI/ISO hivatkozási modell</h1>
+<h2>Történet </h2>
+<h2>Mit jelent a "rétegelt" modell?</h2>
+<h2>Fizikai réteg </h2>
+<div class="paragraph"><b>Feladata:</b> Egy 0-1 sorozat (bitsorozat) továbbítása két közvetlenül összekapcsolt számítógép között.</div>
+<div class="paragraph">Ide tartozik a hálózati illesztők (hálózati kártya, modem) tervezése, a kábelezés kérdése, illetve általánosabban az átviteli közeg és a 0-1 információ fizikai reprezentálásának kérdése, a topológia és a csomóponti eszközök.</div>
+<div class="paragraph">
+<a href="osiiso/fizd067.html?page=print">A fizikai réteg részletesebben.</a>
+</div>
+<h2>Adatkapcsolati réteg </h2>
+<div class="paragraph"><b>Feladata:</b> a fizikai rétegben nem garantált a hibamentes kommunikáció. Az adatkapcsolati réteg fő feladata tehát a hibaészlelés és a hibajavítás, röviden: hibamentes kommunikáció biztosítása két közvetlenül összekapcsolt gép között.</div>
+<div class="paragraph">Szokás két alrétegre bontani: <b>MAC (Media Access Control)</b>, közeghozzáférést szabályozó alréteg, és <b>LLC (Logical Link Control)</b>, logikai kapcsolat vezérlés. 
+</div>
+<div class="paragraph">
+A hibaészlelés és hibajavítás érdekében az adatkapcsolati réteg keretekre (frame) bontva továbbítja az információt, a keretek az adatokon túl hibakezelésre használható kódot is tartalmaznak. (<b>EDC (Error Detection Code)</b>, hibaészlelő kód, <b>ECC (Error Correction Code)</b>, hibajavító kód.)
+</div>
+<h2>Hálózati réteg </h2>
+<div class="paragraph"><b>Feladata:</b> Ebben a rétegben definiáljuk, hogyan címezhetők meg a hálózatba kötött gépek. Ezen cím-információ alapján olyan gépek között is kell tudnunk adatot továbbítani, amelyek nem közvetlenül vannak összekötve. Ehhez a hálózati réteg forgalomirányítási (útvonalkiválasztási) szolgáltatásokat biztosít.</div>
+<h2>Szállítási réteg </h2>
+<div class="paragraph"><b>Feladata:</b> A hálózati rétegben elveszhetnek csomagok, és az is előfordulhat, hogy egy nagyobb üzenet részei rossz sorrendben érkeznek meg. A szállítási réteg biztosítja a veszteségmentes és sorrendhelyes csomagküldést és fogadást.</div>
+<h2>Viszony réteg </h2>
+<div class="paragraph"><b>Feladata:</b> több-résztvevős kommunikáció vezérlése, például konferencia-beszélgetések.</div>
+<h2>Megjelenítési réteg </h2>
+<div class="paragraph"><b>Feladata:</b> adatok kódolása (pl. nemzeti karakterkészletek), tömörítése és titkosítása.</div>
+<h2>Alkalmazási réteg</h2>
+<div class="paragraph"><b>Feladata:</b> Minden, amire a hálózatot használjuk.</div>
+<h2>Források</h2>
+<div class="paragraph">
+<a href="osiiso/osi1d067.html?page=print">osi1.pdf</a><br/>
+<a href="osiiso/osi2d067.html?page=print">osi2.pdf</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:27:00
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/net/osiiso?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:44:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

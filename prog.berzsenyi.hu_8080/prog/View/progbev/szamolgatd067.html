@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/szamolgat?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:51:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="szamolgat.html" class="tab_normal">Nézet</a><a href="szamolgatd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../progbevd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../progbevd067.html?page=print">Programozás bevezető</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="szamolgatd067.html?page=print">Számolgatások</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="szamolgatd067.html?page=print">Számolgatások</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Számolgatások</h1>
+
+<div class="paragraph">
+A legtöbb program számításokat (is) végez. Röviden áttekintjük, milyen számokkal dolgozhatunk, és milyen műveleteket végezhetünk velük.
+</div>
+
+<h2>Szám típusok</h2>
+
+<div class="paragraph">
+Általában kétféle számtípust használnak a programozási nyelvek: vannak <b>egész</b> típusok és <b>lebegőpontos ("valós")</b> típusok. Ezen belül különböző méretű típusok különböztethetők meg (például 8, 16, 32 és 64 bites egészek), illetve lehet előjeles és előjel nélküli egészeket tárolni.
+</div>
+
+<h3>Egészek</h3>
+<div class="paragraph">
+<table>
+<tr>
+<td>Méret</td>
+<td>Előjel</td>
+<td>min</td>
+<td>max</td>
+<td>pascal</td>
+<td>java</td>
+<td>C#</td>
+</tr>
+<tr>
+<td>8 bit</td>
+<td>nincs</td>
+<td>0</td>
+<td>255</td>
+<td><b>byte</b></td>
+<td>-</td>
+<td><b>byte</b></td>
+</tr>
+<tr>
+<td>8 bit</td>
+<td>van</td>
+<td>-128</td>
+<td>127</td>
+<td><b>shortint</b></td>
+<td><b>byte</b></td>
+<td><b>sbyte</b></td>
+</tr>
+<tr>
+<td>16 bit</td>
+<td>nincs</td>
+<td>0</td>
+<td>65535</td>
+<td><b>word</b></td>
+<td>-</td>
+<td><b>ushort</b></td>
+</tr>
+<tr>
+<td>16 bit</td>
+<td>van</td>
+<td>-32768</td>
+<td>32767</td>
+<td><b>integer</b></td>
+<td><b>short</b></td>
+<td><b>short</b></td>
+</tr>
+<tr>
+<td>32 bit</td>
+<td>nincs</td>
+<td>0</td>
+<td>4294967295</td>
+<td>-</td>
+<td>-</td>
+<td><b>uint</b></td>
+</tr>
+<tr>
+<td>32 bit</td>
+<td>van</td>
+<td>-2147483648</td>
+<td>2147483647</td>
+<td><b>longint</b></td>
+<td><b>int</b></td>
+<td><b>int</b></td>
+</tr>
+<tr>
+<td>64 bit</td>
+<td>nincs</td>
+<td>0</td>
+<td>18446744073709551615</td>
+<td>-</td>
+<td>-</td>
+<td><b>ulong</b></td>
+</tr>
+<tr>
+<td>64 bit</td>
+<td>van</td>
+<td>-9223372036854775808</td>
+<td>9223372036854775807 </td>
+<td>-</td>
+<td><b>long</b></td>
+<td><b>long</b></td>
+</tr>
+</table>
+</div>
+
+<h3>Lebegőpontos számok</h3>
+<div class="paragraph">
+<table>
+<tr>
+<td>Méret</td>
+<td>legkisebb pozitív</td>
+<td>legnagyobb pozitív</td>
+<td>értékes jegyek</td>
+<td>pascal</td>
+<td>java</td>
+<td>C#</td>
+</tr>
+<tr>
+<td>32 bit</td>
+<td><span class="mathspan">$1,5\cdot 10^{-45}$</span> </td>
+<td><span class="mathspan">$3,4\cdot 10^{38}$</span> </td>
+<td>6-7</td>
+<td><b>single</b></td>
+<td><b>float</b></td>
+<td><b>float</b></td>
+</tr>
+<tr>
+<td>64 bit</td>
+<td><span class="mathspan">$5,0\cdot 10^{-324}$</span> </td>
+<td><span class="mathspan">$1,7\cdot 10^{308}$</span> </td>
+<td>15-16 </td>
+<td><b>double</b></td>
+<td><b>double</b></td>
+<td><b>double</b></td>
+</tr>
+<tr>
+<td>48 bit</td>
+<td><span class="mathspan">$2,9\cdot 10^{-39}$</span> </td>
+<td><span class="mathspan">$1,7\cdot 10^{38}$</span> </td>
+<td>11-12 </td>
+<td><b>real</b></td>
+<td>-</td>
+<td>-</td>
+</tr>
+</table>
+</div>
+
+<h2>Műveletek (operátorok)</h2>
+<h3>Értékadás</h3>
+<div class="paragraph">
+<table>
+<tr><td>pascal</td><td>java</td><td>C#</td></tr>
+<tr><td>változó := kifejezés</td><td>változó = kifejezés</td><td>változó = kifejezés</td></tr>
+</table>
+</div>
+<h3>Egyoperandusú műveletek</h3>
+<div class="paragraph">
+
+</div>
+<h3>Kétoperandusú műveletek</h3>
+<div class="paragraph">
+
+</div>
+
+
+<h2>Könyvtári függvények</h2>
+
+<div class="paragraph">
+
+</div>
+
+<h2>Példák</h2>
+
+<div class="paragraph">
+<div class="code codetext"><style>.pascal_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.pascal_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.pascal_type {
+color: rgb(128,0,0);
+}
+.pascal_operator {
+color: rgb(0,0,0);
+}
+.pascal_char_literal {
+color: rgb(255,0,255);
+}
+.pascal_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.pascal_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.pascal_num_literal {
+color: rgb(0,0,255);
+}
+.pascal_comment {
+color: rgb(147,147,147);  
+}
+.pascal_plain {
+color: rgb(0,0,0);
+}
+.pascal_string_literal {
+color: rgb(255,0,0);
+}
+.pascal_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="pascal_keyword">program</span><span class="pascal_plain">&#160;xx</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">uses</span><span class="pascal_plain">&#160;math</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">var</span><span class="pascal_plain">&#160;x</span><span class="pascal_separator">,</span><span class="pascal_plain">y</span><span class="pascal_separator">,</span><span class="pascal_plain">d&#160;</span><span class="pascal_operator">:</span><span class="pascal_plain">&#160;float</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain"></span><br /><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;x&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">0.01</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;d&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;</span><span class="pascal_num_literal">0.01</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">while</span><span class="pascal_plain">&#160;x&#160;</span><span class="pascal_operator">&lt;</span><span class="pascal_num_literal">1.0</span><span class="pascal_plain">&#160;</span><span class="pascal_keyword">do</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">begin</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;y&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;power</span><span class="pascal_separator">(</span><span class="pascal_plain">x</span><span class="pascal_separator">,</span><span class="pascal_plain">x</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;writeln</span><span class="pascal_separator">(</span><span class="pascal_plain">x</span><span class="pascal_operator">:</span><span class="pascal_num_literal">0</span><span class="pascal_operator">:</span><span class="pascal_num_literal">4</span><span class="pascal_separator">,</span><span class="pascal_string_literal">';'</span><span class="pascal_separator">,</span><span class="pascal_plain">y</span><span class="pascal_operator">:</span><span class="pascal_num_literal">0</span><span class="pascal_operator">:</span><span class="pascal_num_literal">4</span><span class="pascal_separator">);</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;x&#160;</span><span class="pascal_operator">:=</span><span class="pascal_plain">&#160;x&#160;</span><span class="pascal_operator">+</span><span class="pascal_plain">&#160;d</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="pascal_keyword">end</span><span class="pascal_separator">;</span><span class="pascal_plain"></span><br /><span class="pascal_keyword">end</span><span class="pascal_separator">.</span><span class="pascal_plain"></span><br /></div>
+</div>
+
+
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-02-04 07:46:41
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/szamolgat?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 19:51:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

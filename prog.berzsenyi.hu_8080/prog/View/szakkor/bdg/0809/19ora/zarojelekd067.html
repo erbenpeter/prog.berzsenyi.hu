@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/19ora/zarojelek?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:37:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="zarojelek.html" class="tab_normal">Nézet</a><a href="zarojelekd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../19orad067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../0809d067.html?page=print">2008/2009</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../19orad067.html?page=print">19. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="zarojelekd067.html?page=print">Zárójelek</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="zarojelekd067.html?page=print">Zárójelek</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Zárójelek</h1>
+<div class="paragraph"><div style="text-align: center;">Stanford Local Programming Contest, 2004. 5. feladat</div></div>
+<div class="paragraph">
+Megadjuk a "rendes zárójelezések" definícióját:
+<ul>
+<li> az üres sorozat rendes zárójelezés </li>
+<li> ha <span class="codetext">s</span> rendes zárójelezés, akkor <span class="codetext">(s)</span> és <span class="codetext">[s]</span> is az</li>
+<li> ha <span class="codetext">a</span> és <span class="codetext">b</span> rendes, akkor  <span class="codetext">ab</span> is rendes</li>
+<li> a többi sorozat nem rendes zárójelezés</li>
+</ul>
+</div>
+<div class="paragraph">
+Például a következő zárójelezések rendesek:
+<span class="codetext">(), [], (()), ()[], ()[()]</span>,<br/>
+ezek pedig nem:<span class="codetext">(, ], )(, ([)], ([(]</span>.
+</div>
+<h2>Feladat</h2>
+<div class="paragraph">
+Zárójelek egy adott sorozatára adjuk meg a leghosszabb rendes zárójelezész leíró részsorozat hosszát!</div>
+
+<h2>Bemenet</h2>
+<div class="paragraph">
+A bemenet több tesztesetet tartalmaz. A tesztesetek egy-egy sorban vannak, és csak a  "(", ")", "[", és "]" karaktereket tartalmazzák; a bemeneti sorok hossza legfeljebb 100.
+A bemenet végét egy az  "end" szöveget tartalmazó sor jelzi. 
+</div>
+<h2>Kimenet</h2>
+<div class="paragraph">
+A kimenet minden sorába a megfelelő tesztesetre számolt maximális részsorozat hosszát kell írni.
+</div>
+<h2>Példák</h2>
+<div class="paragraph">
+A <span class="codetext">([([]])]</span> sorozatban a leghosszabb rendes zárójelezést adó részsorozat:
+<span class="codetext">[([])]</span>.
+</div>
+<div class="paragraph">
+<table>
+<tr><td>brackets.in</td><td>brackets.out</td></tr>
+<tr><td>
+<span class="codetext">((()))</span><br/>
+<span class="codetext">()()()</span><br/>
+<span class="codetext">([]])</span><br/>
+<span class="codetext">)[)(</span><br/>
+<span class="codetext">([][][)</span><br/>
+end
+
+</td><td>
+6<br/>
+6<br/>
+4<br/>
+0<br/>
+6
+</td></tr>
+
+</table>
+</div>
+<h2>Tesztadatok</h2>
+<div class="paragraph">
+<a href="zarojelek/bracketsd067.html?page=print">brackets.in</a><br/>
+<a href="zarojelek/bracketsd067-2.html?page=print">brackets.out</a><br/>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:32:42
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/19ora/zarojelek?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:37:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

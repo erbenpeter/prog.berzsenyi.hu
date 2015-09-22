@@ -1,0 +1,311 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/logo/dolgozatok/c06_d_20081119?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:29:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="c06_d_20081119.html" class="tab_normal">Nézet</a><a href="c06_d_20081119d067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../dolgozatokd067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../logod067.html?page=print">Logo programozás</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../dolgozatokd067.html?page=print">Dolgozatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="c06_d_20081119d067.html?page=print">Dolgozat C06 2008.11.19.</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="c06_d_20081119d067.html?page=print">Dolgozat C06 2008.11.19.</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Dolgozat</h1>
+
+<h2>1. feladat</h2>
+<div class="paragraph">Készíts <span class="codetext">FA :H :N</span> eljárást a bináris fa kirajzolásához. Az elágazás után a hossz 2/3-a az elágazás előttinek. A <span class="codetext">:H</span> paraméter az első vonal hossza, <span class="codetext">:N</span> pedig a szintek száma. Az ábrán látható fa szintszáma 2.
+</div>
+<div class="paragraph">
+<img src="../../../Downloadbde5.png?node=3360" alt="" class=""/>
+</div>
+<h3>Megoldás</h3>
+<div class="paragraph">
+Zsakó András kódja alapján
+</div>
+<div class="paragraph">
+<div class="code codetext">eljárás&nbsp;FA&nbsp;:H&nbsp;:N<br />&nbsp;&nbsp;&nbsp;ELŐRE&nbsp;:H<br />&nbsp;&nbsp;&nbsp;HA&nbsp;:N&gt;1&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[BALRA&nbsp;15&nbsp;FA&nbsp;:H/2&nbsp;:N-1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JOBBRA&nbsp;90&nbsp;FA&nbsp;:H/2&nbsp;:N-1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BALRA&nbsp;75]<br />&nbsp;&nbsp;&nbsp;HÁTRA&nbsp;:H<br />vége</div>
+</div>
+
+<h2>2. feladat</h2>
+<div class="paragraph">Készíts  <span class="codetext">TRAP :H :N</span> eljárást az ábrához. <span class="codetext">:H</span> a legnagyobb trapéz szárának hossza, <span class="codetext">:N</span> pedig a trapézok száma. Az ábra befelé "fejlődik", minden újabb trapéz fele akkora, mint az előző.
+
+</div>
+<div class="paragraph">
+<img src="../../../Download7e69.png?node=3361" alt="" class=""/>
+</div>
+
+<h3>Megoldás</h3>
+<div class="paragraph">
+Holocsi Szilvi kódja alapján
+</div>
+<div class="paragraph">
+<div class="code codetext">eljárás&nbsp;TRAP&nbsp;:h&nbsp;:n<br />&nbsp;TF&nbsp;b&nbsp;90&nbsp;E&nbsp;:h&nbsp;TL<br />&nbsp;&nbsp;J&nbsp;120&nbsp;E&nbsp;:h&nbsp;<br />&nbsp;&nbsp;J&nbsp;60&nbsp;&nbsp;E&nbsp;:h<br />&nbsp;&nbsp;J&nbsp;60&nbsp;&nbsp;E&nbsp;:h&nbsp;<br />&nbsp;TF&nbsp;J&nbsp;120&nbsp;E&nbsp;:h&nbsp;J&nbsp;90<br />&nbsp;HA&nbsp;:n&nbsp;&gt;&nbsp;1&nbsp;[TRAP&nbsp;:h/2&nbsp;:n-1]<br />vége</div>
+</div>
+
+<h2>3. feladat</h2>
+<div class="paragraph">Írj rekurzív <span class="codetext">NEGY :H :N</span> eljárást az alábbi rajzok elkészítéséhez. <span class="codetext">:H</span> a legnagyobb négyzet oldalhossza, az ábrák az <span class="codetext">:N=1</span>, <span class="codetext">:N=2</span>, <span class="codetext">:N=3</span> eseteket mutatják.
+
+</div>
+<div class="paragraph">
+<img src="../../../Downloadd5db.png?node=3362" alt="" class=""/>
+</div>
+<h3>Megoldás</h3>
+<div class="paragraph">
+Mohos Péter Pál kódja alapján
+</div>
+<div class="paragraph">
+<div class="code codetext">eljárás&nbsp;negy&nbsp;:h&nbsp;:n<br />&nbsp;ism&nbsp;4&nbsp;[e&nbsp;:h/4&nbsp;j&nbsp;135&nbsp;e&nbsp;(gyök&nbsp;2)*(:h/4)&nbsp;j&nbsp;135&nbsp;e&nbsp;:h/4&nbsp;j&nbsp;90&nbsp;e&nbsp;:h&nbsp;j&nbsp;90]<br />&nbsp;ha&nbsp;:n&gt;1&nbsp;<br />&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;e&nbsp;:h/4<br />&nbsp;&nbsp;&nbsp;&nbsp;ism&nbsp;4&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tf&nbsp;e&nbsp;:h/4*3&nbsp;j&nbsp;90&nbsp;e&nbsp;:h/4&nbsp;j&nbsp;45&nbsp;tl<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;negy&nbsp;(gyök&nbsp;2)*(:h/4)&nbsp;:n-1&nbsp;b&nbsp;45<br />&nbsp;&nbsp;&nbsp;&nbsp;]&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;h&nbsp;:h/4<br />&nbsp;]<br />vége</div>
+</div>
+<div class="paragraph">
+Bágyoni Attila kódja alapján
+</div>
+<div class="paragraph">
+<div class="code codetext">eljárás&nbsp;NEGY&nbsp;:H&nbsp;:N<br />HAK&nbsp;:N&gt;1&nbsp;<br />&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;:H/4<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J&nbsp;45&nbsp;NEGY&nbsp;:H/4&nbsp;*&nbsp;gyök&nbsp;2&nbsp;:N-1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;90&nbsp;NEGY&nbsp;:H/4&nbsp;*&nbsp;gyök&nbsp;2&nbsp;:N-1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISM&nbsp;2&nbsp;[j&nbsp;90&nbsp;e&nbsp;:H/4&nbsp;*&nbsp;gyök&nbsp;2]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;90&nbsp;NEGY&nbsp;:H/4&nbsp;*&nbsp;gyök&nbsp;2&nbsp;:N-1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISM&nbsp;2&nbsp;[j&nbsp;90&nbsp;e&nbsp;:H/4&nbsp;*&nbsp;gyök&nbsp;2]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;90&nbsp;NEGY&nbsp;:H/4&nbsp;*&nbsp;gyök&nbsp;2&nbsp;:N-1<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J&nbsp;90&nbsp;E&nbsp;:H/4&nbsp;*&nbsp;gyök&nbsp;2&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;J&nbsp;45&nbsp;E&nbsp;:H*3/4&nbsp;ISM&nbsp;5&nbsp;[J&nbsp;90&nbsp;E&nbsp;:H]<br />&nbsp;&nbsp;&nbsp;]<br />&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISM&nbsp;4&nbsp;[E&nbsp;:H&nbsp;J&nbsp;90]&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;:H*3/4&nbsp;J&nbsp;45&nbsp;E&nbsp;:H/4&nbsp;*&nbsp;gyök&nbsp;2&nbsp;J&nbsp;45&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISM&nbsp;3&nbsp;[E&nbsp;:H/2&nbsp;J&nbsp;45&nbsp;E&nbsp;:H/4&nbsp;*&nbsp;gyök&nbsp;2&nbsp;J&nbsp;45]&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;:H*3/4<br />&nbsp;&nbsp;&nbsp;]<br />vége</div>
+</div>
+
+<div class="paragraph">
+Albini Valentin kódja alapján
+</div>
+<div class="paragraph">
+<div class="code codetext">eljárás&nbsp;negy&nbsp;:h&nbsp;:n<br />&nbsp;ism&nbsp;4&nbsp;[&nbsp;e&nbsp;:h&nbsp;j&nbsp;90&nbsp;]<br />&nbsp;e&nbsp;:h/4<br />&nbsp;ism&nbsp;4&nbsp;&nbsp;[e&nbsp;:h/2&nbsp;j&nbsp;45&nbsp;e&nbsp;(gyök&nbsp;2)*:h/4&nbsp;j&nbsp;45&nbsp;]<br />&nbsp;h&nbsp;:h/4<br />&nbsp;ha&nbsp;:n&gt;1&nbsp;<br />&nbsp;[&nbsp;<br />&nbsp;&nbsp;&nbsp;e&nbsp;:h/4&nbsp;j&nbsp;45&nbsp;<br />&nbsp;&nbsp;&nbsp;negy&nbsp;(:h/4)*(gyök&nbsp;2)&nbsp;:n-1&nbsp;<br />&nbsp;&nbsp;&nbsp;b&nbsp;45&nbsp;e&nbsp;:h/2&nbsp;j&nbsp;45<br />&nbsp;&nbsp;&nbsp;negy&nbsp;(:h/4)*(gyök&nbsp;2)&nbsp;:n-1&nbsp;<br />&nbsp;&nbsp;&nbsp;e&nbsp;(gyök&nbsp;2)*:h/4&nbsp;j&nbsp;45&nbsp;e&nbsp;:h/2&nbsp;j&nbsp;45<br />&nbsp;&nbsp;&nbsp;negy&nbsp;(:h/4)*(gyök&nbsp;2)&nbsp;:n-1&nbsp;<br />&nbsp;&nbsp;&nbsp;e&nbsp;(gyök&nbsp;2)*:h/4&nbsp;j&nbsp;45&nbsp;e&nbsp;:h/2&nbsp;j&nbsp;45&nbsp;<br />&nbsp;&nbsp;&nbsp;negy&nbsp;(:h/4)*(gyök&nbsp;2)&nbsp;:n-1<br />&nbsp;&nbsp;&nbsp;e&nbsp;(gyök&nbsp;2)*:h/4&nbsp;j&nbsp;45&nbsp;e&nbsp;:h*3/4&nbsp;j&nbsp;90<br />&nbsp;]<br />vége</div>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:23:07
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/logo/dolgozatok/c06_d_20081119?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:29:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

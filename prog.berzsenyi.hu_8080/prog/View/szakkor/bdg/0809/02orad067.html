@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/02ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 21:50:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="02ora.html" class="tab_normal">Nézet</a><a href="02orad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../0809d067.html?page=print">
+                    <img src="../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../0809d067.html?page=print">2008/2009</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="02orad067.html?page=print">2. óra - Permutáció</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="02orad067.html?page=print">2. óra - Permutáció</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../elmeletd067.html?page=print">Elmélet</a>
+            
+                
+                &gt;
+                <a href="../../../elmelet/algd067.html?page=print">Algoritmusok</a>
+            
+                
+                &gt;
+                <a href="../../../elmelet/alg/kombalgod067.html?page=print">Kombinatorikai algoritmusok</a>
+            
+            <br />
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../cimkek/orad067.html?page=print">Óra</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>2. óra</h1>
+<div style="text-align: center;">(2008.09.23.)</div>
+<div class="paragraph">
+Folytatjuk a kombinatorikus algoritmusok tanulmányozását.
+</div>
+<h2>Permutációk</h2>
+<div class="paragraph">
+Adott néhány szám (objektum), és ezeket minden lehetséges módon sorba kell rendeznünk.
+A számok között lehetnek azonosak is. 
+</div>
+<div class="paragraph"> Például az {1,2,3} számok permutációi: 123, 132, 213, 231, 312, 321; az {1,1,2,3} számok permutációi: 1123, 1132, 1213, 1231, 1312, 1321, 2113, 2131, 2311, 3112, 3121, 3211.
+</div>
+<h3>Sorrend</h3>
+<div class="paragraph">A permutációkat <i>lexikografikus sorrendben</i> állítjuk elő. Ez azt jelenti, hogy a permutációkat "karakterláncoknak" képzeljük, és ezeket a karakterláncokat ábécé rend szerint rendezzük. Az "ábécében" a kisebb szám előbb van.</div>
+<div class="paragraph">
+Az 1,2,3,...,n permutációból indulunk ki, és mindig a "legkisebb növelés" elve alapján keressük a következő permutációt. Ehhez az aktuális sorozat jobb szélétől (végétől) visszafelé keressük az első olyan elemet, amitől jobbra nála nagyobb elem van. Ha megtaláltuk, kicseréljük jobbról az első, nála nagyobb elemmel, majd a sorozat végének (ami most fordítottan rendezett) megfordítjuk a sorrendjét.
+</div>
+<h3>Következő permutáció</h3>
+<div class="paragraph">
+<img src="../../../../Download2b1e.png?node=2964" alt="" class=""/>
+</div>
+<h3>Algoritmus</h3>
+<div class="code codetext"><style>.metahun_other_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_user_type {
+color: #0095ff;  font-weight: bold;
+}
+.metahun_keyword {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_char_literal {
+color: rgb(255,0,255); font-weight: bold;
+}
+.metahun_type {
+color: rgb(128,0,0);
+}
+.metahun_operator {
+color: rgb(0,0,0);
+}
+.metahun_char_literal {
+color: rgb(255,0,255);
+}
+.metahun_bool_literal {
+color: rgb(0,0,0); font-weight: bold;
+}
+.metahun_esc_string_literal {
+color: rgb(255,0,0); font-weight: bold;
+}
+.metahun_num_literal {
+color: rgb(0,0,255);
+}
+.metahun_comment {
+color: rgb(147,147,147);  
+}
+.metahun_plain {
+color: rgb(0,0,0);
+}
+.metahun_string_literal {
+color: rgb(255,0,0);
+}
+.metahun_separator {
+color: rgb(0,0,0);
+}
+</style><!--  : generated by JHighlight v1.0 (http://jhighlight.dev.java.net) --><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;az&#160;a</span><span class="metahun_separator">[</span><span class="metahun_num_literal">1</span><span class="metahun_separator">],</span><span class="metahun_plain">a</span><span class="metahun_separator">[</span><span class="metahun_num_literal">2</span><span class="metahun_separator">],...,</span><span class="metahun_plain">a</span><span class="metahun_separator">[</span><span class="metahun_plain">n</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;permut&aacute;ci&oacute;&#160;bej&aacute;r&aacute;sa</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;j&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;n&#160;&ndash;&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">am&iacute;g</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">[</span><span class="metahun_plain">j</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&gt;=</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">[</span><span class="metahun_plain">j</span><span class="metahun_num_literal">+1</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;j&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;j&#160;&ndash;&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ha</span><span class="metahun_plain">&#160;j&#160;</span><span class="metahun_operator">=</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">0</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">akkor</span><span class="metahun_plain">&#160;kil&eacute;p&eacute;s&#160;a&#160;főciklusb&oacute;l&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;m&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;n</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">am&iacute;g</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">[</span><span class="metahun_plain">j</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_operator">&gt;=</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">[</span><span class="metahun_plain">m</span><span class="metahun_separator">]</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;m&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;m&#160;</span><span class="metahun_operator">-</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;Csere</span><span class="metahun_separator">(</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">[</span><span class="metahun_plain">j</span><span class="metahun_separator">],</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">[</span><span class="metahun_plain">m</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;k&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;j&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_separator">;</span><span class="metahun_plain">&#160;m&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;n</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">am&iacute;g</span><span class="metahun_plain">&#160;k&#160;</span><span class="metahun_operator">&lt;</span><span class="metahun_plain">&#160;m</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;Csere</span><span class="metahun_separator">(</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">[</span><span class="metahun_plain">k</span><span class="metahun_separator">],</span><span class="metahun_plain">&#160;a</span><span class="metahun_separator">[</span><span class="metahun_plain">m</span><span class="metahun_separator">]</span><span class="metahun_plain">&#160;</span><span class="metahun_separator">)</span><span class="metahun_plain"></span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;k&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;k&#160;</span><span class="metahun_operator">+</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_separator">;</span><span class="metahun_plain">&#160;m&#160;</span><span class="metahun_operator">:=</span><span class="metahun_plain">&#160;m&#160;</span><span class="metahun_operator">-</span><span class="metahun_plain">&#160;</span><span class="metahun_num_literal">1</span><span class="metahun_plain">&#160;</span><br /><span class="metahun_plain">&#160;&#160;&#160;&#160;</span><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain"></span><br /><span class="metahun_keyword">Ciklus</span><span class="metahun_plain">&#160;</span><span class="metahun_keyword">v&eacute;ge</span><span class="metahun_plain">&#160;</span><br /></div>
+
+<h2>Lépésszám</h2>
+<div class="paragraph">
+Az összes permutáció "legyártása" csak "kis" <span class="mathspan">$n$</span> esetén lehetséges.
+</div>
+<table>
+<tr><td>n</td><td>n!</td></tr>
+<tr><td>1 </td><td>1 </td></tr>
+<tr><td>2 </td><td>2 </td></tr>
+<tr><td>3 </td><td>6 </td></tr>
+<tr><td>4 </td><td>24 </td></tr>
+<tr><td>5 </td><td>120 </td></tr>
+<tr><td>6 </td><td>720 </td></tr>
+<tr><td>7 </td><td>5040 </td></tr>
+<tr><td>8 </td><td>40320 </td></tr>
+<tr><td>9 </td><td>362880 </td></tr>
+<tr><td>10 </td><td>3628800 </td></tr>
+<tr><td>11 </td><td>39916800 </td></tr>
+<tr><td>12 </td><td>479001600 </td></tr>
+<tr><td>13 </td><td>6227020800 </td></tr>
+<tr><td>14 </td><td>87178291200 </td></tr>
+<tr><td>15 </td><td>1307674368000 </td></tr>
+<tr><td>16 </td><td>20922789888000 </td></tr>
+</table>
+
+<h2>Feladat</h2>
+<div class="paragraph">
+<a href="02ora/langfordd067.html?page=print">Langford permutációk</a>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:32:42
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0809/02ora?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 21:50:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

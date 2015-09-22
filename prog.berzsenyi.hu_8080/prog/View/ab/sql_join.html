@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/sql_join by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 15:43:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/screen/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/screen/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+            
+                <div id="leftdiv">
+                    
+
+
+
+
+
+
+
+<div id="maintitle">
+    <a href="../index.html" class="maintitle">
+        Informatika gyűjtemény
+    </a>
+</div>
+
+<div id="leftpanel">
+    
+
+
+
+<div id="favlinks">
+    <a href="../index.html">Főoldal</a> |
+    <a href="../szakkor/bdg/1011.html">Algoritmus szakkör</a>
+    <br />
+    <a href="../doku/info/articles.html">Cikkek</a> | 
+    <a href="../verseny/nttv/00table.html">Feladatok</a> |
+    <a href="../doku/info/projects.html">Projektek</a>
+    <br />
+    <a href="../doku/info/contr.html">Készítők</a> |
+    <a href="../doku/info/links.html">Linkek</a>
+</div>
+
+    <div id="seacrhbox">
+        <form action="http://prog.berzsenyi.hu:8080/prog/Search/ab/sql_join" method="post" accept-charset="UTF-8">
+            <div style="text-align:left;">
+                <input type="text" id="searchbox" name="stitle" value="" /><br />
+            </div>
+            <div style="text-align: right;">
+                <input type="submit" name="submit" value="Keres" />
+                <input type="submit" name="submit" value="Töröl" />
+            </div>
+        </form>
+    </div>
+    
+    
+
+
+
+
+
+
+
+
+
+    <div id="contextmenu">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../ab.html">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        <b><a href="sql_join.html">Táblák összekapcsolása</a></b><br />
+        
+                
+        
+        
+    </div>
+
+
+    
+
+
+
+
+    
+
+
+
+    <!-- <a href="?page=admin&amp;a=/">Admin</a> -->
+</div>
+
+                </div>
+                <!-- RIGHT -->
+                <div id="rightdiv">
+                    
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="sql_join.html" class="tab_selected_white">Nézet</a><a href="sql_joind067.html?page=print" class="tab_normal">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../ab.html">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../View.html">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../ab.html">Adatbázisok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="sql_join.html">Táblák összekapcsolása</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="sql_join.html">Táblák összekapcsolása</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Táblák összekapcsolása</h1>
+<div class="paragraph">
+Jól megtervezett (normalizált) adatbázisokban az összetartozó 
+információk sokszor több táblába vannak szétosztva. Ezzel elkerülhető
+a redundancia, továbbá az adatok módosításnál vagy törlésénél
+így egyszerűbb elkerülni bizonyos hibákat (inkozisztens adatok, információvesztés).
+</div>
+<div class="paragraph">Amikor lekérdezünk az adatbázisból, össze kell szednünk az összetartozó adat-töredékeket. Erre szolgál a <i>táblák összekapcsolása</i>. Alapvetően kétféle összekapcsolást használunk:
+<ul>
+<li>belső összekapcsolás (INNER JOIN)</li>
+<li>külső összekapcsolás (OUTER JOIN)</li>
+</ul>
+</div>
+<div class="paragraph">Az összekapcsolás lényege, hogy több táblából egyet csinál oly módon, hogy az eredmény tábla sorai az eredeti táblák megfelelő sorainak egymás mellé írásával keletkeznek.
+Hogy mit jelent a "megfelelő", az az összekapcsolás feltételében adható meg. Ez leggyakrabban abból áll, hogy az egyik tábla rekordjaiban található valamelyik mező meg kell egyezzen a másik tábla rekordjának egy mezőjével. Itt tipikusan a feltételben szereplő egyik mező kulcs szokott lenni, de ez nem kötelező.
+</div>
+<h2>Példa</h2>
+<div class="paragraph">
+Tekintsük a következő táblákat:
+</div>
+
+<div class="paragraph"><span class="codetext">Diák(név,of)</span></div>
+<div class="paragraph">
+<table>
+<tr><td>név</td><td>of</td></tr>
+<tr><td>Aladár</td><td>1</td></tr>
+<tr><td>Bori</td><td>2</td></tr>
+<tr><td>Csilla</td><td>2</td></tr>
+</table>
+</div>
+
+<div class="paragraph"><span class="codetext">Tanár(sor,név)</span></div>
+<div class="paragraph">
+<table>
+<tr><td>sor</td><td>név</td></tr>
+<tr><td>1</td><td>Kiss Lenke</td></tr>
+<tr><td>2</td><td>Gálos László</td></tr>
+<tr><td>3</td><td>Konta Gyula</td></tr>
+</table>
+</div>
+<div class="paragraph">Ha a Diák tábla "of" mezőjét rendeljük a Tanát tábla "sor" mezőjéhez, akkor a következő
+összekapcsolt táblát kapjuk.</div>
+
+<div class="paragraph">
+<table>
+<tr><td>Diák.név</td><td>of</td><td>sor</td><td>Tanár.név</td></tr>
+<tr><td>Aladár</td><td>1</td><td>1</td><td>Kiss Lenke</td></tr>
+<tr><td>Bori</td><td>2</td><td>2</td><td>Gálos László</td></tr>
+<tr><td>Csilla</td><td>2</td><td>2</td><td>Gálos László</td></tr>
+</table>
+</div>
+
+<h2>Belső összekapcsolás</h2>
+<h3>Összekapcsolás a "WHERE" záradékban</h3>
+<div class="paragraph">
+<div class="code codetext">SELECT&nbsp;*<br />FROM&nbsp;T1,&nbsp;T2<br />WHERE&nbsp;T1.kulcs&nbsp;=&nbsp;T2.kulcs</div>
+</div>
+<h3>Összekapcsolás a "FROM" záradékban</h3>
+<div class="paragraph">
+<div class="code codetext">SELECT&nbsp;*<br />FROM&nbsp;T1&nbsp;INNER&nbsp;JOIN&nbsp;T2&nbsp;ON&nbsp;T1.kulcs&nbsp;=&nbsp;T2.kulcs</div>
+</div>
+<h3>Több tábla összekapcsolása</h3>
+<div class="paragraph">
+<div class="code codetext">SELECT&nbsp;*<br />FROM&nbsp;T1,&nbsp;T2,&nbsp;T3<br />WHERE&nbsp;T1.ka&nbsp;=&nbsp;T2.ka&nbsp;AND&nbsp;T2.kb&nbsp;=&nbsp;T3.kb</div>
+</div>
+<div class="paragraph">
+<div class="code codetext">SELECT&nbsp;*<br />FROM&nbsp;(T1&nbsp;INNER&nbsp;JOIN&nbsp;T2&nbsp;ON&nbsp;T1.ka=T2.ka)&nbsp;INNER&nbsp;JOIN&nbsp;&nbsp;T3&nbsp;ON&nbsp;T2.kb=T3.kb<br /></div>
+</div>
+
+
+
+<h2>Külső összekapcsolás</h2>
+<div class="paragraph">Asszimetrikus, lehet jobb (RIGHT) vagy bal (LEFT).</div>
+<div class="paragraph">
+<div class="code codetext">SELECT&nbsp;*<br />FROM&nbsp;T1&nbsp;LEFT&nbsp;OUTER&nbsp;JOIN&nbsp;T2&nbsp;ON&nbsp;T1.kulcs=T2.kulcs</div>
+</div>
+<div class="paragraph">
+Ha a T1 tábla adott rekordjához nincs "pár" T2-ben, akkor is bekerül
+az eredmény táblába, és T2 mezői "NULL" értéket kapnak.
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2011-01-05 19:34:28
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+        <br /><br />
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img src="../../img/valid-xhtml10-blue.png" alt="Valid XHTML 1.0 Transitional" height="31" width="88" />
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border: 0pt none ; width: 88px; height: 31px;" src="../../img/valid-css-blue.png" alt="Valid CSS!" />
+        </a>
+        <br />
+     
+    
+    
+    <br /><br />
+
+
+</div>
+                </div>
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/ab/sql_join by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 15:43:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

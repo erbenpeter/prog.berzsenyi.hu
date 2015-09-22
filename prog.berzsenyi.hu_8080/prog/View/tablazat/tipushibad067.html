@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/tablazat/tipushiba?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 20:02:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="tipushiba.html" class="tab_normal">Nézet</a><a href="tipushibad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../tablazatd067.html?page=print">
+                    <img src="../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../tablazatd067.html?page=print">Táblázatkezelés</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="tipushibad067.html?page=print">A cellák típustalansága</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="tipushibad067.html?page=print">A cellák típustalansága</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>A cellák típustalansága, mint hibaforrás</h1>
+<div class="paragraph">
+A cellákban szerepelhet szám és szöveg is. Amikor cellákra hivatkozunk, a képletek egy része nem ellenőrzi, hogy a hivatkozott cellákban megfelelő érték van-e. A legrosszabb, hogy előfordulhat: a nem megfelelő típusú értéket a táblázatkezelő valamilyen logika szerint <i>konvertálja</i>, és erről semmiféle hibajelzést nem ad. Mivel az 123 szám és az "123" szöveg <i>majdnem</i> pontosan ugyanúgy néz ki a cellában, "emberi erővel" avagy "szabad szemmel" szinte képtelenség az ilyen problémát észrevenni.
+</div>
+<div class="paragraph">
+A <i>majdnem</i> az előző mondatban arra utalt, hogy a számok jobbra, a szövegek pedig balra igazítottak, de ez egyrészt átállítható, másrészt keskeny oszlopban nem látszik.
+</div>
+<h2>Szöveg formátumú cellába gépelt számjegyek</h2>
+<div class="paragraph">
+Az alábbi ábrán 3-3 szám látható, amiket mindkét esetben a SUM függvénnyel adtunk össze, mégis különbözik a végeredmény.
+</div>
+<div style="text-align: center;">
+<img src="../../Download529f.png?node=3991" alt="" class=""/> <img src="../../Downloadaf90.png?node=3992" alt="" class=""/>
+</div>
+<div class="paragraph">
+A hiba oka, hogy a kékkel jelölt cella formátuma "szöveg", ezt a SUM függvény 0 számértékkel veszi figyelembe.
+</div>
+<div style="text-align: center;">
+<img src="../../Download811b.png?node=3993" alt="" class=""/>
+</div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:30:24
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/tablazat/tipushiba?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 20:02:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

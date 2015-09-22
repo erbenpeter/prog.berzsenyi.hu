@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/erettsegi/lift?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:08:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="lift.html" class="tab_normal">Nézet</a><a href="liftd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../erettsegid067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../progbevd067.html?page=print">Programozás bevezető</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../erettsegid067.html?page=print">Érettségi feladatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="liftd067.html?page=print">Lift</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="liftd067.html?page=print">Lift</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Lift</h1>
+<div class="paragraph">
+A Madárház Kft. toronyházak építésével foglalkozik. Jelenleg a Csúcs Rt. 100 szintes
+szerkezetkész épületén kezdték meg a belső szerelési műveleteket. Az egyes szerelőcsapatok
+naponta többször változtatják helyüket. Ha az új munkaterület egy másik emeleten van, akkor
+– a biztonsági előírások miatt – lifttel kell menniük. A házban egyetlen lift működik, amelynek igénybevételét az egyes csapatok a célszint megadásával jelezhetik. A lift az igényeket a
+jelzés sorrendjében szolgálja ki, és egyszerre csak egy csapatot szállít. A csapatok mozgását a
+9 és 14 óra közötti intervallumban követjük nyomon. Ez az intervallum a munkaidőnek csak
+egy része, tehát a csapatok már dolgoznak valamelyik szinten, de 9 órakor teljesítetlen kérés
+nincs és a lift szabad.
+</div>
+<div class="paragraph">
+A lifthasználati igényeket az <a href="lift/igenyd067.html?page=print">igeny.txt</a> állomány tartalmazza. Első sorában a szintek
+száma (legfeljebb 100), a második sorban a csapatok száma (legfeljebb 50), a harmadik sorban pedig az igények száma (legfeljebb 100) olvasható. A negyedik sortól kezdve soronként
+egy-egy igény szerepel a jelzés sorrendjében. Egy igény hat számból áll: az első három szám
+az időt adja meg (óra, perc, másodpercszám sorrendben), a negyedik a csapat sorszáma, az
+ötödik az induló-, a hatodik a célszint sorszáma. Az egyes számokat pontosan egy szóköz
+választja el egymástól.
+
+</div>
+<div class="paragraph">
+Például:<br/>
+<span class="codetext">igeny.txt</span>
+<pre>
+
+100
+10
+55
+9 7 11 7 6 22
+9 10 30 8 18 2
+9 11 0 5 12 20
+...
+
+</pre>
+A 4. sor megmutatja, hogy 9 óra 7 perc 11 másodperckor a 7. csapat igényelt liftet, hogy a
+6. szintről a 22. szintre eljusson.
+
+</div>
+<div class="paragraph">
+Készítsen programot, amely az alábbi kérdésekre válaszol! A program forráskódját lift
+néven mentse! Ügyeljen arra, hogy programjának minden helyes tartalmú bemeneti állomány
+esetén működnie kell!<br/>
+Minden részfeladat megoldása előtt írja a képernyőre a feladat sorszámát! Ha a felhasználótól kér be adatot, jelenítse meg a képernyőn, hogy milyen értéket vár (például a 2. feladat
+esetén: „2. feladat Kérem a lift indulási helyét!”)! A képernyőn megjelenített üzenetek esetén az ékezetmentes kiírás is elfogadott.
+
+</div>
+<h2>Feladatok</h2>
+<div class="paragraph">
+<ol>
+<li> Olvassa be az igeny.txt állományban talált adatokat, s azok felhasználásával oldja meg
+a következő feladatokat! Ha az állományt nem tudja beolvasni, az első 8 igényhez tartozó
+adatokat jegyezze be a programba és dolgozzon azzal!
+</li><li> Tudjuk, hogy a megfigyelés kezdetén a lift éppen áll. Kérje be a felhasználótól, hogy melyik szinten áll a lift, és a további részfeladatok megoldásánál ezt vegye figyelembe! Ha a
+beolvasást nem tudja elvégezni, használja az igény.txt fájlban az első igény induló
+szintjét!
+</li><li> Határozza meg, hogy melyik szinten áll majd a lift az utolsó kérés teljesítését követően!
+Írja képernyőre a választ a következőhöz hasonló formában: „A lift a 33. szinten
+áll az utolsó igény teljesítése után.” !
+
+</li><li> Írja a képernyőre, hogy a megfigyelés kezdete és az utolsó igény teljesítése között melyik
+volt a legalacsonyabb és melyik a legmagasabb sorszámú szint, amelyet a lift érintett!
+</li><li> Határozza meg, hogy hányszor kellett a liftnek felfelé indulnia utassal és hányszor utas
+nélkül! Az eredményt jelenítse meg a képernyőn!
+</li><li> Határozza meg, hogy mely szerelőcsapatok nem vették igénybe a liftet a vizsgált intervallumban! A szerelőcsapatok sorszámát egymástól egy-egy szóközzel elválasztva írja a képernyőre!
+</li><li> Előfordul, hogy egyik vagy másik szerelőcsapat áthágja a szabályokat, és egyik szintről
+gyalog megy a másikra. (Ezt onnan tudhatjuk, hogy más emeleten igényli a liftet, mint
+ahova korábban érkezett.) Generáljon véletlenszerűen egy létező csapatsorszámot! (Ha
+nem jár sikerrel, dolgozzon a 3. csapattal!) Határozza meg, hogy a vizsgált időszak igényei alapján lehet-e egyértelműen bizonyítani, hogy ez a csapat vétett a szabályok ellen!
+Ha igen, akkor adja meg, hogy melyik két szint közötti utat tették meg gyalog, ellenkező
+esetben írja ki a Nem bizonyítható szabálytalanság szöveget!
+</li><li> A munkák elvégzésének adminisztrálásához minden csapatnak egy blokkoló kártyát kell
+használnia. A kártyára a liftben elhelyezett blokkolóóra rögzíti az emeletet, az időpontot.
+Ennek a készüléknek a segítségével kell megadni a munka kódszámát és az adott munka-
+folyamat sikerességét. A munka kódja 1 és 99 közötti egész szám lehet. A sikerességet a
+„befejezett” és a „befejezetlen” szavakkal lehet jelezni.
+Egy műszaki hiba folytán az előző feladatban vizsgált csapat kártyájára az általunk nyomon követett időszakban nem került bejegyzés. Ezért a csapatfőnöknek a műszak végén
+pótolnia kell a hiányzó adatokat. Az igeny.txt állomány adatait felhasználva írja a kép-
+ernyőre időrendben, hogy a vizsgált időszakban milyen kérdéseket tett fel az óra, és kérje
+be az adott válaszokat a felhasználótól! A pótlólag feljegyzett adatokat írja a blokkol.txt állományba! A blokkol.txt állomány tartalmát az alábbi sorok mintájára
+alakítsa ki:
+<pre>
+
+Befejezés ideje: 9:23:11
+Sikeresség: befejezett
+-----
+Indulási emelet: 9
+Célemelet: 11
+Feladatkód: 23
+Befejezés ideje: 10:43:22
+Sikeresség: befejezetlen
+-----
+Indulási emelet: 11
+Célemelet: 6
+Feladatkód: 6
+...
+</pre>
+</li>
+</ol>
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2010-12-05 09:47:04
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/progbev/erettsegi/lift?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:08:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

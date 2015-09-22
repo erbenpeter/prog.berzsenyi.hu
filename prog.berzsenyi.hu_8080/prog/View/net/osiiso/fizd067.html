@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/net/osiiso/fiz?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:32:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="fiz.html" class="tab_normal">Nézet</a><a href="fizd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../osiisod067.html?page=print">
+                    <img src="../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../netd067.html?page=print">Számítógép hálózatok</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../osiisod067.html?page=print">Az OSI/ISO referencia modell</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="fizd067.html?page=print">Fizikai réteg</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="fizd067.html?page=print">Fizikai réteg</a>
+                
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>OSI/ISO modell - 1. fizikai réteg</h1>
+
+
+<div class="paragraph">
+A fizikai réteg a hét hálózati réteg közül a legalsó. Biteket, bitsorozotakokat továbbít egymással kapcsolatban álló számítógépek közt, biztosítja az ehhez szükséges mechanikai, funkcionális, villamos és eljárási eszközöket.
+</div>
+
+<h2>Az információ kódolása</h2>
+
+<div class="paragraph">
+Az információt kódolni lehet a kettes számrendszer szerint, ezeket a jeleket továbbítja a fizikai réteg. Egy szöveg például egy karaktersorozat, ahol az egyes karakterek kódolhatók 0 és 1 számokkal. Egy képet sakktáblaként értelmezhetünk, ahol a mezők a képpontok, és ahol minden mezőnek megvan a saját kódja (a színe szerint). Hangok esetén a megfelelő számérték a hangmagasságból és hangerőből tevődik össze. A film egy kép-, és egy hangsorozat együttese.
+</div>
+
+<div class="paragraph">
+Az információt digitális és analóg módon lehet továbbítani.<br/>
+<b>Digitális adatátvitel</b>: sebességét bizonyos idő alatt továbbított bitek számával határozhatjuk meg, mértékegysége bit/s. Használatos a baud mértékegység, amely a másodperc alatt bekövetkezett változások számát adja meg.<br/>
+<b>Analóg adatátvitel</b>: a sávszélesség a legfontosabb jellemzője a közegen átvihető jel maximális és minimális frekvenciájának különbsége, mértékegysége Hz.
+</div>
+
+<h2>A vonalak megosztása</h2>
+
+<div class="paragraph">
+A vonalakat, ahol az adatokat továbbítják, gyakran nem használják ki maximálisan, ezért egy-egy vonalat kisebb csatornákra osztanak. A vonalakat háromféleképp lehet felosztani:
+</div>
+
+<div class="paragraph">
+<ol><li><b>Multiplexelés</b>: egy információs vonal felosztása úgy, hogy a vonalon egymástól függetlenül több információt lehessen szállítani.<br/>
+      <b>Frekvenciaosztásos multiplexelés:</b> analóg átvitelben használatos, a nagy sávszélességű vonalat kisebb frekvenciatartományú csatornákra osztják, így egyszerre több jel vihető át rajta.<br/>
+      <b>Időosztásos multiplexelés:</b> a vonalat időben osztják több csatornára, így a vonalakon egyszerre több jel fut. A vevők oldalán a jeleket szétválasztják, és a megfelelő jel a megfelelő vevőhöz kerül.</li>
+<li><b>Üzenetkapcsolás</b>: az adó oldal a teljes üzenetet elküldi a legközelebbi szabad hosztnak, amely tobvábbküldi ugyanúgy a következőnek, ez egészen így folytatódik a címzettig. Mivel a teljes információmennyiséget egyszerre küldi a rendszer, a vonal rövid ideig foglalt. Hátránya, hogy az információt fogadó hosztnak legalább akkora kapacitással kell rendelkeznie, amekkora a küldött üzenet.<br/>
+      <b>Csomagkapcsolás</b>: az üzenetet kisebb részekre darabolják, ezeket mint önálló információt továbbítják különböző útvonalakon. A vevő oldal ismét sorrenbe állítja az információkat (előfordulhat, hogy azok nem az eredetinek megfelelő sorrendben érkeztek), létrehozza az eredeti üzenetet.</li>
+<li><b>Vonalkapcsolás</b>: nem rendelhető hozzá egy adó és egy vevő, hanem az állomások és a kommunikáció szükséglete alapján jutunk hozzá. A kommunikáló felek ezt pont-pont kapcsolatként érzékelik. </li>
+</ol>
+</div>
+
+<h2>Fizikai átviteli közegek</h2>
+
+<h3>I. Koaxiális kábel</h3>
+
+<div class="paragraph">
+A koaxiális szó önmagában "közös tengelyű"-t jelent. A koaxiális vezeték felépítése bentről kifelé haladva: vezető ér-melegér, szigetelőanyag, árnyékolás(alumíniumfólia vagy sodrott háló), szigetelőanyag.
+</div> 
+<div class="paragraph"><div style="text-align: center;"><img src="../../../Downloadc110.png?node=3752" alt="" class=""/></div></div>
+<div class="paragraph"><div style="text-align: center;"><img src="../../../Downloadd4c5.png?node=3753" alt="" class=""/></div></div>
+<div class="paragraph">
+Két fő típusa van: <b>Szélessávú koaxiális kábel</b>: analóg átvitelt tesz lehetővé, 300-500 MHz-es jeleket akár 100 km-re is továbbít. GHz-es nagyságú jelek átvitelére is alkalmas, így a vonalat több, kisebb sávszélességű csatornákra osztják, így egymástól független információátvitelt tesznek lehetővé egy vonalon. <b>Alapsávú koaxiális kábel</b>: főleg a digitális adatátvitelben használják. Két típusa van, a vékony és a vastag koaxiális kábel. A vékony koaxiális kábelt az Ethernet hálózatokban használják adatátviteli sebessége 1 km-en 100Mbit/s- a távolság csökkenésével ez a szám nő és fordítva. A vastag koaxiális kábel lassan eltűnik, a vékony koaxnál vastagabb, nehezebben szerelhető, ugyanakkor nagyobb távolságok áthidalhatók ugyanakkora sebességgel-jobban kiküszöbölhetők ugyanis a környezeti hatások által okozott zavarok.
+</div>
+
+<h3>II. Csavart érpár</h3>
+
+<div class="paragraph">
+Két szigetelt, spirálisan egymásra csavart vezetékből áll. Az árnyékolással ellátott érpárt STP kábelnek, az árnyékolás nélkülit UTP kábelnek nevezzük. Az egymásra csavarással a jelkisugárzás minimálisra csökkenthető. Ha több érpárt fognak össze, általában egy szigeteléssel látják el őket, így tovább csökkentik a külvilág hatásait a kábelekre. A közepes méretű hálózatok az UTP kábeleket részesítik előnyben. Az UTP kábeleket több típusba osztják:
+</div>
+
+<div class="paragraph">
+   1. kategória - hangátvitel<br/>
+   2. kategória - 4 Mbit/s- os adatvonal<br/>
+   3. kategória - 10 Mbit/s- os adatvonal<br/>
+   4. kategória - 20 Mbit/s- os adatvonal<br/>
+   5. kategória - 100 Mbit/s- os adatvonal 
+</div>
+
+<div class="paragraph">
+Az UTP kábel 100 m-t képes erősítés nélkül áthidalni.
+</div>
+
+<div class="paragraph"><div style="text-align: center;"><img src="../../../Download8d09.jpg?node=3754" alt="" class=""/></div></div>
+<div class="paragraph"><div style="text-align: center;"><img src="../../../Download3fdc.gif?node=3755" alt="" class=""/></div></div> 
+
+<h3>III. Optikai vezeték</h3>
+
+<div class="paragraph">
+Az optikai vezeték használatakor az információ fényimpulzusok formájában terjed a közegben- ez lehet levegő is, de csak kis távolságokon belül. Nagy távok esetén a fény optikai szálon keresztül terjed. Ez egy nagyon vékony cső, melynek belsejét speciális anyag tölti ki, amelyben halad a fény. Kétféle kábelen keresztül továbbítható az információ: a többmódusú és egymódusú kábelen. A többmódusú kábel esetében a fényvisszaverődés segítségével továbbítják az információt: ha a vezetőben a fény megfelelő szögben esik a cső felületére, teljes mértékben visszaverődik, így tud haladni az információ. Az egymódusú kábel esetében a cső átmérője megegyezik a fény hullámhosszával, így a fény visszaverődés nélkül haladhat, nagy távolságba juthat az információ erősítés nélkül.
+</div>
+
+<h3>IV. Földi mikrohullámú vonal</h3>
+
+<div class="paragraph">
+Nagy sebességű, nagy távolságok áthidalására is alkalmas. Időjárásfüggő.
+</div>
+
+<h3>V. Műholdas átvitel</h3>
+
+<div class="paragraph">
+Mikrohullámú átvitel a Föld és műholdak közt. Optimális az 1-10 GHz-s átvitel, bár az időjárás nagyban befolyásolja azt.
+</div>
+<h2>Hálózati eszközök</h2>
+
+<h3>Hálózati kártya</h3>
+
+<div class="paragraph">
+A hálózati kártya a számítógépek hálózatra kapcsolódását és az azon történő kommunikációját lehetővé tevő bővítőkártya. Ez minden hálózatra kötött számítógépen megtalálható. Ezekbe lehet beledugni a szabványos hálózati kábelt. Léteznek vezeték nélküli kártyák is. Ezek rádióhullámokat vesznek/adnak, és ezzel kommunikálnak. </div>
+<div class="paragraph"><div style="text-align: center;"><img src="../../../Download53fe.png?node=3759" alt="" class=""/></div></div>
+<div class="paragraph">
+Sebességük: 10Mb/s-1Gb/s között mozog.</div>
+
+<h3>Modem</h3>
+
+<div class="paragraph">
+A modem egy olyan berendezés, ami egy vivőhullám modulálásával a digitális jelet analóg információvá, illetve a másik oldalon ennek demodulálásával újra digitális információvá alakítja. Az eljárás célja, hogy a digitális adatot analóg módon átvihetővé tegye. A telefonos modem például, a számítógép által használt digitális 1 és 0 jeleket úgy alakítja át hangfrekvenciává, hogy az telefon vonalon továbbítható legyen. Szabványos sebességei: 14kbps, 28,8kbps, 33,6kbps, 56kbps. Sebessége láthatóan nem nagy, viszont előnye, hogy ahol van telefon ott lehet internetezni is ennek segítségével.</div> 
+
+<div class="paragraph">Fajtái:</div>
+<div class="paragraph"><ol>
+<li><b>Telefonos modem</b>: Telefonvonalon való információtovábbításra ad lehetőséget. Hangfrekvenciás jelekké alakítja át az információt.</li>
+<li><b>Az ADSL modem</b>: szintén telefonvonalon működik, azonban működése más, mint a telefonos modemé, az átvitelre nem hangfrekvenciát használ. Átviteli sebességei jellemzően: 512kbps, 1024kbps, 2048kbps, 4096kbps, 8192kbps</li>
+<li><b>Optikai modemek</b> az adatokat optikai szálakon továbbítják. Az optikai szálakat optikai kábelekbe fogják össze. Az optikai modemek átviteli sebessége 109 bit per másodperc nagyságrendű (960Mbps).</li> 
+</ol></div>
+<h2>Csomóponti eszközök</h2>
+
+<h3>Repeater</h3>
+<div class="paragraph">
+A legegyszerűbb csomóponti eszköz, jelentése ismétlő, és valójában ennyit is csinál. A beérkező jelet megismétli, így az nem torzul el egy hosszú kábelben. Nem intelligens eszköz.</div>
+
+<h3>Hub</h3>
+<div class="paragraph">
+Ez már 2-nél több számítógép összekötésére is lehetőséget kínál. Viszont még mindig nem intelligens, tehát ha rá van kötve 4 számítógép és az 1-es küld egy adatcsomagot a 3-nak, akkor ezt az adatcsomagot megkapja mind a 2-es mind a 4-es számítógép is.
+</div>
+
+
+<h3>Switch</h3>
+<div class="paragraph">
+Már egy intelligens eszköz. Tehát, ha egy switch-el játszuk el a fenti példát, akkor az adatot csak a 3-as számítógépnek küldi tovább a switch. Így nem terheli le a hálózatot az adatforgalom, gyorsabb lesz.</div>
+
+<div class="paragraph"><div style="text-align: center;"><img src="../../../Download062d.png?node=3757" alt="" class=""/></div></div>
+<h3>Router</h3>
+
+<div class="paragraph">A router, vagy útválasztó a számítógép-hálózatokban egy forgalomirányítást végző eszköz, amelynek a feladata a helyi hálózatok összekapcsolása. A router akkor jön szóba, ha például van két darab 4 gépből álló hálózatunk (a 4-4 gép egy-egy switchel van összekötve). Az „A” csoport 1. gépe akar küldeni a „B” csoport 2-es gépének adatot. Itt jön szóba az „A” router, aki továbbítja a „B” routernek ,aki továbbküldi a Bcsoport 2-es gépnek egy switchen keresztül. Tehát, ha egy külső géppel akarunk kommunikálni, ami nincs összekötve a switchünkel (pl.: egy weblap szervergépe), akkor már kell egy router. </div>
+<div class="paragraph"><div style="text-align: center;"><img src="../../../Downloadb495.png?node=3758" alt="" class=""/></div></div>
+
+<h2>Topológiák</h2>
+
+<h3>Csillag topológia</h3>
+<div class="paragraph">
+A csillag topológia a legidősebb módja egy hálózat kiépítésének. Központja a szerver, melyre minden kliens külön csatlakozik, egymást a szerveren keresztül érik el. A központi gépet HUB-nak (ez lehet egy hub, vagy egy switch), a hálózatba kapcsolt gépeket pedig NODE-nak nevezik. Minden node egyetlen kábellel csatlakozik a hubhoz. A csillag topológia legfőbb előnye az, hogy ha megszakad a kapcsolat a hub és bármelyik számítógép között, az nem befolyásolja a hálózat többi csomópontját, mert minden node-nak megvan a saját összeköttetése a hub-bal. A topológia hátránya az, hogy a központ meghibásodásával az egész hálózat működésképtelenné válik.
+</div>
+
+
+<h3>Gyűrű topológia</h3>
+
+<div class="paragraph">
+Minden állomás, beleértve a szervert is, két szomszédos állomással áll közvetlen kapcsolatban. Az összeköttetés körkörös gyűrű, ebből következően a hálózatnak nincs végpontja. Bármely pontról elindulva végül visszatérünk a kiindulóponthoz, hiszen az adat csak egy irányban halad. Az üzeneteket a gépek mindig a szomszédjuknak adják át, s ha az nem a szomszédnak szólt, akkor az is továbbítja. Addig vándorol az üzenet gépről gépre, amíg el nem érkezik a címzetthez. A csillag topológiától eltérően a gyűrű topológia folyamatos útvonalat igényel a hálózat összes számítógépe között. A gyűrű bármely részén fellépő meghibásodás hatására a teljes adatátvitel leáll. Ezenkívül hátránya még az is, hogy az adat a hálózat minden számítógépén keresztülhalad, és a felhasználók illetéktelenül is .hozzájuthatnak az adatokhoz.
+</div>
+
+
+<h3>Sín topológia</h3>
+
+<div class="paragraph">A sín topológia a legegyszerűbb hálózati elrendezés. Ez az elrendezés egyetlen, busznak nevezett átviteli közeget használ. A buszon lévő mindegyik számítógépnek egyedi címe van, ez azonosítja a hálózaton. Egy busz topológiájú hálózat esetén a számítógépeket az esetek többségében koaxiális kábellel csatlakoztatják Nem egyetlen hosszú kábel, hanem sok rövid szakaszból áll, amelyeket T-csatlakozók segítségével kötnek össze. Egy speciális hardverelemet kell használni a kábel mindkét végének lezárásához, hogy ne verődjön vissza a buszon végighaladó jel, azaz ne jelenjen meg ismételt adatként. Ahogy az adat végighalad a buszon, mindegyik számítógép megvizsgálja, hogy eldöntse, melyik számítógépnek szól az üzenet. A busz topológiával az a probléma, hogy ha a buszkábel bárhol megszakad, mindkét oldalon megszűnik a lezárás. A lezárás megszűnésének hatására a jel visszaverődik és meghamisítja a buszon lévő adatokat.</div>
+
+<div class="paragraph"><div style="text-align: center;"><img src="../../../Download4e3c.png?node=3756" alt="" class=""/></div></div>
+
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:27:21
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/net/osiiso/fiz?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 23:32:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

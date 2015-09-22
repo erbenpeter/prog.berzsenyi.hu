@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/03ora/agykacsa?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:33:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="agykacsa.html" class="tab_normal">Nézet</a><a href="agykacsad067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../03orad067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../0910d067.html?page=print">2009/2010</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../03orad067.html?page=print">3. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="agykacsad067.html?page=print">AgyKacsa</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="agykacsad067.html?page=print">AgyKacsa</a>
+                
+                
+                    (<a href="agykacsa/_megoldasd067.html?page=print">Megoldás</a>)
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>AgyKacsa</h1>
+<h2>Bevezetés</h2>
+<div class="paragraph">
+Az AgyKacsa a világ egyik legegyszerűbb programozási nyelvének egy variánsa. Ennek a programozási nyelvnek mindösszesen nyolc utasítása van, és mindegyik pontosan egy karakter hosszú. A nyelv mégis Touring-teljes, tehát bármilyen algoritmikus probléma megoldható vele. Nyolcféle karakter használatával nem könnyű programozni, valószínűleg ezért is nevezték az eredeti nyelvet <a href="http://hu.wikipedia.org/wiki/Brainfuck">Brainfucknak</a>. Unatkozó programozók körében ez egy nagyon népszerű programozási nyelv, egy keresőbe beírva rengeteg megírt példaprogramot találhatunk rá. Az eredeti nyelv egyetlen dologban tér el az AgyKacsától, mégpedig a nevében, hogy tekintettel legyünk kiskorú olvasóinkra. Tehát az interneten talált Brainfuck példaprogramok tökéletesen futtathatók lesznek AgyKacsában is.
+</div>
+<h2>a nyelv leírása</h2>
+<h3>Alapmodell</h3>
+<div class="paragraph">
+Hogy az AgyKacsa programok működését megértsük, először el kell képzelni egy egyszerű számítógép-modellt. Ennek a számítógépnek:</div>
+<ul><li>van egy 30,000 cella méretű memóriája, melyben minden cella pontosan egy byte-ot tárol, és kezdetben mindegyik tartalma a nulla szám.</li><li>van egy mutatója is, ami mindig a memória egyik cellájára mutat, kezdetben a legelsőre. Ezt a kijelölt cellát aktuális cellának nevezzük.</li></ul>
+<div class="paragraph">
+A lehetséges utasítások:
+</div>
+<table>
+<tr><td>Kód</td><td>Leírás</td></tr>
+<tr><td/><span class="codetext">&gt;</span><td>Jobbra lépteti a mutatót eggyel</td></tr>
+<tr><td/><span class="codetext">&lt;</span><td>Balra lépteti a mutatót eggyel</td></tr>
+<tr><td/><span class="codetext">+</span><td>Növeli az aktuális cellában lévő értéket eggyel</td></tr>
+<tr><td/><span class="codetext">-</span><td>Csökkenti az aktuális cellában lévő értéket eggyel</td></tr>
+</table>
+<div class="paragraph">
+A memóriában lévő számok növelése és csökkentése esetén körberfordul az érték, 255 növelése esetén 0-ra, 0 csökkentése esetén 255-re. <b>Példa:</b>
+</div>
+<div class="code codetext">++++++++++<br />++++++++++<br />++++++++++<br />++++++++++<br />++<br />&gt;<br />+++<br />hihihi-hahaha</div>
+<div class="paragraph">
+A fenti program utasításait sorban kell értelmezni. A nyelvben nem szereplő karaktereket figyelmen kívűl kell hagyni: például a szóközöket, sortöréseket, az angol ábécé betűit, stb. Ez a program beírja a 42 számot az első cellába, majd az 2 számot a másodikba. Miért nem a hármat? Mert az utolsó sorban van egy - parancs, ami visszacsökkenti a cella értékét kettőre. Az ismeretlen karakterek azért megengedettek a nyelvben, hogy könnyű legyen kommenteket írni.
+</div>
+<h3>Bemenet és kimenet</h3>
+<div class="paragraph">
+Az előbbi utasítások segítségével már sokféle programot lehet írni, de ezek a külvilággal még nem tudnak kommunikálni. Úgyhogy léteznek még a következő utasítások is:
+</div>
+<table>
+<tr><td>Kód</td><td>Leírás</td></tr>
+<tr><td/><span class="codetext">.</span><td>Kiírja a mutatott cellában lévő értéket a képernyőre karakterként</td></tr>
+<tr><td/><span class="codetext">,</span><td>Beolvas egy karaktert a bemenetről és beírja a mutatott cellába</td></tr>
+</table>
+<div class="paragraph">
+Látszólagos ellentmondás, hogy a memóriában bájtok vannak, kiírásnál és beolvasásnál pedig karakterekről beszélünk. Ennek a feloldása az, hogy minden karakterhez egy szám van hozzárendelve, és valójában ezt tárolja minden számítógép és ezt használja minden program. Csak mi, a képernyőn látjuk karaktereknek őket. Az angol ábécé betűihez és a gyakoribb írásjelekhez rendelt számokat az <a href="http://hu.wikipedia.org/wiki/ASCII">ASCII</a> szabvány határozza meg, és bőven kisebbek 255-nél, tehát beférnek egy bájtba. <b>Példa:</b></div>
+<div class="code codetext">,&gt;,<br />&lt;<br />-.&gt;+.</div>
+<div class="paragraph">
+Beolvas két karaktert, az elsőnél kiírja az egyel kisebb kódú karaktert, a másodiknál pedig az egyel nagyob kódú karaktert. Például ha a bemenet:
+</div>
+<div class="code codetext">35</div>
+<div class="paragraph">
+Akkor a kimenet:
+</div>
+<div class="code codetext">26</div>
+<div class="paragraph">
+Ne feledjük, hogy itt karakterkódokról volt szó, tehát ha például a második karakter egy <span class="codetext">9</span>-es, akkor ennek kódja fog a memóriába beolvasódni, ami <span class="codetext">57</span>, és ezt egyel megnövelve <span class="codetext">58</span>-at kapunk, ami a kettőspont karakter kódja.
+</div>
+
+
+<h3>Feltételes szerkezet</h3>
+<div class="paragraph">
+Amíg nincs feltételes szerkezet - elágazás, ciklus vagy feltétes ugrás, stb. - egy programozási nyelvben, addig erősen korlátozott, hogy milyen programokat lehet benne írni.
+</div>
+<table>
+<tr><td>Kód</td><td>Leírás</td></tr>
+<tr><td/><span class="codetext">]</span><td>Mindig párban áll egy <span class="codetext">[</span> utasítással. (Egy páron belül lehetnek további párok.) A végrehajtás az utasítás párján folytatódik.</td></tr>
+<tr><td/><span class="codetext">[</span><td>Ha az aktuális memóriacellában nulla van, akkor az ehhez az utasításhoz párosítható <span class="codetext">]</span> utasítás után következő utasításhoz ugrik, és onnan folytatja a program végrehajtását. Ha az érték nem nulla, akkor a következő utasításnál folytatódik a végrehajtás.</td></tr>
+</table>
+<div class="paragraph">
+<b>Példa:</b>
+</div>
+<div class="code codetext">[-]</div>
+<div class="paragraph">
+Addig csökkenti az aktuális cella értékét, amíg az nem lesz nulla. Másszóval nullára állítja be. Ez akkor hasznos, ha nem tudjuk mi ez az érték, egyébként megfelelő számú minusz-jel is megfelelne.
+</div>
+<h2>feladat</h2>
+<div class="paragraph">
+Feladatunk készíteni egy AgyKacsa interpretert. Egy interpreter egy olyan program, ami végrehajt egy más nyelven írt programot. Lépések, amik után tesztelni érdemes:
+</div>
+<ol>
+<li>AgyKacsa programkód beolvasása egy fájlból egy stringbe. (teszt: String kiírása képernyőre.)</li>
+<li>Az alapmodell utasításainak megvalósítása. (teszt: Az ott látható példaprogram lefuttatása. A teszteléshez készítsünk egy dump() nevű segédfüggvényt, ami kiírja az első néhány memóriahelyen tárolt értéket szám és karakter formájában is.) </li>
+<li>A bemeneti és kimeneti utasítások megvalósítása. (Teszt: a példaprogram használata, beolvasott karakterek kiírása például "beolvasva: karakter szám" formában.) </li>
+<li>Részfeladat: nyitózárójel csukó párjának megkeresése egy stringben; csukózárójel nyitó párjának megkeresése stringben. (Ezeket külön függvénybe érdemes írni, és tesztelni őket egy külön programban.)</li>
+<li>A részfeladat megoldását felhasználva a feltételes utasítások megvalósítása. (teszt: az ott látható példa)</li>
+</ol>
+<div class="paragraph">És most már lefuttathatjuk a hello worldöt [<a href="http://en.wikipedia.org/wiki/Brainfuck#Hello_World.21">forrás</a>]:</div>
+<div class="code codetext">+++&nbsp;+++&nbsp;+++&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;initialize&nbsp;counter&nbsp;(cell&nbsp;#0)&nbsp;to&nbsp;10<br />[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use&nbsp;loop&nbsp;to&nbsp;set&nbsp;the&nbsp;next&nbsp;four&nbsp;cells&nbsp;to&nbsp;70/100/30/10<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;+++&nbsp;+++&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add&nbsp;&nbsp;7&nbsp;to&nbsp;cell&nbsp;#1<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;+++&nbsp;+++&nbsp;+++&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add&nbsp;10&nbsp;to&nbsp;cell&nbsp;#2&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;+++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add&nbsp;&nbsp;3&nbsp;to&nbsp;cell&nbsp;#3<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add&nbsp;&nbsp;1&nbsp;to&nbsp;cell&nbsp;#4<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;&lt;&lt;&nbsp;&lt;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decrement&nbsp;counter&nbsp;(cell&nbsp;#0)<br />]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&gt;++&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'H'<br />&gt;+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'e'<br />+++&nbsp;+++&nbsp;+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'l'<br />.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'l'<br />+++&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'o'<br />&gt;++&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'&nbsp;'<br />&lt;&lt;+&nbsp;+++&nbsp;+++&nbsp;+++&nbsp;+++&nbsp;++.&nbsp;print&nbsp;'W'<br />&gt;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'o'<br />+++&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'r'<br />---&nbsp;---&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'l'<br />---&nbsp;---&nbsp;--.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'d'<br />&gt;+.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'!'<br />&gt;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print&nbsp;'\n'</div>
+<h2>további feladatok</h2>
+<h3>programok próbálgatása</h3>
+<div class="paragraph">
+Próbáld ki ezeket a példákat: <a href="agykacsa/addd067.html?page=print">add.bf</a> <a href="agykacsa/hellod067.html?page=print">hello.bf</a> <a href="agykacsa/bottlesd067.html?page=print">bottles.bf</a>  Keress interneten más példákat.
+</div>
+<h3>programok írása</h3>
+<div class="paragraph">
+Ötletek:
+</div>
+<ul>
+<li>Eratosztenész(FIXME) szitája</li>
+<li>Fibancci számok kiírása</li>
+<li>stb</li>
+</ul>
+<div class="paragraph">
+A byte-nyi cellaméretet megnövelhetjük integernyire is, hogy könnyebb legyen nagy számokkal számolni. Sőt az adatkiírást is módosíthatjuk, hogy karakter helyett valódi számot írjon ki. Így egyes netes példák elromolhatnak. Miért is? Egyébkétn bájtalapú cellákkal is lehetne nagy számokkal számolni, csak ekkor kézzel meg kell csinálni a bájthatárokon a túlcsordulást.
+</div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Feh&eacute;r G&aacute;bor;
+        utolsó módosítás:
+        2009-11-07 23:32:43
+        (Feh&eacute;r G&aacute;bor)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0910/03ora/agykacsa?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:33:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>

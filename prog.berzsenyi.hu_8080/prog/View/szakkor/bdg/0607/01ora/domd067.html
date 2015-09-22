@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0607/01ora/dom?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:34:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+<head>
+        <title>Informatika gyűjtemény</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+
+
+<script type="text/javascript" src="../../../../../js/tatab.js" ></script>
+    
+
+<script type="text/javascript">
+    
+    window.onload = function() {
+
+        
+
+        return true;
+    }
+</script>
+
+    <script type="text/javascript" src="../../../../../js/latex/LaTeXMathML.js" ></script>
+
+        
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/unsorted.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/system/tables.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/view.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/common/doc.lists.css"/>
+
+
+        
+
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/doc.css"/>
+<link rel="stylesheet" type="text/css" media="screen, print" href="../../../../../css/print/view.css"/>
+
+
+
+        
+
+    </head>
+    <body>
+        
+            
+                
+
+
+
+ 
+ 
+
+    <p class="tabhead">
+<a href="dom.html" class="tab_normal">Nézet</a><a href="domd067.html?page=print" class="tab_selected_white">Nyomtat</a></p>
+<div id="rightbase">    
+    
+
+
+
+
+
+
+    <div id="navbar">
+        
+
+
+
+
+
+
+
+
+        
+            
+                <a href="../01orad067.html?page=print">
+                    <img src="../../../../../img/up.png" alt="Egy szinttel feljebb" class="uparrow_active" />                    
+                </a>
+            
+            
+        
+        
+            
+                
+                
+                    
+                        
+                            
+                        
+                        
+                    
+                    
+                    <a href="../../../../../Viewd067.html?page=print">Főoldal</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../../szakkord067.html?page=print">Szakkörök</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../../bdgd067.html?page=print">BDG Szakkör</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../../0607d067.html?page=print">2006/2007</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="../01orad067.html?page=print">1. óra</a>
+                
+                    
+                        
+                        &gt;
+                    
+                    
+                    <a href="domd067.html?page=print">Dominófedés</a>
+                
+            
+            
+        
+    </div> <!-- navbar -->
+    
+
+
+    
+
+
+ 
+
+
+    
+
+    
+    
+        
+              
+        
+            
+            
+            
+            
+            
+                
+                
+                
+                
+                    
+
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+<div class="docnav">
+    <b>
+        
+        
+            
+            
+                
+                <a href="domd067.html?page=print">Dominófedés</a>
+                
+                
+                    (<a href="dom/_megoldasd067.html?page=print">Megoldás</a>)
+                
+            
+        
+
+    </b>
+
+    <br />
+    
+        
+    
+        
+            
+            
+                
+                
+                
+            
+                
+                
+                <a href="../../../../cimkekd067.html?page=print">Címkék</a>
+            
+                
+                &gt;
+                <a href="../../../../cimkek/feladatd067.html?page=print">Feladat</a>
+            
+            <br />
+        
+    
+</div>
+
+
+
+<div class="docpanel">
+    <div class="document">
+        
+            
+            
+
+
+                    
+                        
+                        
+                            
+<h1>Dominófedés</h1>
+<h2>Feladat</h2>
+<div class="paragraph">
+Adott egy <span class="mathspan">$n \times m$</span>-es tábla, amelyre be van rajzolva néhány vonal. A berajzolt vonalak mindig két szomszédos mezőt választanak el. Le kell fedni a táblát
+<span class="mathspan">$2 \times 1$</span>-es dominókkal úgy, hogy a berajzolt vonalak nem haladhatnak keresztül dominón. Feltehetjük, hogy minden input esetén van helyes megoldás.
+</div>
+<h2>Bemenet</h2>
+<div class="paragraph">
+A <span class="codetext">dom.in</span> állomány első sora <span class="mathspan">$n$</span> és <span class="mathspan">$m$</span> értékét tartalmazza. <span class="mathspan">$(1 \le n,m \le 100)$</span> A tábla mezőit balról jobbra, felülről lefelé számozzuk meg, 1-től <span class="mathspan">$n\cdot m$</span>-ig.
+Az input második sora az elválasztó vonalak <span class="mathspan">$l$</span> számát adja meg. 
+<span class="mathspan">$(0\le l\le 120)$</span>
+Ezután <span class="mathspan">$l$</span> darab sorban <span class="mathspan">$p, q$</span> párok következnek, 
+ahol az <span class="mathspan">$i$</span>-dik vonal a <span class="mathspan">$p$</span> és <span class="mathspan">$q$</span> 
+mezőket választja el egymástól. 
+</div>
+<h2>Kimenet</h2>
+<div class="paragraph">
+A <span class="codetext">dom.out</span> állomány <span class="mathspan">$\frac{n\cdot m}{2}$</span> sora egy-egy számpárt tartalmaz.
+Minden sor egy dominó által lefedett két mező sorszámát adja meg.
+Ha több megoldás is lehetséges, akkor bármelyiket megadhatjuk.
+</div>
+<h2>Példa</h2>
+<table class="ttpre"><tr><td>dom.in</td><td>dom.out</td></tr><tr>
+<td>4 5
+9
+8 7
+13 14
+14 19
+6 7
+12 7
+4 9
+12 13
+14 9
+9 10</td>
+<td>3 4
+1 6
+2 7
+8 9
+5 10
+14 15
+11 16
+12 17
+13 18
+19 20</td>
+</tr></table>
+
+<h2>Tesztadatok</h2>
+<div class="paragraph"><a href="dom/dom_testd067.html?page=print">dom_test.zip</a></div>
+
+<h2>Példák</h2>
+<div class="paragraph"> Az ábrákat Mészáros Balázs programja készítette.</div>
+<div class="paragraph"><img src="../../../../../Download19cb.png?node=1345" alt="" class=""/> <img src="../../../../../Download118a.png?node=1346" alt="" class=""/> </div>
+<div class="paragraph"><img src="../../../../../Downloadbda4.png?node=1347" alt="" class=""/> <img src="../../../../../Download06a0.png?node=1348" alt="" class=""/> </div>
+<div class="paragraph"><img src="../../../../../Downloadef44.png?node=1349" alt="" class=""/> <img src="../../../../../Download09c7.png?node=1350" alt="" class=""/> </div>
+
+                        
+                        
+                    
+
+            
+        
+    </div>
+</div>
+    
+    
+
+                
+                
+            
+        
+    
+</div> <!-- rightbase -->
+<div id="copyright">
+    
+        A dokumentum tulajdonosa: Erben P&eacute;ter;
+        utolsó módosítás:
+        2009-11-07 23:32:42
+        (Erben P&eacute;ter)
+        <br />
+    
+
+        (C) 2004-2010
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a>
+    <br /> 
+    Powered by 
+    <a href="../../../../doku/info/contr.html" class="copyright">BDG programozás szakkör</a> &amp;
+    <a href="../../../../doku/info/njcms.html" class="copyright">njcms</a>
+
+    v0.5.12
+    
+    
+    <br /><br />
+
+
+</div>
+            
+            
+        
+
+    </body>
+
+<!-- Mirrored from prog.berzsenyi.hu:8080/prog/View/szakkor/bdg/0607/01ora/dom?page=print by HTTrack Website Copier/3.x [XR&CO'2010], Tue, 07 Aug 2012 22:34:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
+</html>
